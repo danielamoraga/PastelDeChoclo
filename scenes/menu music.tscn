@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cybnv34qj7g6f"]
+
+[ext_resource type="AudioStream" uid="uid://bnbywajfaycpi" path="res://Música/Menu.mp3" id="1_a5fk2"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_a5fk2")
+autoplay = true
