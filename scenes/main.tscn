@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://5h3fcrpon2wy" path="res://assets/Sunny-land-assets-files/PNG/environment/layers/back.png" id="1_2ns5k"]
 [ext_resource type="PackedScene" uid="uid://xtdej8l6hgo1" path="res://scenes/player.tscn" id="2_gpvv4"]
 [ext_resource type="Texture2D" uid="uid://lkxe3sndjn4n" path="res://assets/Sunny-land-assets-files/PNG/environment/props/block-big.png" id="3_mjxyy"]
-[ext_resource type="AudioStream" uid="uid://b20ta1xel4d1f" path="res://Música/BWV_1043.WAV" id="4_kjnti"]
+[ext_resource type="AudioStream" uid="uid://pqjdp8oi80be" path="res://Música/BWV_1043.mp3" id="4_vxvv5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b5jdv"]
 size = Vector2(707.75, 186)
@@ -45,6 +45,6 @@ position = Vector2(354.125, 913)
 shape = SubResource("RectangleShape2D_b5jdv")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("4_kjnti")
+stream = ExtResource("4_vxvv5")
 volume_db = -15.0
 autoplay = true

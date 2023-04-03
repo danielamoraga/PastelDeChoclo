@@ -1,7 +1,8 @@
 2a60927148abd1d33b818b535e306557
-::res://::1680547992
+::res://::1680550188
 game.tscn::PackedScene::856039212845910697::1680482519::0::1::::<><>::
 icon.svg::CompressedTexture2D::3505943541304165199::1680317960::1680317966::1::::<><>::
+README.md::TextFile::-1::1680549930::0::1::::<><>::
 ::res://assets/::1680492324
 All textures.png::CompressedTexture2D::6017014651674416323::1680491803::1680491803::1::::<><>::
 Idle 1.png::CompressedTexture2D::8585629390473545259::1679944805::1680488466::1::::<><>::
@@ -187,15 +188,15 @@ Crosterian.ttf::FontFile::8591274671785371342::1604324911::1680319545::1::::<><>
 Logo Itchio.png::CompressedTexture2D::7129722989117286979::1680313705::1680318818::1::::<><>::
 Menu Background.png::CompressedTexture2D::6485008457583760956::1586672082::1680319695::1::::<><>::
 tileset.png::CompressedTexture2D::8960761891268121665::1586671666::1680319695::1::::<><>::
-::res://Música/::1680549690
+::res://Música/::1680549865
 BWV_1043.mp3::AudioStreamMP3::1086415348428965522::1680549130::1680549865::1::::<><>::
 Menu.mp3::AudioStreamMP3::3302436538165247662::1680310740::1680318834::1::::<><>::
-::res://scenes/::1680547566
+::res://scenes/::1680550131
 main.tscn::PackedScene::6496213838413330134::1680547566::0::1::::<><>::uid://5h3fcrpon2wy<>uid://xtdej8l6hgo1<>uid://lkxe3sndjn4n<>uid://b20ta1xel4d1f
 menu music.tscn::PackedScene::6460266331224397579::1680319045::0::1::::<><>::uid://bnbywajfaycpi
 menu.gd::GDScript::-1::1680501120::0::1::::<>MarginContainer<>::
-menu.tscn::PackedScene::5934976567708442679::1680547566::0::1::::<><>::res://scenes/menu.gd<>uid://cys2xs5g4yt63<>uid://cynne27juo05m<>uid://dunxbkw3r0qqw<>uid://bnbywajfaycpi
+menu.tscn::PackedScene::5934976567708442679::1680550131::0::1::::<><>::res://scenes/menu.gd<>uid://cys2xs5g4yt63<>uid://cynne27juo05m<>uid://dunxbkw3r0qqw
 pause_menu.gd::GDScript::-1::1680501742::0::1::::<>MarginContainer<>::
-pause_menu.tscn::PackedScene::3200172551617717111::1680547566::0::1::::<><>::res://scenes/pause_menu.gd<>uid://dunxbkw3r0qqw
+pause_menu.tscn::PackedScene::3200172551617717111::1680550131::0::1::::<><>::res://scenes/pause_menu.gd<>uid://dunxbkw3r0qqw
 player.gd::GDScript::-1::1680503900::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::1653756399385995222::1680547566::0::1::::<><>::res://scenes/player.gd<>uid://cryxl8frh8n60<>uid://blugmy1ntgbsp
+player.tscn::PackedScene::1653756399385995222::1680550131::0::1::::<><>::res://scenes/player.gd<>uid://cryxl8frh8n60<>uid://blugmy1ntgbsp
