@@ -1,7 +1,7 @@
-[gd_scene load_steps=17 format=3 uid="uid://xtdej8l6hgo1"]
+[gd_scene load_steps=17 format=3 uid="uid://b5208fp6rc1i8"]
 
 [ext_resource type="Script" path="res://scenes/player.gd" id="1_omsvt"]
-[ext_resource type="Texture2D" uid="uid://cryxl8frh8n60" path="res://assets/All textures.png" id="1_sotld"]
+[ext_resource type="Texture2D" uid="uid://cryxl8frh8n60" path="res://assets/sprite/All textures.png" id="2_avtw0"]
 [ext_resource type="PackedScene" uid="uid://blugmy1ntgbsp" path="res://scenes/pause_menu.tscn" id="3_b0tb6"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xf6c7"]
@@ -115,7 +115,7 @@ script = ExtResource("1_omsvt")
 position = Vector2(-13, -66)
 
 [node name="Sprite2D" type="Sprite2D" parent="Pivot"]
-texture = ExtResource("1_sotld")
+texture = ExtResource("2_avtw0")
 hframes = 3
 vframes = 4
 
