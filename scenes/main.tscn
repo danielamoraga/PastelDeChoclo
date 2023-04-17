@@ -11,8 +11,8 @@ size = Vector2(707.75, 186)
 [node name="Main" type="Node2D"]
 
 [node name="Back" type="Sprite2D" parent="."]
-position = Vector2(897.5, 506.5)
-scale = Vector2(5.16715, 5.35263)
+position = Vector2(897, 506.5)
+scale = Vector2(5.16426, 5.35263)
 texture = ExtResource("1_huiix")
 
 [node name="Player" parent="." instance=ExtResource("2_gpvv4")]
