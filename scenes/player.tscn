@@ -1,7 +1,7 @@
-[gd_scene load_steps=17 format=3 uid="uid://b5208fp6rc1i8"]
+[gd_scene load_steps=17 format=3 uid="uid://dtyssvex7sohr"]
 
 [ext_resource type="Script" path="res://scenes/player.gd" id="1_omsvt"]
-[ext_resource type="Texture2D" uid="uid://cryxl8frh8n60" path="res://assets/sprite/All textures.png" id="2_avtw0"]
+[ext_resource type="Texture2D" uid="uid://cryxl8frh8n60" path="res://assets/sprite/All textures.png" id="1_sotld"]
 [ext_resource type="PackedScene" uid="uid://blugmy1ntgbsp" path="res://scenes/pause_menu.tscn" id="3_b0tb6"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xf6c7"]
@@ -111,11 +111,108 @@ graph_offset = Vector2(1.94744, 0)
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_omsvt")
 
+[node name="Raycast" type="Node2D" parent="."]
+rotation = -1.5708
+
+[node name="RayCast01" type="RayCast2D" parent="Raycast"]
+position = Vector2(0, 70)
+target_position = Vector2(0, 500)
+
+[node name="RayCast02" type="RayCast2D" parent="Raycast"]
+position = Vector2(2, 70)
+rotation = -0.0872665
+target_position = Vector2(0, 500)
+
+[node name="RayCast03" type="RayCast2D" parent="Raycast"]
+position = Vector2(-2, 70)
+rotation = 0.0872665
+target_position = Vector2(0, 500)
+
+[node name="RayCast04" type="RayCast2D" parent="Raycast"]
+position = Vector2(4, 70)
+rotation = -0.174533
+target_position = Vector2(0, 500)
+
+[node name="RayCast05" type="RayCast2D" parent="Raycast"]
+position = Vector2(-4, 70)
+rotation = 0.174533
+target_position = Vector2(0, 500)
+
+[node name="RayCast06" type="RayCast2D" parent="Raycast"]
+position = Vector2(6, 70)
+rotation = -0.261799
+target_position = Vector2(0, 500)
+
+[node name="RayCast07" type="RayCast2D" parent="Raycast"]
+position = Vector2(-6, 70)
+rotation = 0.261799
+target_position = Vector2(0, 500)
+
+[node name="RayCast08" type="RayCast2D" parent="Raycast"]
+position = Vector2(8, 70)
+rotation = -0.349066
+target_position = Vector2(0, 500)
+
+[node name="RayCast09" type="RayCast2D" parent="Raycast"]
+position = Vector2(-8, 70)
+rotation = 0.349066
+target_position = Vector2(0, 500)
+
+[node name="RayCast10" type="RayCast2D" parent="Raycast"]
+position = Vector2(10, 70)
+rotation = -0.436332
+target_position = Vector2(0, 500)
+
+[node name="RayCast11" type="RayCast2D" parent="Raycast"]
+position = Vector2(-10, 70)
+rotation = 0.436332
+target_position = Vector2(0, 500)
+
+[node name="RayCast12" type="RayCast2D" parent="Raycast"]
+position = Vector2(12, 70)
+rotation = -0.523599
+target_position = Vector2(0, 500)
+
+[node name="RayCast13" type="RayCast2D" parent="Raycast"]
+position = Vector2(-12, 70)
+rotation = 0.523599
+target_position = Vector2(0, 500)
+
+[node name="RayCast14" type="RayCast2D" parent="Raycast"]
+position = Vector2(14, 70)
+rotation = -0.610865
+target_position = Vector2(0, 500)
+
+[node name="RayCast15" type="RayCast2D" parent="Raycast"]
+position = Vector2(-14, 70)
+rotation = 0.610865
+target_position = Vector2(0, 500)
+
+[node name="RayCast16" type="RayCast2D" parent="Raycast"]
+position = Vector2(16, 70)
+rotation = -0.698132
+target_position = Vector2(0, 500)
+
+[node name="RayCast17" type="RayCast2D" parent="Raycast"]
+position = Vector2(-16, 70)
+rotation = 0.698132
+target_position = Vector2(0, 500)
+
+[node name="RayCast18" type="RayCast2D" parent="Raycast"]
+position = Vector2(18, 70)
+rotation = -0.785398
+target_position = Vector2(0, 500)
+
+[node name="RayCast19" type="RayCast2D" parent="Raycast"]
+position = Vector2(-18, 70)
+rotation = 0.785398
+target_position = Vector2(0, 500)
+
 [node name="Pivot" type="Node2D" parent="."]
 position = Vector2(-13, -66)
 
 [node name="Sprite2D" type="Sprite2D" parent="Pivot"]
-texture = ExtResource("2_avtw0")
+texture = ExtResource("1_sotld")
 hframes = 3
 vframes = 4
 

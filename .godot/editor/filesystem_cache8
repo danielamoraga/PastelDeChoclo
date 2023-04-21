@@ -1,25 +1,24 @@
 2a60927148abd1d33b818b535e306557
-::res://::1681744882
+::res://::1682088176
 export_presets.cfg::TextFile::-1::1681698221::0::1::::<><>::
 game.tscn::PackedScene::856039212845910697::1681697949::0::1::::<><>::
 icon.svg::CompressedTexture2D::3505943541304165199::1681697949::1681697949::1::::<><>::
 README.md::TextFile::-1::1681697949::0::1::::<><>::
-::res://assets/::1681744873
-Assets.png::CompressedTexture2D::4490884474975669624::1572732358::1681744873::1::::<><>::
-::res://assets/sprite/::1681744629
-All textures.png::CompressedTexture2D::6017014651674416323::1681697949::1681744588::1::::<><>::
-Idle 1.png::CompressedTexture2D::8585629390473545259::1681697949::1681744593::1::::<><>::
-Idle 2.png::CompressedTexture2D::6460628588017322339::1681697949::1681744601::1::::<><>::
-Idle 3.png::CompressedTexture2D::3530446456961738257::1681697949::1681744603::1::::<><>::
-Idle 4.png::CompressedTexture2D::1050513294963932976::1681697949::1681744607::1::::<><>::
-Jump.png::CompressedTexture2D::7395169876026928194::1681697949::1681744610::1::::<><>::
-Run 1.png::CompressedTexture2D::8001490809633500916::1681697949::1681744613::1::::<><>::
-Run 2.png::CompressedTexture2D::6696484719432929082::1681697949::1681744617::1::::<><>::
-Run 3.png::CompressedTexture2D::4932437863556763194::1681697949::1681744619::1::::<><>::
-Run 4.png::CompressedTexture2D::1583400786211088153::1681697949::1681744622::1::::<><>::
-Sit 1.png::CompressedTexture2D::53050309308417014::1681697949::1681744625::1::::<><>::
-Sit 2.png::CompressedTexture2D::6256232191596590623::1681697949::1681744627::1::::<><>::
-Sit 3.png::CompressedTexture2D::8452083034188144374::1681697949::1681744629::1::::<><>::
+::res://assets/::1682087523
+::res://assets/sprite/::1682087523
+All textures.png::CompressedTexture2D::6017014651674416323::1682087523::1682087523::1::::<><>::
+Idle 1.png::CompressedTexture2D::8585629390473545259::1682087523::1682087523::1::::<><>::
+Idle 2.png::CompressedTexture2D::6460628588017322339::1682087523::1682087523::1::::<><>::
+Idle 3.png::CompressedTexture2D::3530446456961738257::1682087523::1682087523::1::::<><>::
+Idle 4.png::CompressedTexture2D::1050513294963932976::1682087523::1682087523::1::::<><>::
+Jump.png::CompressedTexture2D::7395169876026928194::1682087523::1682087523::1::::<><>::
+Run 1.png::CompressedTexture2D::8001490809633500916::1682087523::1682087523::1::::<><>::
+Run 2.png::CompressedTexture2D::6696484719432929082::1682087523::1682087523::1::::<><>::
+Run 3.png::CompressedTexture2D::4932437863556763194::1682087523::1682087523::1::::<><>::
+Run 4.png::CompressedTexture2D::1583400786211088153::1682087523::1682087523::1::::<><>::
+Sit 1.png::CompressedTexture2D::53050309308417014::1682087523::1682087523::1::::<><>::
+Sit 2.png::CompressedTexture2D::6256232191596590623::1682087523::1682087523::1::::<><>::
+Sit 3.png::CompressedTexture2D::8452083034188144374::1682087523::1682087523::1::::<><>::
 ::res://assets/Sunny-land-assets-files/::1681697949
 public-license.txt::TextFile::-1::1681697949::0::1::::<><>::
 ::res://assets/Sunny-land-assets-files/code/::1681697949
@@ -183,11 +182,10 @@ player-jump.png::CompressedTexture2D::8001790978934290692::1681697949::168169794
 ::res://assets/Sunny-land-assets-files/Sound/::1681697949
 platformer_level03.mp3::AudioStreamMP3::4892988171246973933::1681697949::1681697949::1::::<><>::
 platformer_level03_loop.ogg::AudioStreamOggVorbis::7265040541684087102::1681697949::1681697949::1::::<><>::
-::res://assets/tiles/::1681744973
-background.png::CompressedTexture2D::1675395014591920904::1681744957::1681744975::1::::<><>::
-objects.png::CompressedTexture2D::1030019855804786050::1681744973::1681744975::1::::<><>::
-platforms.png::CompressedTexture2D::8994215723583265467::1572732444::1681744869::1::::<><>::
-::res://builds/::1681698570
+::res://assets/tiles/::1682087523
+background.png::CompressedTexture2D::1675395014591920904::1682087523::1682087523::1::::<><>::
+platforms.png::CompressedTexture2D::8994215723583265467::1682087523::1682087523::1::::<><>::
+::res://builds/::1682087523
 ::res://Diseño/::1681697949
 background_0.png::CompressedTexture2D::8460855298240905491::1681697949::1681697949::1::::<><>::
 background_1.png::CompressedTexture2D::6664401872898851358::1681697949::1681697949::1::::<><>::
@@ -199,12 +197,12 @@ tileset.png::CompressedTexture2D::8960761891268121665::1681697949::1681697949::1
 ::res://Música/::1681697949
 BWV_1043.mp3::AudioStreamMP3::1086415348428965522::1681697949::1681697949::1::::<><>::
 Menu.mp3::AudioStreamMP3::3302436538165247662::1681697949::1681697949::1::::<><>::
-::res://scenes/::1681744772
-main.tscn::PackedScene::6496213838413330134::1681744772::0::1::::<><>::uid://5h3fcrpon2wy<>uid://b5208fp6rc1i8<>uid://lkxe3sndjn4n<>uid://pqjdp8oi80be
+::res://scenes/::1682087735
+main.tscn::PackedScene::6496213838413330134::1682087735::0::1::::<><>::uid://5h3fcrpon2wy<>uid://xtdej8l6hgo1<>uid://lkxe3sndjn4n<>uid://pqjdp8oi80be
 menu music.tscn::PackedScene::6460266331224397579::1681697949::0::1::::<><>::uid://bnbywajfaycpi
 menu.gd::GDScript::-1::1681697949::0::1::::<>MarginContainer<>::
-menu.tscn::PackedScene::5934976567708442679::1681744771::0::1::::<><>::res://scenes/menu.gd<>uid://cys2xs5g4yt63<>uid://cynne27juo05m<>uid://dunxbkw3r0qqw<>uid://bnbywajfaycpi
+menu.tscn::PackedScene::5934976567708442679::1682087735::0::1::::<><>::res://scenes/menu.gd<>uid://cys2xs5g4yt63<>uid://cynne27juo05m<>uid://dunxbkw3r0qqw<>uid://bnbywajfaycpi
 pause_menu.gd::GDScript::-1::1681697949::0::1::::<>MarginContainer<>::
-pause_menu.tscn::PackedScene::3200172551617717111::1681744771::0::1::::<><>::res://scenes/pause_menu.gd<>uid://dunxbkw3r0qqw
+pause_menu.tscn::PackedScene::3200172551617717111::1682087735::0::1::::<><>::res://scenes/pause_menu.gd<>uid://dunxbkw3r0qqw
 player.gd::GDScript::-1::1681697949::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::4549401335431851481::1681744771::0::1::::<><>::res://scenes/player.gd<>uid://cryxl8frh8n60<>uid://blugmy1ntgbsp
+player.tscn::PackedScene::1653756399385995222::1682087735::0::1::::<><>::res://scenes/player.gd<>res://assets/All textures.png<>uid://blugmy1ntgbsp

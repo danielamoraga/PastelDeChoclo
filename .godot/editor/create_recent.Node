@@ -1,6 +1,7 @@
+RayCast2D
+Node2D
 TileMap
 AudioStreamPlayer2D
-Node2D
 AnimationTree
 CanvasLayer
 Sprite2D

@@ -2,3 +2,4 @@ res://scenes/player.tscn
 res://scenes/pause_menu.tscn
 res://scenes/menu.tscn
 res://scenes/main.tscn
+res://scenes/player.gd
