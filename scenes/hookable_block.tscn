@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bf8jrulltmrk4"]
+
+[ext_resource type="Texture2D" uid="uid://lkxe3sndjn4n" path="res://assets/Sunny-land-assets-files/PNG/environment/props/block-big.png" id="1_6kfof"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d3opd"]
+size = Vector2(20.5705, 20.6381)
+
+[node name="HookableBlock" type="StaticBody2D" groups=["Hookable"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_6kfof")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.431758, -0.479873)
+scale = Vector2(1.51365, 1.50403)
+shape = SubResource("RectangleShape2D_d3opd")

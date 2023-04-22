@@ -115,13 +115,21 @@ script = ExtResource("1_omsvt")
 position = Vector2(-13, -66)
 
 [node name="Sprite2D" type="Sprite2D" parent="Pivot"]
+position = Vector2(42, -42)
 texture = ExtResource("2_avtw0")
 hframes = 3
 vframes = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-7, -14)
+position = Vector2(41, -59)
 shape = SubResource("CapsuleShape2D_xf6c7")
+
+[node name="HookDetector" type="RayCast2D" parent="."]
+position = Vector2(0, -1)
+
+[node name="HookLine" type="Line2D" parent="."]
+position = Vector2(0, -1)
+default_color = Color(0.74902, 0.47451, 0.345098, 1)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -135,5 +143,6 @@ active = true
 parameters/playback = SubResource("AnimationNodeStateMachinePlayback_8qvem")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="Pause_Menu" parent="CanvasLayer" instance=ExtResource("3_b0tb6")]
