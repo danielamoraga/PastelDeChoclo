@@ -1,9 +1,10 @@
-StaticBody2D
-Line2D
-RayCast2D
 CollisionShape2D
+Area2D
+StaticBody2D
 Sprite2D
 Node2D
+Line2D
+RayCast2D
 TileMap
 AudioStreamPlayer2D
 AnimationTree

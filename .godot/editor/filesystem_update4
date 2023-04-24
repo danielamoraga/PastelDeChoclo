@@ -1,5 +1,9 @@
 res://scenes/main.tscn
+res://scenes/player.gd
 res://scenes/player.tscn
 res://scenes/pause_menu.tscn
 res://scenes/menu.tscn
 res://scenes/hookable_block.tscn
+res://scenes/Spikes.gd
+res://spikes.tscn
+res://scenes/spikes.tscn

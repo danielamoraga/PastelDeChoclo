@@ -109,6 +109,8 @@ graph_offset = Vector2(1.94744, 0)
 [sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_8qvem"]
 
 [node name="Player" type="CharacterBody2D"]
+collision_layer = 3
+collision_mask = 3
 script = ExtResource("1_omsvt")
 
 [node name="Pivot" type="Node2D" parent="."]

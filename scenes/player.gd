@@ -6,6 +6,9 @@ const JUMP_VELOCITY = -400.0
 const ACCELERATION = 1000
 const GRAVITY = 1000
 
+#@export var max_health: float = 100
+#@onready var health = max_health
+
 var hooked = false
 var target: Vector2 = Vector2()
 var dist: float = 0
@@ -29,6 +32,8 @@ func create_hook():
 	if (hook_detector.is_colliding()):
 		var body: Node2D = hook_detector.get_collider()
 		if (body.is_in_group("Hookable")):
+			if body.is_in_group("take_damage"):
+				print("auch")
 			target = hook_detector.get_collision_point()
 			hook_line.add_point(Vector2())
 			hook_line.add_point(to_local(target))
@@ -111,3 +116,13 @@ func _physics_process(delta):
 		_gravity(delta)
 
 	move_and_slide()
+	
+func _on_body_entered(body: Node):
+	if body.has_method("take damage"):
+		body.take_damage()
+	if body is CharacterBody2D:
+		var character = body as CharacterBody2D
+		character.velocity = (character.global_position - global_position)
+			
+func take_damage():
+	print("auch")
