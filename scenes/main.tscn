@@ -1,20 +1,12 @@
-<<<<<<< HEAD
 [gd_scene load_steps=9 format=3 uid="uid://cys2xs5g4yt63"]
-=======
-[gd_scene load_steps=8 format=3 uid="uid://cys2xs5g4yt63"]
->>>>>>> e64203ab918d5deda1267e893c5ee150fe0a1131
 
 [ext_resource type="Texture2D" uid="uid://x4trm30o47a7" path="res://assets/tiles/background.png" id="1_huiix"]
 [ext_resource type="PackedScene" uid="uid://b5208fp6rc1i8" path="res://scenes/player.tscn" id="2_gpvv4"]
 [ext_resource type="PackedScene" uid="uid://bf8jrulltmrk4" path="res://scenes/hookable_block.tscn" id="3_8flw8"]
 [ext_resource type="Texture2D" uid="uid://lkxe3sndjn4n" path="res://assets/Sunny-land-assets-files/PNG/environment/props/block-big.png" id="3_mjxyy"]
 [ext_resource type="AudioStream" uid="uid://pqjdp8oi80be" path="res://Música/BWV_1043.mp3" id="4_vxvv5"]
-<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://hkj1hbq1qmxf" path="res://scenes/spikes.tscn" id="5_0vse3"]
 [ext_resource type="PackedScene" uid="uid://blugmy1ntgbsp" path="res://scenes/pause_menu.tscn" id="8_l7ok0"]
-=======
-[ext_resource type="PackedScene" uid="uid://blugmy1ntgbsp" path="res://scenes/pause_menu.tscn" id="6_ovr8i"]
->>>>>>> e64203ab918d5deda1267e893c5ee150fe0a1131
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b5jdv"]
 size = Vector2(707.75, 186)
@@ -85,17 +77,8 @@ stream = ExtResource("4_vxvv5")
 volume_db = -15.0
 autoplay = true
 
-<<<<<<< HEAD
 [node name="Pause_Menu" parent="." instance=ExtResource("8_l7ok0")]
-visible = false
 offset_left = 692.0
 offset_top = 409.0
 offset_right = 1099.0
 offset_bottom = 585.0
-=======
-[node name="Pause_Menu" parent="." instance=ExtResource("6_ovr8i")]
-offset_left = 676.0
-offset_top = 387.0
-offset_right = 1083.0
-offset_bottom = 563.0
->>>>>>> e64203ab918d5deda1267e893c5ee150fe0a1131
