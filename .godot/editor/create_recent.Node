@@ -1,21 +1,15 @@
-<<<<<<< HEAD
-=======
+Node2D
 TileMap
 StaticBody2D
 Line2D
 RayCast2D
->>>>>>> e64203ab918d5deda1267e893c5ee150fe0a1131
 CollisionShape2D
 Area2D
 StaticBody2D
 Sprite2D
-Node2D
-<<<<<<< HEAD
 Line2D
 RayCast2D
 TileMap
-=======
->>>>>>> e64203ab918d5deda1267e893c5ee150fe0a1131
 AudioStreamPlayer2D
 AnimationTree
 CanvasLayer
