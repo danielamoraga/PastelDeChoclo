@@ -1,11 +1,19 @@
 2a60927148abd1d33b818b535e306557
-::res://::1682292002
+::res://::1682294679
 export_presets.cfg::TextFile::-1::1681696422::0::1::::<><>::
 game.tscn::PackedScene::856039212845910697::1681695451::0::1::::<><>::
 icon.svg::CompressedTexture2D::3505943541304165199::1680652428::1680652428::1::::<><>::
 README.md::TextFile::-1::1680652428::0::1::::<><>::
 static_body_2d.tscn::PackedScene::5452006668427936074::1682177729::0::1::::<><>::
-::res://assets/::1681749367
+::res://assets/::1682293612
+::res://assets/Legacy_Adventure_Pack/::1682293520
+Autor_note.txt::TextFile::-1::1572739352::0::1::::<><>::
+::res://assets/Legacy_Adventure_Pack/Assets/::1682293612
+Assets.png::CompressedTexture2D::7210249252787181705::1572739644::1682293612::1::::<><>::
+Character.png::CompressedTexture2D::6506340736333842957::1572739280::1682293612::1::::<><>::
+::res://assets/Legacy_Adventure_Pack/Social/::1682293612
+Assets.png::CompressedTexture2D::759216060950195326::1572739558::1682293612::1::::<><>::
+Test.png::CompressedTexture2D::8303661493601941786::1572739058::1682293612::1::::<><>::
 ::res://assets/sprite/::1681749367
 All textures.png::CompressedTexture2D::6017014651674416323::1681749367::1681749367::1::::<><>::
 Idle 1.png::CompressedTexture2D::8585629390473545259::1681749367::1681749367::1::::<><>::
@@ -59,7 +67,7 @@ title-screen.png::CompressedTexture2D::5676785597346345986::1680652428::16806524
 back.png::CompressedTexture2D::2121825090195533784::1680652428::1680652428::1::::<><>::
 middle.png::CompressedTexture2D::7987193382053142785::1680652428::1680652428::1::::<><>::
 props.png::CompressedTexture2D::3391241660166081277::1680652428::1680652428::1::::<><>::
-::res://assets/Sunny-land-assets-files/PNG/environment/props/::1680652428
+::res://assets/Sunny-land-assets-files/PNG/environment/props/::1682293569
 big-crate.png::CompressedTexture2D::9092852564453980813::1680652428::1680652428::1::::<><>::
 block-big.png::CompressedTexture2D::794126190623525043::1680652428::1680652428::1::::<><>::
 block.png::CompressedTexture2D::1098016794164498441::1680652428::1680652428::1::::<><>::
@@ -82,6 +90,14 @@ spike-skull.png::CompressedTexture2D::8192478479131375539::1680652428::168065242
 spikes-top.png::CompressedTexture2D::805771157372055113::1680652428::1680652428::1::::<><>::
 spikes.png::CompressedTexture2D::3212585608671025472::1680652428::1680652428::1::::<><>::
 tree.png::CompressedTexture2D::6521468114669880671::1680652428::1680652428::1::::<><>::
+::res://assets/Sunny-land-assets-files/PNG/environment/props/Legacy_Adventure_Pack/::1682293569
+Autor_note.txt::TextFile::-1::1682293569::0::1::::<><>::
+::res://assets/Sunny-land-assets-files/PNG/environment/props/Legacy_Adventure_Pack/Assets/::1682293569
+Assets.png::CompressedTexture2D::8629086882296894146::1682293569::1682293569::1::::<><>::
+Character.png::CompressedTexture2D::7980141548493784417::1682293569::1682293569::1::::<><>::
+::res://assets/Sunny-land-assets-files/PNG/environment/props/Legacy_Adventure_Pack/Social/::1682293569
+Assets.png::CompressedTexture2D::5219848145988857534::1682293569::1682293569::1::::<><>::
+Test.png::CompressedTexture2D::5106914760922926489::1682293569::1682293569::1::::<><>::
 ::res://assets/Sunny-land-assets-files/PNG/sprites/::1680652428
 ::res://assets/Sunny-land-assets-files/PNG/sprites/cherry/::1680652428
 cherry-1.png::CompressedTexture2D::6887642159355526070::1680652428::1680652428::1::::<><>::
@@ -198,13 +214,14 @@ tileset.png::CompressedTexture2D::8960761891268121665::1680652428::1680652428::1
 ::res://Música/::1680652428
 BWV_1043.mp3::AudioStreamMP3::1086415348428965522::1680652428::1680652428::1::::<><>::
 Menu.mp3::AudioStreamMP3::3302436538165247662::1680652428::1680652428::1::::<><>::
-::res://scenes/::1682291419
-hookable_block.tscn::PackedScene::2806067247184040165::1682291419::0::1::::<><>::uid://lkxe3sndjn4n
-main.tscn::PackedScene::6496213838413330134::1682291418::0::1::::<><>::uid://x4trm30o47a7<>uid://b5208fp6rc1i8<>uid://bf8jrulltmrk4<>uid://lkxe3sndjn4n<>uid://pqjdp8oi80be
+::res://scenes/::1682294653
+hookable_block.tscn::PackedScene::2806067247184040165::1682292593::0::1::::<><>::uid://lkxe3sndjn4n
+level1.tscn::PackedScene::1392161995342147614::1682294653::0::1::::<><>::uid://dayx0tbjx2rin
+main.tscn::PackedScene::6496213838413330134::1682293648::0::1::::<><>::uid://x4trm30o47a7<>uid://b5208fp6rc1i8<>uid://bf8jrulltmrk4<>uid://lkxe3sndjn4n<>uid://pqjdp8oi80be<>uid://blugmy1ntgbsp
 menu music.tscn::PackedScene::6460266331224397579::1680652428::0::1::::<><>::uid://bnbywajfaycpi
 menu.gd::GDScript::-1::1682205715::0::1::::<>MarginContainer<>::
-menu.tscn::PackedScene::5934976567708442679::1682291419::0::1::::<><>::res://scenes/menu.gd<>uid://cys2xs5g4yt63<>uid://cynne27juo05m<>uid://dunxbkw3r0qqw<>uid://bnbywajfaycpi
-pause_menu.gd::GDScript::-1::1682205715::0::1::::<>MarginContainer<>::
-pause_menu.tscn::PackedScene::3200172551617717111::1682291418::0::1::::<><>::res://scenes/pause_menu.gd<>uid://dunxbkw3r0qqw
+menu.tscn::PackedScene::5934976567708442679::1682292593::0::1::::<><>::res://scenes/menu.gd<>uid://cys2xs5g4yt63<>uid://cynne27juo05m<>uid://dunxbkw3r0qqw<>uid://bnbywajfaycpi
+pause_menu.gd::GDScript::-1::1682292451::0::1::::<>MarginContainer<>::
+pause_menu.tscn::PackedScene::3200172551617717111::1682292593::0::1::::<><>::res://scenes/pause_menu.gd<>uid://dunxbkw3r0qqw
 player.gd::GDScript::-1::1682205715::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::4549401335431851481::1682291418::0::1::::<><>::res://scenes/player.gd<>uid://cryxl8frh8n60<>uid://blugmy1ntgbsp
+player.tscn::PackedScene::4549401335431851481::1682292593::0::1::::<><>::res://scenes/player.gd<>uid://cryxl8frh8n60<>uid://blugmy1ntgbsp
