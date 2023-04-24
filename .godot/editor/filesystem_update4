@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 res://scenes/main.tscn
 res://scenes/player.gd
+=======
+>>>>>>> e64203ab918d5deda1267e893c5ee150fe0a1131
 res://scenes/player.tscn
 res://scenes/pause_menu.tscn
 res://scenes/menu.tscn
 res://scenes/hookable_block.tscn
+<<<<<<< HEAD
 res://scenes/Spikes.gd
 res://spikes.tscn
 res://scenes/spikes.tscn
+=======
+res://scenes/main.tscn
+res://scenes/level1.tscn
+>>>>>>> e64203ab918d5deda1267e893c5ee150fe0a1131
