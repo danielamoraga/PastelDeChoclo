@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://blugmy1ntgbsp"]
+[gd_scene load_steps=4 format=3 uid="uid://blugmy1ntgbsp"]
 
 [ext_resource type="Script" path="res://scenes/pause_menu.gd" id="1_wb1bv"]
-[ext_resource type="FontFile" uid="uid://dunxbkw3r0qqw" path="res://Diseño/Crosterian.ttf" id="3_4a8xn"]
+[ext_resource type="FontFile" uid="uid://bpvouls2mpuf7" path="res://Diseño/Fonts/Chonkly.otf" id="2_d45pu"]
+[ext_resource type="FontFile" uid="uid://81p7b7pbndxb" path="res://Diseño/Fonts/fibberish.ttf" id="3_114mj"]
 
 [node name="Pause_Menu" type="MarginContainer"]
 process_mode = 3
@@ -32,16 +33,27 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("3_4a8xn")
-theme_override_font_sizes/font_size = 29
+theme_override_colors/font_color = Color(1, 0.623529, 0.160784, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.898039, 0.411765, 0.12549, 1)
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("2_d45pu")
+theme_override_font_sizes/font_size = 60
 text = "Banana Bounce"
 
 [node name="Resume" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_114mj")
+theme_override_font_sizes/font_size = 50
 text = "Resume"
 
 [node name="Main Menu" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_114mj")
+theme_override_font_sizes/font_size = 50
 text = "Main Menu"
