@@ -1,3 +1,5 @@
+AudioStreamPlayer
+VBoxContainer
 Node2D
 TileMap
 StaticBody2D
@@ -16,9 +18,7 @@ CanvasLayer
 AnimationPlayer
 CharacterBody2D
 Node3D
-AudioStreamPlayer
 Button
-VBoxContainer
 Label
 MarginContainer
 PanelContainer

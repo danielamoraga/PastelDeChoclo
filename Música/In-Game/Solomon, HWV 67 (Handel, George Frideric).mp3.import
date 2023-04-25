@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://kb3x5gnev7je"
+path="res://.godot/imported/Solomon, HWV 67 (Handel, George Frideric).mp3-ca86e7ed229821680977d8b75db82720.mp3str"
+
+[deps]
+
+source_file="res://Música/In-Game/Solomon, HWV 67 (Handel, George Frideric).mp3"
+dest_files=["res://.godot/imported/Solomon, HWV 67 (Handel, George Frideric).mp3-ca86e7ed229821680977d8b75db82720.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

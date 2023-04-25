@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cqs7gxxjydw8f"]
+[gd_scene load_steps=9 format=3 uid="uid://cqs7gxxjydw8f"]
 
 [ext_resource type="Script" path="res://scenes/menu.gd" id="1_h1y1r"]
 [ext_resource type="PackedScene" uid="uid://cys2xs5g4yt63" path="res://scenes/main.tscn" id="2_5x3wo"]
@@ -6,6 +6,11 @@
 [ext_resource type="FontFile" uid="uid://bpvouls2mpuf7" path="res://Diseño/Fonts/Chonkly.otf" id="4_w621r"]
 [ext_resource type="AudioStream" uid="uid://bnbywajfaycpi" path="res://Música/Menu.mp3" id="5_teeo7"]
 [ext_resource type="FontFile" uid="uid://81p7b7pbndxb" path="res://Diseño/Fonts/fibberish.ttf" id="5_v6pax"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2f333"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_5pud2"]
+blend_mode = 3
 
 [node name="Main Menu" type="MarginContainer"]
 anchors_preset = 15
@@ -28,16 +33,21 @@ texture = ExtResource("2_sbxw4")
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxEmpty_2f333")
 
 [node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 2
-theme_override_constants/margin_left = 35
-theme_override_constants/margin_top = 35
-theme_override_constants/margin_right = 35
-theme_override_constants/margin_bottom = 35
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
+self_modulate = Color(1, 1, 1, 0)
+material = SubResource("CanvasItemMaterial_5pud2")
 layout_mode = 2
+theme_override_constants/separation = 15
 
 [node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2

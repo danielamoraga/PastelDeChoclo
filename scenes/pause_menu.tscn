@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://blugmy1ntgbsp"]
+[gd_scene load_steps=5 format=3 uid="uid://blugmy1ntgbsp"]
 
 [ext_resource type="Script" path="res://scenes/pause_menu.gd" id="1_wb1bv"]
 [ext_resource type="FontFile" uid="uid://bpvouls2mpuf7" path="res://Diseño/Fonts/Chonkly.otf" id="2_d45pu"]
 [ext_resource type="FontFile" uid="uid://81p7b7pbndxb" path="res://Diseño/Fonts/fibberish.ttf" id="3_114mj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lp0u8"]
 
 [node name="Pause_Menu" type="MarginContainer"]
 process_mode = 3
@@ -20,6 +22,7 @@ metadata/_edit_lock_ = true
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxEmpty_lp0u8")
 
 [node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
 layout_mode = 2
@@ -30,6 +33,7 @@ theme_override_constants/margin_bottom = 35
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
 layout_mode = 2
+theme_override_constants/separation = 12
 
 [node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
