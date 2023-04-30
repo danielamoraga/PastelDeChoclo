@@ -117,6 +117,13 @@ func _physics_process(delta):
 
 	move_and_slide()
 	
+	#animation
+
+	if velocity.x != 0:
+		animation_player.play("run")
+	else:
+		animation_player.play("idle")
+		
 func _on_body_entered(body: Node):
 	if body.has_method("take damage"):
 		body.take_damage()
@@ -126,3 +133,4 @@ func _on_body_entered(body: Node):
 			
 func take_damage():
 	print("auch")
+	
