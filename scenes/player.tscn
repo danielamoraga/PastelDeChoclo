@@ -148,3 +148,9 @@ parameters/playback = SubResource("AnimationNodeStateMachinePlayback_8qvem")
 visible = false
 
 [node name="Pause_Menu" parent="CanvasLayer" instance=ExtResource("3_b0tb6")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2(0, -320)
+limit_left = 0
+limit_top = 320
+limit_bottom = -10
