@@ -1,13 +1,15 @@
+MarginContainer
+Button
+Label
+PanelContainer
 CollisionShape2D
 TileMap
 Camera2D
-Label
 HSlider
 HBoxContainer
 CheckButton
 OptionButton
 GridContainer
-MarginContainer
 TabBar
 TabContainer
 ColorRect
@@ -28,4 +30,3 @@ AudioStreamPlayer2D
 AnimationTree
 CanvasLayer
 AnimationPlayer
-CharacterBody2D

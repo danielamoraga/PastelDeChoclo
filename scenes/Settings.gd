@@ -1,5 +1,7 @@
 extends MarginContainer
 
+@onready var close = %Close_Button
+
 #Video Settings
 @onready var display_options = $SettingsTabs/Video/MarginContainer/VideoSettings/DisplayButton
 @onready var vsync_btn = $SettingsTabs/Video/MarginContainer/VideoSettings/VsyncButton
@@ -20,13 +22,15 @@ extends MarginContainer
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	close.pressed.connect(_on_close_pressed)
 	pass # Replace with function body.
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
 
+func _on_close_pressed():
+	get_tree().change_scene_to_file("res://scenes/menu.tscn")
 
 func _on_display_button_item_selected(index):
 	GlobalSettings.toggle_fullscreen(true if index == 1 else false)

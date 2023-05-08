@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dihc204nsgwch"
+path="res://.godot/imported/Hungarian Dance no. 5 (Brahms).mp3-2b02dbd04d4d2948c93e89beb6b19309.mp3str"
+
+[deps]
+
+source_file="res://Música/In-Game/Hungarian Dance no. 5 (Brahms).mp3"
+dest_files=["res://.godot/imported/Hungarian Dance no. 5 (Brahms).mp3-2b02dbd04d4d2948c93e89beb6b19309.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

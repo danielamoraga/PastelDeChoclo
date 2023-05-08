@@ -1,6 +1,6 @@
 extends AudioStreamPlayer
 
-var songs = ["BWV_1043.mp3", "Solomon, HWV 67 (Handel, George Frideric).mp3"]
+var songs = ["BWV_1043.mp3", "Hungarian Dance no. 5 (Brahms).mp3", "Solomon, HWV 67 (Handel, George Frideric).mp3", "Symphony 40 Mozart.mp3", "Violin Concerto No. 1 in A minor (Bach).mp3"]
 var last_song = -1
 
 func play_random_song():
