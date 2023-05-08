@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://du1xjhi1fphev"]
+
+[ext_resource type="Script" path="res://MainMenuMusicController.gd" id="1_0s6bm"]
+
+[node name="MainMenuMusicController" type="Node"]
+script = ExtResource("1_0s6bm")
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+volume_db = -15.0

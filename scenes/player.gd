@@ -123,7 +123,11 @@ func _physics_process(delta):
 		animation_player.play("run")
 	else:
 		animation_player.play("idle")
-		
+	var move_input = Input.get_axis("left","right")
+	
+	if move_input:
+		pivot.scale.x = sign(move_input)
+
 func _on_body_entered(body: Node):
 	if body.has_method("take damage"):
 		body.take_damage()

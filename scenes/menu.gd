@@ -14,6 +14,7 @@ func _ready():
 
 
 func _on_play_pressed():
+	MainMenuMusicController.stop_music()
 	get_tree().change_scene_to_packed(main_scene)
 	
 

@@ -219,6 +219,19 @@ layer_0/tile_data = PackedInt32Array(327669, 0, 9, 393205, 0, 10, 327670, 65536,
 [node name="Player" parent="." instance=ExtResource("2_gpvv4")]
 position = Vector2(99, 409)
 
+[node name="spikes" type="Node2D" parent="."]
+
+[node name="Spikes" parent="spikes" instance=ExtResource("5_0vse3")]
+position = Vector2(762, 582)
+collision_layer = 1
+collision_mask = 1
+
+[node name="Spikes2" parent="spikes" instance=ExtResource("5_0vse3")]
+position = Vector2(1214, 564)
+rotation = 1.57079
+collision_layer = 1
+collision_mask = 1
+
 [node name="blocks" type="Node2D" parent="."]
 
 [node name="HookableBlock" parent="blocks" instance=ExtResource("3_8flw8")]
@@ -232,20 +245,6 @@ scale = Vector2(3.97425, 4.03562)
 [node name="HookableBlock3" parent="blocks" instance=ExtResource("3_8flw8")]
 position = Vector2(1297, 562)
 scale = Vector2(3.97425, 4.03562)
-
-[node name="spikes" type="Node2D" parent="."]
-visible = false
-
-[node name="Spikes" parent="spikes" instance=ExtResource("5_0vse3")]
-position = Vector2(805, 350)
-collision_layer = 1
-collision_mask = 1
-
-[node name="Spikes2" parent="spikes" instance=ExtResource("5_0vse3")]
-position = Vector2(914, 462)
-rotation = 1.57079
-collision_layer = 1
-collision_mask = 1
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 volume_db = -25.316
