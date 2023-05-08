@@ -6,3 +6,5 @@ res://scenes/pause_menu.tscn
 res://scenes/Settings.tscn
 res://MainMenuMusicController.tscn
 res://scenes/life.tscn
+res://scenes/Life.gd
+res://scenes/player.gd

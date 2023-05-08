@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+signal life_change(player_hearts)
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
@@ -12,6 +13,9 @@ const GRAVITY = 1000
 var hooked = false
 var target: Vector2 = Vector2()
 var dist: float = 0
+
+var max_hearts: int = 3
+var hearts: float = max_hearts
 
 @onready var animation_player = $AnimationPlayer
 @onready var animation_tree = $AnimationTree
@@ -135,6 +139,7 @@ func _on_body_entered(body: Node):
 		var character = body as CharacterBody2D
 		character.velocity = (character.global_position - global_position)
 			
-func take_damage():
-	print("auch")
+func take_damage(dam: int) -> void:
+	hearts -= dam * 0.5
+	
 	
