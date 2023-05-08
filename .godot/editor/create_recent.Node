@@ -1,6 +1,11 @@
+TextureRect
+Control
+CanvasLayer
+ProgressBar
+TextureProgressBar
+MarginContainer
 AudioStreamPlayer
 Node
-MarginContainer
 Button
 Label
 PanelContainer
@@ -26,7 +31,3 @@ Area2D
 StaticBody2D
 Sprite2D
 Line2D
-RayCast2D
-AudioStreamPlayer2D
-AnimationTree
-CanvasLayer

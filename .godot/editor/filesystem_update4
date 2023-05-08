@@ -4,10 +4,5 @@ res://scenes/hookable_block.tscn
 res://scenes/main.tscn
 res://scenes/pause_menu.tscn
 res://scenes/Settings.tscn
-res://Main Menu Music Controller.gd
-res://main_menu_music_controller.tscn
-res://scenes/menu.gd
 res://MainMenuMusicController.tscn
-res://MainMenuMusicController.gd
-res://scenes/pause_menu.gd
-res://scenes/player.gd
+res://scenes/life.tscn
