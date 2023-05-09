@@ -1,3 +1,4 @@
+RayCast2D
 TextureRect
 Control
 CanvasLayer
@@ -26,8 +27,6 @@ VBoxContainer
 Node2D
 StaticBody2D
 Line2D
-RayCast2D
 Area2D
 StaticBody2D
 Sprite2D
-Line2D

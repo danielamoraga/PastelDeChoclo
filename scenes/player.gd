@@ -24,6 +24,7 @@ var hearts: float = max_hearts
 
 @onready var hook_detector = $HookDetector
 @onready var hook_line = $HookLine
+@onready var too_high = $TooHigh
 
 #Calculo de la gravedad
 func _gravity(delta):
@@ -122,16 +123,39 @@ func _physics_process(delta):
 	move_and_slide()
 	
 	#animation
-
+	var grounded = false
+	var fallDistance = 0
+	
 	if velocity.x != 0:
 		animation_player.play("run")
 	else:
 		animation_player.play("idle")
-	var move_input = Input.get_axis("left","right")
+
+	if Input.is_action_just_pressed("jump"):
+		animation_player.play("jump")
+
+	if not is_on_floor():
+		if velocity.y > 0:
+			animation_player.play("falling")
+		else:
+			animation_player.play("jumping")
+	else:
+		grounded = true
+		fallDistance = 0
 	
+	#if not is_on_floor() and not too_high.is_colliding():
+		#while true:
+			#print("a")
+			#if velocity.y < 0:
+				#animation_player.play("falling")
+			#if is_on_floor():
+				#animation_player.play("fallCollision")
+				#break
+	var move_input = Input.get_axis("left","right")
+
 	if move_input:
 		pivot.scale.x = sign(move_input)
-
+	
 func _on_body_entered(body: Node):
 	if body.has_method("take damage"):
 		body.take_damage()
