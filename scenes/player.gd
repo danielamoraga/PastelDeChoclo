@@ -7,15 +7,11 @@ const JUMP_VELOCITY = -400.0
 const ACCELERATION = 1000
 const GRAVITY = 1000
 
-#@export var max_health: float = 100
-#@onready var health = max_health
+var current_heart = 6
 
 var hooked = false
 var target: Vector2 = Vector2()
 var dist: float = 0
-
-var max_hearts: int = 3
-var hearts: float = max_hearts
 
 @onready var animation_player = $AnimationPlayer
 @onready var animation_tree = $AnimationTree
@@ -24,6 +20,14 @@ var hearts: float = max_hearts
 
 @onready var hook_detector = $HookDetector
 @onready var hook_line = $HookLine
+
+func _ready():
+	update_heart_num()
+	pass
+	
+func update_heart_num():
+	$"../heart".update_heart(current_heart)
+	pass
 
 #Calculo de la gravedad
 func _gravity(delta):
@@ -37,7 +41,8 @@ func create_hook():
 		var body: Node2D = hook_detector.get_collider()
 		if (body.is_in_group("Hookable")):
 			if body.is_in_group("take_damage"):
-				print("auch")
+				current_heart -= 1
+				update_heart_num()
 			target = hook_detector.get_collision_point()
 			hook_line.add_point(Vector2())
 			hook_line.add_point(to_local(target))
@@ -138,8 +143,8 @@ func _on_body_entered(body: Node):
 	if body is CharacterBody2D:
 		var character = body as CharacterBody2D
 		character.velocity = (character.global_position - global_position)
-			
-func take_damage(dam: int) -> void:
-	hearts -= dam * 0.5
-	
-	
+
+func take_damage(_dam: int) -> void:
+	current_heart -= 1
+	update_heart_num()
+	pass

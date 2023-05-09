@@ -1,4 +1,5 @@
 TextureRect
+HBoxContainer
 Control
 CanvasLayer
 ProgressBar
@@ -13,7 +14,6 @@ CollisionShape2D
 TileMap
 Camera2D
 HSlider
-HBoxContainer
 CheckButton
 OptionButton
 GridContainer
@@ -30,4 +30,3 @@ RayCast2D
 Area2D
 StaticBody2D
 Sprite2D
-Line2D

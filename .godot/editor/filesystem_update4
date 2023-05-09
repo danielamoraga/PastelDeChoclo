@@ -8,3 +8,5 @@ res://MainMenuMusicController.tscn
 res://scenes/life.tscn
 res://scenes/Life.gd
 res://scenes/player.gd
+res://heart.gd
+res://heart.tscn
