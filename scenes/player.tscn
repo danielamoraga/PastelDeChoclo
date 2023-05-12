@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://b5208fp6rc1i8"]
+[gd_scene load_steps=24 format=3 uid="uid://b5208fp6rc1i8"]
 
 [ext_resource type="Script" path="res://scenes/player.gd" id="1_omsvt"]
 [ext_resource type="Texture2D" uid="uid://cryxl8frh8n60" path="res://assets/sprite/All textures.png" id="2_avtw0"]
@@ -132,6 +132,9 @@ _data = {
 "run": SubResource("Animation_mifg6")
 }
 
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_8weoq"]
+animation = &"fallCollision"
+
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_xcyjq"]
 animation = &"idle"
 
@@ -145,14 +148,23 @@ advance_mode = 2
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_wmwt3"]
 
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_0cskk"]
+switch_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_c7ixo"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_8dk30"]
+
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_jacqn"]
 states/Start/position = Vector2(198, 100)
+states/fallCollision/node = SubResource("AnimationNodeAnimation_8weoq")
+states/fallCollision/position = Vector2(373.958, -15.3158)
 states/idle/node = SubResource("AnimationNodeAnimation_xcyjq")
 states/idle/position = Vector2(373.958, 100)
 states/run/node = SubResource("AnimationNodeAnimation_or7gj")
 states/run/position = Vector2(558.958, 100)
-transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_vn1tx"), "idle", "run", SubResource("AnimationNodeStateMachineTransition_oup4h"), "run", "idle", SubResource("AnimationNodeStateMachineTransition_wmwt3")]
-graph_offset = Vector2(1.94744, -60.3158)
+transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_vn1tx"), "idle", "run", SubResource("AnimationNodeStateMachineTransition_oup4h"), "run", "idle", SubResource("AnimationNodeStateMachineTransition_wmwt3"), "fallCollision", "idle", SubResource("AnimationNodeStateMachineTransition_0cskk"), "idle", "fallCollision", SubResource("AnimationNodeStateMachineTransition_c7ixo"), "run", "fallCollision", SubResource("AnimationNodeStateMachineTransition_8dk30")]
+graph_offset = Vector2(1.94744, -57.076)
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_8qvem"]
 
@@ -203,6 +215,6 @@ limit_left = 0
 limit_top = 320
 limit_bottom = -10
 
-[node name="TooHigh" type="RayCast2D" parent="."]
+[node name="pix" type="RayCast2D" parent="."]
 position = Vector2(-14, -60)
-target_position = Vector2(0, 400)
+target_position = Vector2(0, 106)

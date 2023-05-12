@@ -17,6 +17,10 @@ var dist: float = 0
 var max_hearts: int = 3
 var hearts: float = max_hearts
 
+var grounded = false
+var fallDistance = 0
+var collision_velocity = false
+
 @onready var animation_player = $AnimationPlayer
 @onready var animation_tree = $AnimationTree
 @onready var playback = animation_tree.get("parameters/playback")
@@ -24,7 +28,9 @@ var hearts: float = max_hearts
 
 @onready var hook_detector = $HookDetector
 @onready var hook_line = $HookLine
-@onready var too_high = $TooHigh
+@onready var pix = $pix
+
+
 
 #Calculo de la gravedad
 func _gravity(delta):
@@ -123,16 +129,15 @@ func _physics_process(delta):
 	move_and_slide()
 	
 	#animation
-	var grounded = false
-	var fallDistance = 0
 	
-	if velocity.x != 0:
+	if velocity.x != 0 and velocity.y == 0:
 		animation_player.play("run")
 	else:
 		animation_player.play("idle")
 
 	if Input.is_action_just_pressed("jump"):
 		animation_player.play("jump")
+		grounded = false
 
 	if not is_on_floor():
 		if velocity.y > 0:
@@ -143,14 +148,19 @@ func _physics_process(delta):
 		grounded = true
 		fallDistance = 0
 	
-	#if not is_on_floor() and not too_high.is_colliding():
-		#while true:
-			#print("a")
-			#if velocity.y < 0:
-				#animation_player.play("falling")
-			#if is_on_floor():
-				#animation_player.play("fallCollision")
-				#break
+	if pix.is_colliding() and not grounded and velocity.y > 600:
+		print("collinding")
+		grounded = true
+		collision_velocity = true
+		print(collision_velocity)
+	#print("grounded "+str(grounded))
+	#print("collision "+str(collision_velocity))
+	
+	if is_on_floor() and collision_velocity:
+		print("fallCollision")
+		animation_player.play("fallCollision")
+		collision_velocity = false
+	
 	var move_input = Input.get_axis("left","right")
 
 	if move_input:
