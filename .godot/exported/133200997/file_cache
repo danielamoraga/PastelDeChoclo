@@ -1,12 +1,13 @@
-res://scenes/main.tscn::ca089018e8b0a2c859fc4c67ca1640bf::1683555787::res://.godot/exported/133200997/export-3ad5c15c4f3250da0cc7c1af1770d85f-main.scn
+res://scenes/main.tscn::36b77e8648424525be60fe703ced0e4d::1684115713::res://.godot/exported/133200997/export-3ad5c15c4f3250da0cc7c1af1770d85f-main.scn
 res://scenes/menu music.tscn::e71c9f39309c6aae79e400659066c49c::1682989921::res://.godot/exported/133200997/export-154b136c23cb428e7abf0ee10f8d8236-menu music.scn
-res://scenes/menu.tscn::e19ca260d5d305a93c155d45a51842dd::1683555786::res://.godot/exported/133200997/export-1ce5c86e8ca186dcaaeaa8726f1268db-menu.scn
-res://scenes/pause_menu.tscn::d0d0e3582414c3fd4492ae665c03326d::1683555787::res://.godot/exported/133200997/export-ca2c2284eb591e72162d67219a0d2f87-pause_menu.scn
-res://scenes/player.tscn::6a6cf15088f13982dab2de9690186ba8::1683555785::res://.godot/exported/133200997/export-234fb6894ec6226e856ab7f825500d3d-player.scn
-res://scenes/hookable_block.tscn::1b3720b85c46ecd10a1750d14f11ad15::1683555786::res://.godot/exported/133200997/export-2f2cd3bffa9d5b8113851f7c8196b26a-hookable_block.scn
+res://scenes/menu.tscn::96b1aa410dd9d9a04d4008420a1dd516::1684115712::res://.godot/exported/133200997/export-1ce5c86e8ca186dcaaeaa8726f1268db-menu.scn
+res://scenes/pause_menu.tscn::d0d0e3582414c3fd4492ae665c03326d::1684115714::res://.godot/exported/133200997/export-ca2c2284eb591e72162d67219a0d2f87-pause_menu.scn
+res://scenes/player.tscn::82e200ab4b9e483f269a629ed4ad7602::1684115712::res://.godot/exported/133200997/export-234fb6894ec6226e856ab7f825500d3d-player.scn
+res://scenes/hookable_block.tscn::1b3720b85c46ecd10a1750d14f11ad15::1684115713::res://.godot/exported/133200997/export-2f2cd3bffa9d5b8113851f7c8196b26a-hookable_block.scn
 res://scenes/level1.tscn::d9cba7d4d445feb0defe6360a7a35bc6::1682989921::res://.godot/exported/133200997/export-f859d0047d3b342253437035700f7078-level1.scn
-res://scenes/Settings.tscn::4665eeb37d96eb213710448da255cad1::1683555787::res://.godot/exported/133200997/export-aa0bebfe53779e3753807371083ff1c1-Settings.scn
+res://scenes/Settings.tscn::4665eeb37d96eb213710448da255cad1::1684115714::res://.godot/exported/133200997/export-aa0bebfe53779e3753807371083ff1c1-Settings.scn
 res://scenes/spikes.tscn::7c26eb833f2ef0551aef275e14574180::1682990313::res://.godot/exported/133200997/export-79c404826e1077e3757648625d8ecc37-spikes.scn
 res://fps_label.tscn::e3537859ed268fd146a2d0c7e4c0da88::1683555598::res://.godot/exported/133200997/export-6da564b23a83e0e9d72d80d927376980-fps_label.scn
-res://MainMenuMusicController.tscn::992752078b7448e6eee53a4577ef3b31::1683555787::res://.godot/exported/133200997/export-cd33ea7f0f70ecf2fd8a5bcbaf15416c-MainMenuMusicController.scn
+res://MainMenuMusicController.tscn::992752078b7448e6eee53a4577ef3b31::1683558148::res://.godot/exported/133200997/export-cd33ea7f0f70ecf2fd8a5bcbaf15416c-MainMenuMusicController.scn
 res://static_body_2d.tscn::e07979564c0f41a8e674b20edfa432d6::1682989921::res://.godot/exported/133200997/export-02286b65e76640ef6cf1f2afac61c608-static_body_2d.scn
+res://heart.tscn::c9a08c3955dfb34cf0eed0cbe7b53d0e::1684115817::res://.godot/exported/133200997/export-b2e26e438636898eddb9e1b54f81a9ee-heart.scn

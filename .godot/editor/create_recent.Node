@@ -1,6 +1,7 @@
+CenterContainer
+Control
 TextureRect
 HBoxContainer
-Control
 CanvasLayer
 ProgressBar
 TextureProgressBar

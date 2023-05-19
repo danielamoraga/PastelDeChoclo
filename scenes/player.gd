@@ -20,13 +20,14 @@ var dist: float = 0
 
 @onready var hook_detector = $HookDetector
 @onready var hook_line = $HookLine
+@onready var heart = $CanvasLayer/heart
 
 func _ready():
 	update_heart_num()
 	pass
 	
 func update_heart_num():
-	$"../heart".update_heart(current_heart)
+	heart.update_heart(current_heart)
 	pass
 
 #Calculo de la gravedad

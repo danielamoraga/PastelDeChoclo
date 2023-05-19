@@ -4,9 +4,5 @@ res://scenes/hookable_block.tscn
 res://scenes/main.tscn
 res://scenes/pause_menu.tscn
 res://scenes/Settings.tscn
-res://MainMenuMusicController.tscn
-res://scenes/life.tscn
-res://scenes/Life.gd
-res://scenes/player.gd
-res://heart.gd
 res://heart.tscn
+res://scenes/player.gd
