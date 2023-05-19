@@ -148,4 +148,6 @@ func _on_body_entered(body: Node):
 func take_damage(_dam: int) -> void:
 	current_heart -= 1
 	update_heart_num()
-	pass
+	if current_heart <= 0:
+		life_change.emit()
+	#pass
