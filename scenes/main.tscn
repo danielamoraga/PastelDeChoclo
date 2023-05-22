@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cys2xs5g4yt63"]
+[gd_scene load_steps=15 format=3 uid="uid://dgcnrayjs7jqn"]
 
 [ext_resource type="Texture2D" uid="uid://d0wwo6w7whc6d" path="res://Diseño/tileset.png" id="1_2kw6x"]
 [ext_resource type="Texture2D" uid="uid://x4trm30o47a7" path="res://assets/tiles/background.png" id="1_huiix"]
@@ -9,8 +9,8 @@
 [ext_resource type="Script" path="res://scenes/AudioStreamPlayer.gd" id="6_y3l10"]
 [ext_resource type="PackedScene" uid="uid://dkvxipv1ai3jc" path="res://fps_label.tscn" id="8_dpol6"]
 [ext_resource type="PackedScene" uid="uid://blugmy1ntgbsp" path="res://scenes/pause_menu.tscn" id="8_l7ok0"]
-[ext_resource type="Texture2D" uid="uid://d317ygkqd417c" path="res://assets/ful heart.png" id="10_aytd4"]
-[ext_resource type="Script" path="res://scenes/Life.gd" id="10_nioru"]
+[ext_resource type="PackedScene" uid="uid://cm7pijkda0178" path="res://scenes/game_over.tscn" id="9_u6vvj"]
+[ext_resource type="PackedScene" uid="uid://bdi40on1byl5v" path="res://heart.tscn" id="10_0ts2e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b5jdv"]
 size = Vector2(2301.88, 152)
@@ -184,7 +184,6 @@ scale = Vector2(5.16426, 5.35263)
 texture = ExtResource("1_huiix")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-visible = false
 
 [node name="Sprite2D2" type="Sprite2D" parent="StaticBody2D"]
 position = Vector2(267, 912)
@@ -258,39 +257,19 @@ offset_top = 409.0
 offset_right = 1099.0
 offset_bottom = 585.0
 
+[node name="Game_over" parent="." instance=ExtResource("9_u6vvj")]
+offset_left = 698.0
+offset_top = 365.0
+offset_right = 1101.0
+offset_bottom = 690.0
+
 [node name="Label" parent="." instance=ExtResource("8_dpol6")]
-visible = false
 offset_right = 291.0
 offset_bottom = 70.0
 
-[node name="UI" type="CanvasLayer" parent="."]
-
-[node name="Life" type="Control" parent="UI"]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 204.0
-offset_bottom = 70.0
-script = ExtResource("10_nioru")
-
-[node name="Hearts" type="TextureRect" parent="UI/Life"]
-layout_mode = 0
-offset_right = 68.0
-offset_bottom = 70.0
-texture = ExtResource("10_aytd4")
-expand_mode = 1
-
-[node name="Hearts2" type="TextureRect" parent="UI/Life"]
-layout_mode = 0
-offset_left = 68.0
-offset_right = 136.0
-offset_bottom = 70.0
-texture = ExtResource("10_aytd4")
-expand_mode = 1
-
-[node name="Hearts3" type="TextureRect" parent="UI/Life"]
-layout_mode = 0
-offset_left = 136.0
-offset_right = 204.0
-offset_bottom = 70.0
-texture = ExtResource("10_aytd4")
-expand_mode = 1
+[node name="heart" parent="." instance=ExtResource("10_0ts2e")]
+offset_left = 25.0
+offset_top = 29.0
+offset_right = 909.0
+offset_bottom = 328.0
+scale = Vector2(0.2, 0.2)
