@@ -17,8 +17,6 @@ func _on_play_pressed():
 	MainMenuMusicController.stop_music()
 	get_tree().change_scene_to_packed(main_scene)
 	
-
-
 func _on_settings_pressed():
 	get_tree().change_scene_to_file("res://scenes/Settings.tscn")
 

@@ -21,6 +21,7 @@ var dist: float = 0
 @onready var hook_detector = $HookDetector
 @onready var hook_line = $HookLine
 @onready var heart = $CanvasLayer/heart
+@onready var game_over = $CanvasLayer/Game_over
 
 func _ready():
 	update_heart_num()
@@ -28,8 +29,10 @@ func _ready():
 	
 func update_heart_num():
 	heart.update_heart(current_heart)
-	pass
-
+	if current_heart <= 0:
+		emit_signal("life_change", current_heart)
+		game_over.show()
+		
 #Calculo de la gravedad
 func _gravity(delta):
 	velocity.y += GRAVITY * delta
@@ -148,6 +151,4 @@ func _on_body_entered(body: Node):
 func take_damage(_dam: int) -> void:
 	current_heart -= 1
 	update_heart_num()
-	if current_heart <= 0:
-		life_change.emit()
-	#pass
+	

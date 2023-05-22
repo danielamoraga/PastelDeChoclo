@@ -1,8 +1,10 @@
 res://scenes/player.tscn
+res://scenes/player.gd
 res://scenes/menu.tscn
 res://scenes/hookable_block.tscn
 res://scenes/main.tscn
 res://scenes/pause_menu.tscn
 res://scenes/Settings.tscn
 res://heart.tscn
-res://scenes/player.gd
+res://scenes/game_over.gd
+res://scenes/menu.gd
