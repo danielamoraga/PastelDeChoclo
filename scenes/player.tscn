@@ -205,9 +205,9 @@ anim_player = NodePath("../AnimationPlayer")
 parameters/playback = SubResource("AnimationNodeStateMachinePlayback_8qvem")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="Pause_Menu" parent="CanvasLayer" instance=ExtResource("3_b0tb6")]
+visible = false
 
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2(0, -320)

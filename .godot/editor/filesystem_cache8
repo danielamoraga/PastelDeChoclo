@@ -1,18 +1,19 @@
 2a60927148abd1d33b818b535e306557
-::res://::1683660889
+::res://::1684808965
 fps_label.gd::GDScript::-1::1683491821::0::1::::<>Label<>::
 fps_label.tscn::PackedScene::7905914018952563172::1683440196::0::1::::<><>::uid://bpvouls2mpuf7<>res://fps_label.gd
 global_settings.gd::GDScript::-1::1683437902::0::1::::<>Node<>::
+heart.gd::GDScript::-1::1684459875::0::1::::<>HBoxContainer<>::
+heart.tscn::PackedScene::2615308430870500109::1684794017::0::1::::<><>::res://heart.gd<>uid://d317ygkqd417c
 icon.svg::CompressedTexture2D::3505943541304165199::1680317960::1680317966::1::::<><>::
 MainMenuMusicController.gd::GDScript::-1::1683523448::0::1::::<>Node<>::
 MainMenuMusicController.tscn::PackedScene::8618125689634764609::1683524515::0::1::::<><>::res://MainMenuMusicController.gd
 README.md::TextFile::-1::1680549930::0::1::::<><>::
 static_body_2d.tscn::PackedScene::5452006668427936074::1682440721::0::1::::<><>::
-::res://assets/::1683584381
-empty heart.png::CompressedTexture2D::5683977703844133637::1683581410::1683584381::1::::<><>::
-ful heart.png::CompressedTexture2D::9180209628692300226::1683581389::1683584381::1::::<><>::
-half heart.png::CompressedTexture2D::1778793393771662343::1683581442::1683584381::1::::<><>::
-hearts.png::CompressedTexture2D::292020145287696129::1683577854::1683577854::1::::<><>::
+::res://assets/::1684793816
+empty_heart.png::CompressedTexture2D::5683977703844133637::1684459875::1684793816::1::::<><>::
+full_heart.png::CompressedTexture2D::9180209628692300226::1684459875::1684793816::1::::<><>::
+half_heart.png::CompressedTexture2D::1778793393771662343::1684459875::1684793816::1::::<><>::
 ::res://assets/Legacy_Adventure_Pack/::1682440721
 Autor_note.txt::TextFile::-1::1682440721::0::1::::<><>::
 ::res://assets/Legacy_Adventure_Pack/Assets/::1682440721
@@ -21,7 +22,7 @@ Character.png::CompressedTexture2D::6506340736333842957::1682440721::1682440721:
 ::res://assets/Legacy_Adventure_Pack/Social/::1682440721
 Assets.png::CompressedTexture2D::759216060950195326::1682440721::1682440721::1::::<><>::
 Test.png::CompressedTexture2D::8303661493601941786::1682440721::1682440721::1::::<><>::
-::res://assets/sprite/::1682440721
+::res://assets/sprite/::1684792161
 All textures.png::CompressedTexture2D::6017014651674416323::1682440721::1682440721::1::::<><>::
 Idle 1.png::CompressedTexture2D::8585629390473545259::1682440721::1682440721::1::::<><>::
 Idle 2.png::CompressedTexture2D::6460628588017322339::1682440721::1682440721::1::::<><>::
@@ -229,21 +230,22 @@ Hungarian Dance no. 5 (Brahms).mp3::AudioStreamMP3::7735394453381003347::1683509
 Solomon, HWV 67 (Handel, George Frideric).mp3::AudioStreamMP3::705695548757856574::1683509344::1683515025::1::::<><>::
 Symphony 40 Mozart.mp3::AudioStreamMP3::3088748457111251279::1683514954::1683515025::1::::<><>::
 Violin Concerto No. 1 in A minor (Bach).mp3::AudioStreamMP3::8658803064488866141::1683509721::1683515025::1::::<><>::
-::res://scenes/::1683609224
+::res://scenes/::1684794017
 AudioStreamPlayer2D.gd::GDScript::-1::1682450488::0::1::::<>AudioStreamPlayer2D<>::
 AudioStreamPlayer.gd::GDScript::-1::1683517387::0::1::::<>AudioStreamPlayer<>::
-hookable_block.tscn::PackedScene::2806067247184040165::1683609224::0::1::::<><>::uid://lkxe3sndjn4n
+game_over.gd::GDScript::-1::1684793705::0::1::::<>MarginContainer<>::
+game_over.tscn::PackedScene::5682093108710755185::1684459875::0::1::::<><>::res://scenes/game_over.gd<>uid://bpvouls2mpuf7<>uid://81p7b7pbndxb
+hookable_block.tscn::PackedScene::2806067247184040165::1684794017::0::1::::<><>::uid://lkxe3sndjn4n
 level1.tscn::PackedScene::1392161995342147614::1682440721::0::1::::<><>::uid://dayx0tbjx2rin
-Life.gd::GDScript::-1::1683577854::0::1::::<>Control<>::
-main.tscn::PackedScene::6496213838413330134::1683609224::0::1::::<><>::uid://d0wwo6w7whc6d<>uid://x4trm30o47a7<>uid://b5208fp6rc1i8<>uid://bf8jrulltmrk4<>uid://lkxe3sndjn4n<>uid://hkj1hbq1qmxf<>res://scenes/AudioStreamPlayer.gd<>uid://dkvxipv1ai3jc<>uid://blugmy1ntgbsp<>uid://d317ygkqd417c<>res://scenes/Life.gd
+main.tscn::PackedScene::7585343585327511825::1684794017::0::1::::<><>::uid://d0wwo6w7whc6d<>uid://x4trm30o47a7<>uid://b5208fp6rc1i8<>uid://bf8jrulltmrk4<>uid://lkxe3sndjn4n<>uid://hkj1hbq1qmxf<>res://scenes/AudioStreamPlayer.gd<>uid://dkvxipv1ai3jc
 menu music.tscn::PackedScene::6460266331224397579::1680319045::0::1::::<><>::uid://bnbywajfaycpi
-menu.gd::GDScript::-1::1683523553::0::1::::<>MarginContainer<>::
-menu.tscn::PackedScene::5934976567708442679::1683609224::0::1::::<><>::res://scenes/menu.gd<>uid://cys2xs5g4yt63<>uid://cynne27juo05m<>uid://bpvouls2mpuf7<>uid://81p7b7pbndxb
-pause_menu.gd::GDScript::-1::1683523553::0::1::::<>MarginContainer<>::
-pause_menu.tscn::PackedScene::3200172551617717111::1683609224::0::1::::<><>::res://scenes/pause_menu.gd<>uid://bpvouls2mpuf7<>uid://81p7b7pbndxb
-player.gd::GDScript::-1::1683609204::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::4549401335431851481::1683609224::0::1::::<><>::res://scenes/player.gd<>uid://cryxl8frh8n60<>uid://blugmy1ntgbsp
+menu.gd::GDScript::-1::1684793705::0::1::::<>MarginContainer<>::
+menu.tscn::PackedScene::5934976567708442679::1684794017::0::1::::<><>::res://scenes/menu.gd<>uid://dgcnrayjs7jqn<>uid://cynne27juo05m<>uid://bpvouls2mpuf7<>uid://81p7b7pbndxb
+pause_menu.gd::GDScript::-1::1684459875::0::1::::<>MarginContainer<>::
+pause_menu.tscn::PackedScene::3200172551617717111::1684794017::0::1::::<><>::res://scenes/pause_menu.gd<>uid://bpvouls2mpuf7<>uid://81p7b7pbndxb
+player.gd::GDScript::-1::1684793766::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::4549401335431851481::1684794016::0::1::::<><>::res://scenes/player.gd<>uid://cryxl8frh8n60<>uid://blugmy1ntgbsp
 Settings.gd::GDScript::-1::1683520963::0::1::::<>MarginContainer<>::
-Settings.tscn::PackedScene::5226161845740687548::1683609224::0::1::::<><>::uid://bpvouls2mpuf7<>res://scenes/Settings.gd<>uid://81p7b7pbndxb<>uid://cynne27juo05m
+Settings.tscn::PackedScene::5226161845740687548::1684794017::0::1::::<><>::uid://bpvouls2mpuf7<>res://scenes/Settings.gd<>uid://81p7b7pbndxb<>uid://cynne27juo05m
 Spikes.gd::GDScript::-1::1682440721::0::1::::<>StaticBody2D<>::
 spikes.tscn::PackedScene::512558936553860387::1683436234::0::1::::<><>::res://scenes/Spikes.gd<>uid://lqk6y27to0hx

@@ -21,6 +21,7 @@ var grounded = false
 var fallDistance = 0
 var collision_velocity = false
 
+
 @onready var animation_player = $AnimationPlayer
 @onready var animation_tree = $AnimationTree
 @onready var playback = animation_tree.get("parameters/playback")
@@ -76,6 +77,8 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 	
+	var prev_velocity = 0
+	
 	#Movimiento si estamos colgando
 	if hooked:
 		#Acortar el gancho
@@ -96,12 +99,13 @@ func _physics_process(delta):
 		#si quieren que no vaya frenando
 		if _swing(delta):
 			velocity *= 0.99
-		
+			
 		#Verificar si soltamos el click
 		if Input.is_action_just_released("hook"):
 			hooked = false
-		
+			
 		move_and_slide()
+		
 		
 		return
 

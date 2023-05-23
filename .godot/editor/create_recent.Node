@@ -1,3 +1,4 @@
+TileMap
 RayCast2D
 TextureRect
 HBoxContainer
@@ -12,7 +13,6 @@ Button
 Label
 PanelContainer
 CollisionShape2D
-TileMap
 Camera2D
 HSlider
 CheckButton
