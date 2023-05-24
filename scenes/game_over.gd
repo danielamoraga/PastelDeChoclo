@@ -12,14 +12,9 @@ func _ready():
 	exit.pressed.connect(_on_exit_pressed)
 	hide()
 	
-func _on_life_change(player_hearts):
+func _on_life_change():
 	var game_over = load("res://scenes/game_over.tscn").instance()
 	add_child(game_over, true)
-	# Pause the game
-	get_tree().paused = true
-	# Disable player input
-	var player = get_parent().get_node("Player")
-	player.input_process = false
 	
 func _on_restart_pressed():
 	get_tree().reload_current_scene()
