@@ -150,12 +150,11 @@ parameters/playback = SubResource("AnimationNodeStateMachinePlayback_8qvem")
 [node name="Pause_Menu" parent="CanvasLayer" instance=ExtResource("3_b0tb6")]
 
 [node name="heart" parent="CanvasLayer" instance=ExtResource("4_v582h")]
-offset_left = 59.0
-offset_top = 52.0
-offset_right = 943.0
-offset_bottom = 351.0
-scale = Vector2(0.2, 0.2)
-metadata/_edit_lock_ = true
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 109.0
+offset_bottom = 37.0
+scale = Vector2(0.277686, 0.302659)
 
 [node name="Game_over" parent="CanvasLayer" instance=ExtResource("5_synem")]
 offset_left = 3.0
