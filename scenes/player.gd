@@ -22,7 +22,7 @@ var dist: float = 0
 @onready var hook_line = $HookLine
 @onready var heart = $CanvasLayer/heart
 @onready var game_over = $CanvasLayer/Game_over
-
+	
 func _ready():
 	update_heart_num()
 	pass
@@ -131,7 +131,6 @@ func _physics_process(delta):
 	move_and_slide()
 	
 	#animation
-
 	if velocity.x != 0:
 		animation_player.play("run")
 	else:
@@ -141,7 +140,7 @@ func _physics_process(delta):
 	if move_input:
 		pivot.scale.x = sign(move_input)
 
-func _on_body_entered(body: Node):
+func _on_body_entered(body: Node):	
 	if body.has_method("take damage"):
 		body.take_damage()
 	if body is CharacterBody2D:

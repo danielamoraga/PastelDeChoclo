@@ -1,8 +1,12 @@
+CanvasLayer
+RayCast2D
+CollisionShape2D
+Area2D
+StaticBody2D
 CenterContainer
 Control
 TextureRect
 HBoxContainer
-CanvasLayer
 ProgressBar
 TextureProgressBar
 MarginContainer
@@ -11,7 +15,6 @@ Node
 Button
 Label
 PanelContainer
-CollisionShape2D
 TileMap
 Camera2D
 HSlider
@@ -25,9 +28,4 @@ Popup
 PopupMenu
 VBoxContainer
 Node2D
-StaticBody2D
 Line2D
-RayCast2D
-Area2D
-StaticBody2D
-Sprite2D
