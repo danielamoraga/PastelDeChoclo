@@ -927,7 +927,7 @@ collision_layer = 1
 collision_mask = 1
 
 [node name="Spikes2" parent="spikes" instance=ExtResource("5_0vse3")]
-position = Vector2(1211, 560)
+position = Vector2(1208, 521)
 rotation = 1.57079
 scale = Vector2(0.907716, 0.820359)
 collision_layer = 1
@@ -944,7 +944,7 @@ position = Vector2(1096, 367)
 scale = Vector2(3.97425, 4.03562)
 
 [node name="HookableBlock3" parent="blocks" instance=ExtResource("3_8flw8")]
-position = Vector2(1297, 562)
+position = Vector2(1295, 521)
 scale = Vector2(3.97425, 4.03562)
 
 [node name="Player" parent="." instance=ExtResource("1_e8mkt")]
