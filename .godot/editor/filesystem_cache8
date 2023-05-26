@@ -1,5 +1,5 @@
 2a60927148abd1d33b818b535e306557
-::res://::1685069534
+::res://::1685115385
 export_presets.cfg::TextFile::-1::1682296914::0::1::::<><>::
 fps_label.gd::GDScript::-1::1684964435::0::1::::<>Label<>::
 fps_label.tscn::PackedScene::7905914018952563172::1683518469::0::1::::<><>::uid://bpvouls2mpuf7<>res://fps_label.gd
@@ -231,26 +231,26 @@ Hungarian Dance no. 5 (Brahms).mp3::AudioStreamMP3::7735394453381003347::1683948
 Solomon, HWV 67 (Handel, George Frideric).mp3::AudioStreamMP3::705695548757856574::1683948498::1682690033::1::::<><>::
 Symphony 40 Mozart.mp3::AudioStreamMP3::3088748457111251279::1683948498::1683948498::1::::<><>::
 Violin Concerto No. 1 in A minor (Bach).mp3::AudioStreamMP3::8658803064488866141::1683948499::1683948499::1::::<><>::
-::res://scenes/::1685054105
+::res://scenes/::1685115348
 AudioStreamPlayer2D.gd::GDScript::-1::1682690033::0::1::::<>AudioStreamPlayer2D<>::
 AudioStreamPlayer.gd::GDScript::-1::1683948499::0::1::::<>AudioStreamPlayer<>::
 game_over.gd::GDScript::-1::1684964435::0::1::::<>MarginContainer<>::
-game_over.tscn::PackedScene::5682093108710755185::1685048233::0::1::::<><>::res://scenes/game_over.gd<>uid://bpvouls2mpuf7<>uid://81p7b7pbndxb
-hookable_block.tscn::PackedScene::2806067247184040165::1685053513::0::1::::<><>::uid://lkxe3sndjn4n
+game_over.tscn::PackedScene::5682093108710755185::1685115015::0::1::::<><>::res://scenes/game_over.gd<>uid://bpvouls2mpuf7<>uid://81p7b7pbndxb
+hookable_block.tscn::PackedScene::2806067247184040165::1685115015::0::1::::<><>::uid://lkxe3sndjn4n
 level1.tscn::PackedScene::1392161995342147614::1682351344::0::1::::<><>::uid://dayx0tbjx2rin
-main.tscn::PackedScene::7585343585327511825::1685054105::0::1::::<><>::uid://d0wwo6w7whc6d<>uid://b5208fp6rc1i8<>uid://bf8jrulltmrk4<>uid://lkxe3sndjn4n<>uid://d1e4oiij42m7d<>uid://hkj1hbq1qmxf<>res://scenes/AudioStreamPlayer.gd<>uid://bf4us40h865te<>uid://dkvxipv1ai3jc
+main.tscn::PackedScene::7585343585327511825::1685115348::0::1::::<><>::uid://d0wwo6w7whc6d<>uid://b5208fp6rc1i8<>uid://bf8jrulltmrk4<>uid://lkxe3sndjn4n<>uid://d1e4oiij42m7d<>uid://hkj1hbq1qmxf<>res://scenes/AudioStreamPlayer.gd<>uid://bf4us40h865te<>uid://dkvxipv1ai3jc
 menu music.tscn::PackedScene::6460266331224397579::1680652428::0::1::::<><>::uid://bnbywajfaycpi
 menu.gd::GDScript::-1::1684958701::0::1::::<>MarginContainer<>::
 menu.tscn::PackedScene::5934976567708442679::1685048232::0::1::::<><>::res://scenes/menu.gd<>uid://dgcnrayjs7jqn<>uid://cynne27juo05m<>uid://bpvouls2mpuf7<>uid://81p7b7pbndxb
 pause_menu.gd::GDScript::-1::1684379365::0::1::::<>MarginContainer<>::
 pause_menu.tscn::PackedScene::3200172551617717111::1684985895::0::1::::<><>::res://scenes/pause_menu.gd<>uid://bpvouls2mpuf7<>uid://81p7b7pbndxb
 player.gd::GDScript::-1::1685052134::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::4549401335431851481::1685053513::0::1::::<><>::res://scenes/player.gd<>uid://cryxl8frh8n60<>uid://blugmy1ntgbsp<>uid://bdi40on1byl5v<>uid://cm7pijkda0178
+player.tscn::PackedScene::4549401335431851481::1685115015::0::1::::<><>::res://scenes/player.gd<>uid://cryxl8frh8n60<>uid://blugmy1ntgbsp<>uid://bdi40on1byl5v<>uid://cm7pijkda0178
 Settings.gd::GDScript::-1::1683948499::0::1::::<>MarginContainer<>::
 Settings.tscn::PackedScene::5226161845740687548::1684985895::0::1::::<><>::uid://bpvouls2mpuf7<>res://scenes/Settings.gd<>uid://81p7b7pbndxb<>uid://cynne27juo05m
 Spikes.gd::GDScript::-1::1682351346::0::1::::<>StaticBody2D<>::
 spikes.tscn::PackedScene::512558936553860387::1682690086::0::1::::<><>::res://scenes/Spikes.gd<>uid://lqk6y27to0hx
-win.gd::GDScript::-1::1685052643::0::1::::<>Area2D<>::
-win_area.tscn::PackedScene::2798479903057279274::1685053513::0::1::::<><>::res://scenes/win.gd<>uid://i1kandsu4y3f
+win.gd::GDScript::-1::1685114436::0::1::::<>Area2D<>::
+win_area.tscn::PackedScene::2798479903057279274::1685115015::0::1::::<><>::res://scenes/win.gd<>uid://i1kandsu4y3f
 win_menu.gd::GDScript::-1::1685052785::0::1::::<>MarginContainer<>::
-win_menu.tscn::PackedScene::615792428921175877::1685053513::0::1::::<><>::res://scenes/win_menu.gd<>uid://bpvouls2mpuf7<>uid://81p7b7pbndxb
+win_menu.tscn::PackedScene::615792428921175877::1685115015::0::1::::<><>::res://scenes/win_menu.gd<>uid://bpvouls2mpuf7<>uid://81p7b7pbndxb

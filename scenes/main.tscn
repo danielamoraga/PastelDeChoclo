@@ -967,4 +967,4 @@ position = Vector2(1807.67, 11.5)
 shape = SubResource("RectangleShape2D_kvxxm")
 
 [node name="win_zone" parent="." instance=ExtResource("7_pljoh")]
-position = Vector2(2054, 854)
+position = Vector2(2149, 854)
