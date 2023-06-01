@@ -1,7 +1,7 @@
 res://scenes/hookable_block.tscn
-res://scenes/game_over.gd
 res://scenes/main.tscn
 res://scenes/player.tscn
 res://scenes/win_area.tscn
 res://scenes/win_menu.tscn
 res://scenes/game_over.tscn
+res://scenes/player.gd

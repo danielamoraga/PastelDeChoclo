@@ -32,6 +32,7 @@ func update_heart_num():
 	if current_heart <= 0:
 		emit_signal("life_change", current_heart)
 		game_over.show()
+		get_tree().paused = true
 		
 #Calculo de la gravedad
 func _gravity(delta):
