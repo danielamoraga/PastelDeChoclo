@@ -1,11 +1,7 @@
 res://scenes/main.tscn
-res://scenes/win_area.tscn
-res://scenes/win.gd
-res://scenes/player.tscn
-res://scenes/player.gd
-res://scenes/menu.tscn
 res://scenes/hookable_block.tscn
-res://heart.tscn
+res://scenes/player.tscn
+res://scenes/win_area.tscn
 res://scenes/win_menu.tscn
-res://scenes/game_over.tscn
-res://scenes/win_menu.gd
+res://scenes/AudioStreamPlayer.gd
+res://scenes/Settings.tscn

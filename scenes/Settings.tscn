@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://cgpuefc7scrf5"]
+[gd_scene load_steps=7 format=3 uid="uid://cgpuefc7scrf5"]
 
 [ext_resource type="FontFile" uid="uid://bpvouls2mpuf7" path="res://Diseño/Fonts/Chonkly.otf" id="1_bscci"]
 [ext_resource type="Script" path="res://scenes/Settings.gd" id="1_uot7k"]
 [ext_resource type="FontFile" uid="uid://81p7b7pbndxb" path="res://Diseño/Fonts/fibberish.ttf" id="2_4k6m5"]
 [ext_resource type="Texture2D" uid="uid://cynne27juo05m" path="res://Diseño/Menu Background.png" id="2_qf2jh"]
+[ext_resource type="Texture2D" uid="uid://yfhrh8mcdmm0" path="res://assets/Space UI pack/assets/ToggleOn.png" id="5_34jjd"]
+[ext_resource type="Texture2D" uid="uid://cvks661anruxi" path="res://assets/Space UI pack/assets/ToggleOff.png" id="6_g6dwj"]
 
 [node name="MarginContainer" type="MarginContainer"]
 anchors_preset = -1
@@ -82,6 +84,8 @@ size_flags_horizontal = 10
 size_flags_stretch_ratio = 0.0
 theme_override_fonts/font = ExtResource("2_4k6m5")
 theme_override_font_sizes/font_size = 50
+theme_override_icons/checked = ExtResource("5_34jjd")
+theme_override_icons/unchecked = ExtResource("6_g6dwj")
 expand_icon = true
 
 [node name="DisplayFPS" type="Label" parent="SettingsTabs/Video/MarginContainer/VideoSettings"]
@@ -96,6 +100,8 @@ size_flags_horizontal = 8
 size_flags_stretch_ratio = 0.0
 theme_override_fonts/font = ExtResource("2_4k6m5")
 theme_override_font_sizes/font_size = 0
+theme_override_icons/checked = ExtResource("5_34jjd")
+theme_override_icons/unchecked = ExtResource("6_g6dwj")
 expand_icon = true
 
 [node name="MaxFPS" type="Label" parent="SettingsTabs/Video/MarginContainer/VideoSettings"]
