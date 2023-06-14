@@ -13,6 +13,7 @@ func _on_win_menu():
 	add_child(win_menu, true)
 
 func _on_next_level_pressed():
+	get_tree().change_scene_to_file("res://scenes/level1.tscn")
 	get_tree().paused = false
 	hide()
 	

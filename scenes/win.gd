@@ -15,4 +15,4 @@ func _physics_process(_delta):
 	for body in win_zone:
 		if body.name == "Player":
 			win_menu.show()
-			get_tree().paused = true
+			#get_tree().paused = true
