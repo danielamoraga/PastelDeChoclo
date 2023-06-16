@@ -16,3 +16,9 @@ func _physics_process(_delta):
 		if body.name == "Player":
 			win_menu.show()
 			#get_tree().paused = true
+
+
+	
+
+			
+			

@@ -13,6 +13,8 @@ var hooked = false
 var target: Vector2 = Vector2()
 var dist: float = 0
 
+var antiGravityActivado = false
+
 @onready var animation_player = $AnimationPlayer
 @onready var animation_tree = $AnimationTree
 @onready var playback = animation_tree.get("parameters/playback")
@@ -36,9 +38,18 @@ func update_heart_num():
 		
 #Calculo de la gravedad
 func _gravity(delta):
-	velocity.y += GRAVITY * delta
-	if velocity.y > 2000:
-		velocity.y = 2000
+	if antiGravityActivado == false:
+		velocity.y += GRAVITY * delta
+		if velocity.y > 2000:
+			velocity.y = 2000
+	elif antiGravityActivado == true:
+		velocity.y -= GRAVITY * delta
+		if velocity.y < -2000:
+			velocity.y = -2000
+		#else:
+		#	velocity.y += GRAVITY * delta
+		#	if velocity.y > 2000:
+		#		velocity.y = 2000
 		
 #Detectar si hay un bloque para el gancho
 func create_hook():
@@ -152,3 +163,12 @@ func take_damage(_dam: int) -> void:
 	current_heart -= 1
 	update_heart_num()
 	
+func _on_antigravity_body_entered(body):
+	if body.is_in_group("Player") and antiGravityActivado == false:
+		antiGravityActivado = true
+		$Pivot/Sprite2D.flip_v = true
+		$CollisionShape2D.position.y = -158
+	elif body.is_in_group("Player") and antiGravityActivado == true:
+		antiGravityActivado = false
+		$Pivot/Sprite2D.flip_v = false
+		$CollisionShape2D.position.y = -57

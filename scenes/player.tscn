@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cm7pijkda0178" path="res://scenes/game_over.tscn" id="5_synem"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xf6c7"]
-radius = 73.0
+radius = 62.0
 height = 152.0
 
 [sub_resource type="Animation" id="Animation_tovkg"]
@@ -109,7 +109,7 @@ graph_offset = Vector2(1.94744, 0)
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_8qvem"]
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
 collision_layer = 3
 collision_mask = 3
 script = ExtResource("1_omsvt")
@@ -129,7 +129,7 @@ hframes = 3
 vframes = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-14, -59)
+position = Vector2(-13, -57)
 shape = SubResource("CapsuleShape2D_xf6c7")
 
 [node name="HookDetector" type="RayCast2D" parent="."]
@@ -172,6 +172,5 @@ position = Vector2(41, 20)
 offset = Vector2(0, -320)
 limit_left = 0
 limit_top = 320
-limit_bottom = -10
 
 [connection signal="life_change" from="CanvasLayer/Game_over" to="CanvasLayer/Game_over" method="_on_life_change"]

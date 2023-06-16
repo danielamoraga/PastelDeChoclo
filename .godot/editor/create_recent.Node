@@ -1,7 +1,8 @@
-CanvasLayer
-RayCast2D
+CollisionPolygon2D
 CollisionShape2D
 Area2D
+CanvasLayer
+RayCast2D
 StaticBody2D
 CenterContainer
 Control
