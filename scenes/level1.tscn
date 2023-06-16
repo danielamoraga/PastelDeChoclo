@@ -23,7 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://ohimjra35urw" path="res://assets/Forest tileset/Tile-set/Trunks/Trunk 01.png" id="13_52quk"]
 [ext_resource type="Texture2D" uid="uid://c7bvfdk8iuw4y" path="res://assets/Forest tileset/Tile-set/Leaves, branches, bushes, etc/06.png" id="16_7r0d1"]
 [ext_resource type="Texture2D" uid="uid://476iogrsh0st" path="res://assets/Forest tileset/Tile-set/Leaves, branches, bushes, etc/02.png" id="17_t4otm"]
-[ext_resource type="PackedScene" uid="uid://bg5qorp0gr2a0" path="res://scenes/banana_2d.tscn" id="24_c43sr"]
+[ext_resource type="PackedScene" uid="uid://bc4ced6s0fta2" path="res://scenes/banana_2d.tscn" id="24_c43sr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ujrrn"]
 texture = ExtResource("1_nbtwl")

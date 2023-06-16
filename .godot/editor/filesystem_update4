@@ -1,12 +1,10 @@
-res://scenes/win_menu.gd
-res://scenes/win_menu.tscn
-res://scenes/win.gd
+res://scenes/banana_2d.tscn
 res://scenes/hookable_block.tscn
 res://scenes/main.tscn
 res://scenes/player.tscn
 res://scenes/win_area.tscn
+res://scenes/win_menu.tscn
 res://scenes/game_over.tscn
 res://scenes/level1.tscn
-res://scenes/game_over.gd
 res://scenes/banana_2d.gd
-res://scenes/banana_2d.tscn
+res://scenes/player.gd

@@ -8,6 +8,7 @@ const ACCELERATION = 1000
 const GRAVITY = 1000
 
 var current_heart = 6
+var banana = 0
 
 var hooked = false
 var target: Vector2 = Vector2()
@@ -27,6 +28,7 @@ var antiGravityActivado = false
 	
 func _ready():
 	update_heart_num()
+	update_banana_num()
 	pass
 	
 func update_heart_num():
@@ -35,6 +37,15 @@ func update_heart_num():
 		emit_signal("life_change", current_heart)
 		game_over.show()
 		get_tree().paused = true
+		
+func update_banana_num():
+	#var platanos = get_tree().get_nodes_in_group("banana")
+	#platanos.connect(_on_handleBananaCollected)
+	$CanvasLayer/bananaCounter.text = str(banana)
+
+func _on_handleBananaCollected():
+	banana += 1
+	$CanvasLayer/bananaCounter.text = str(banana)
 		
 #Calculo de la gravedad
 func _gravity(delta):

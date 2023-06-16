@@ -9,7 +9,7 @@
 [ext_resource type="Script" path="res://scenes/AudioStreamPlayer.gd" id="6_y3l10"]
 [ext_resource type="PackedScene" uid="uid://bf4us40h865te" path="res://scenes/win_area.tscn" id="7_pljoh"]
 [ext_resource type="PackedScene" uid="uid://dkvxipv1ai3jc" path="res://fps_label.tscn" id="8_dpol6"]
-[ext_resource type="PackedScene" uid="uid://bg5qorp0gr2a0" path="res://scenes/banana_2d.tscn" id="10_8wuhj"]
+[ext_resource type="PackedScene" uid="uid://bc4ced6s0fta2" path="res://scenes/banana_2d.tscn" id="10_8wuhj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b5jdv"]
 size = Vector2(2301.88, 152)

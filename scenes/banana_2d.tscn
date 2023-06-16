@@ -1,9 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://bg5qorp0gr2a0"]
+[gd_scene load_steps=3 format=3 uid="uid://bc4ced6s0fta2"]
 
 [ext_resource type="Script" path="res://scenes/banana_2d.gd" id="1_7yqmh"]
-[ext_resource type="Texture2D" uid="uid://c7i7iul81t6ou" path="res://assets/banana/banana.png" id="2_2nf07"]
+[ext_resource type="Texture2D" uid="uid://c7i7iul81t6ou" path="res://assets/banana/banana.png" id="2_nhtak"]
 
-[node name="Banana2D" type="Area2D"]
+[node name="Banana2D" type="Area2D" groups=["banana"]]
+texture_filter = 1
 script = ExtResource("1_7yqmh")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
@@ -12,6 +13,6 @@ polygon = PackedVector2Array(12, -91.4, 13.6, -84, 20.8, -84, 24, -80.8, 24, -74
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_2nf07")
+texture = ExtResource("2_nhtak")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
