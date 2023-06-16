@@ -1,5 +1,7 @@
 extends Area2D
 
+signal win
+
 @onready var win_menu = $CanvasLayer/Win_Menu
 
 # Called when the node enters the scene tree for the first time.
@@ -14,11 +16,5 @@ func _physics_process(_delta):
 	var win_zone = get_overlapping_bodies()
 	for body in win_zone:
 		if body.name == "Player":
-			win_menu.show()
-			#get_tree().paused = true
-
-
-	
-
-			
+			win.emit()
 			
