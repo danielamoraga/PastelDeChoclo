@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://cqs7gxxjydw8f"]
+[gd_scene load_steps=11 format=3 uid="uid://cqs7gxxjydw8f"]
 
 [ext_resource type="Script" path="res://scenes/menu.gd" id="1_h1y1r"]
 [ext_resource type="PackedScene" uid="uid://dgcnrayjs7jqn" path="res://scenes/main.tscn" id="2_5x3wo"]
 [ext_resource type="Texture2D" uid="uid://cynne27juo05m" path="res://Diseño/Menu Background.png" id="2_sbxw4"]
+[ext_resource type="Script" path="res://scenes/PointLights.gd" id="3_mcyuw"]
 [ext_resource type="FontFile" uid="uid://bpvouls2mpuf7" path="res://Diseño/Fonts/Chonkly.otf" id="4_w621r"]
 [ext_resource type="FontFile" uid="uid://81p7b7pbndxb" path="res://Diseño/Fonts/fibberish.ttf" id="5_v6pax"]
 
@@ -10,6 +11,15 @@
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_5pud2"]
 blend_mode = 3
+
+[sub_resource type="Gradient" id="Gradient_jie83"]
+offsets = PackedFloat32Array(0.291317, 0.47619)
+colors = PackedColorArray(0.882353, 0.72549, 0.560784, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_dtc2i"]
+gradient = SubResource("Gradient_jie83")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
 
 [node name="Main Menu" type="MarginContainer"]
 anchors_preset = 15
@@ -84,3 +94,72 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("5_v6pax")
 theme_override_font_sizes/font_size = 65
 text = "Exit"
+
+[node name="PointLights" type="Node2D" parent="."]
+position = Vector2(159, 563)
+script = ExtResource("3_mcyuw")
+
+[node name="PointLight2D" type="PointLight2D" parent="PointLights"]
+color = Color(0.882353, 0.72549, 0.560784, 1)
+shadow_color = Color(0.152941, 0.152941, 0.152941, 0)
+texture = SubResource("GradientTexture2D_dtc2i")
+
+[node name="PointLight2D2" type="PointLight2D" parent="PointLights"]
+position = Vector2(-87, -73)
+color = Color(0.882353, 0.72549, 0.560784, 1)
+shadow_color = Color(0.152941, 0.152941, 0.152941, 0)
+texture = SubResource("GradientTexture2D_dtc2i")
+
+[node name="PointLight2D3" type="PointLight2D" parent="PointLights"]
+position = Vector2(503, -57)
+color = Color(0.882353, 0.72549, 0.560784, 1)
+shadow_color = Color(0.152941, 0.152941, 0.152941, 0)
+texture = SubResource("GradientTexture2D_dtc2i")
+
+[node name="PointLight2D4" type="PointLight2D" parent="PointLights"]
+position = Vector2(597, 83)
+color = Color(0.882353, 0.72549, 0.560784, 1)
+shadow_color = Color(0.152941, 0.152941, 0.152941, 0)
+texture = SubResource("GradientTexture2D_dtc2i")
+
+[node name="PointLight2D5" type="PointLight2D" parent="PointLights"]
+position = Vector2(703, 33)
+color = Color(0.882353, 0.72549, 0.560784, 1)
+shadow_color = Color(0.152941, 0.152941, 0.152941, 0)
+texture = SubResource("GradientTexture2D_dtc2i")
+
+[node name="PointLight2D6" type="PointLight2D" parent="PointLights"]
+position = Vector2(572, 129)
+color = Color(0.882353, 0.72549, 0.560784, 1)
+shadow_color = Color(0.152941, 0.152941, 0.152941, 0)
+texture = SubResource("GradientTexture2D_dtc2i")
+
+[node name="PointLight2D7" type="PointLight2D" parent="PointLights"]
+position = Vector2(1101, 196)
+color = Color(0.882353, 0.72549, 0.560784, 1)
+shadow_color = Color(0.152941, 0.152941, 0.152941, 0)
+texture = SubResource("GradientTexture2D_dtc2i")
+
+[node name="PointLight2D8" type="PointLight2D" parent="PointLights"]
+position = Vector2(1213, 39)
+color = Color(0.882353, 0.72549, 0.560784, 1)
+shadow_color = Color(0.152941, 0.152941, 0.152941, 0)
+texture = SubResource("GradientTexture2D_dtc2i")
+
+[node name="PointLight2D9" type="PointLight2D" parent="PointLights"]
+position = Vector2(1301, 28)
+color = Color(0.882353, 0.72549, 0.560784, 1)
+shadow_color = Color(0.152941, 0.152941, 0.152941, 0)
+texture = SubResource("GradientTexture2D_dtc2i")
+
+[node name="PointLight2D10" type="PointLight2D" parent="PointLights"]
+position = Vector2(1356, 109)
+color = Color(0.882353, 0.72549, 0.560784, 1)
+shadow_color = Color(0.152941, 0.152941, 0.152941, 0)
+texture = SubResource("GradientTexture2D_dtc2i")
+
+[node name="PointLight2D11" type="PointLight2D" parent="PointLights"]
+position = Vector2(989, 67)
+color = Color(0.882353, 0.72549, 0.560784, 1)
+shadow_color = Color(0.152941, 0.152941, 0.152941, 0)
+texture = SubResource("GradientTexture2D_dtc2i")

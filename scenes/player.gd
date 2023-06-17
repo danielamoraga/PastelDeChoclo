@@ -28,7 +28,6 @@ var antiGravityActivado = false
 	
 func _ready():
 	update_heart_num()
-	update_banana_num()
 	pass
 	
 func update_heart_num():
@@ -39,13 +38,11 @@ func update_heart_num():
 		get_tree().paused = true
 		
 func update_banana_num():
-	#var platanos = get_tree().get_nodes_in_group("banana")
-	#platanos.connect(_on_handleBananaCollected)
-	$CanvasLayer/bananaCounter.text = str(banana)
-
-func _on_handleBananaCollected():
 	banana += 1
 	$CanvasLayer/bananaCounter.text = str(banana)
+
+func _on_banana_collected():
+	update_banana_num()
 		
 #Calculo de la gravedad
 func _gravity(delta):
@@ -169,6 +166,8 @@ func _on_body_entered(body: Node):
 	if body is CharacterBody2D:
 		var character = body as CharacterBody2D
 		character.velocity = (character.global_position - global_position)
+	if body.has_signal("BananaCollected"):
+		body.connect("BananaCollected", _on_banana_collected)
 
 func take_damage(_dam: int) -> void:
 	current_heart -= 1
