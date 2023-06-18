@@ -215,5 +215,6 @@ position = Vector2(41, 20)
 offset = Vector2(0, -320)
 limit_left = 0
 limit_top = 320
+rotation_smoothing_enabled = true
 
 [connection signal="life_change" from="CanvasLayer/Game_over" to="CanvasLayer/Game_over" method="_on_life_change"]

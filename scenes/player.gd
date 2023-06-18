@@ -3,7 +3,7 @@ extends CharacterBody2D
 signal life_change(player_hearts)
 
 const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
+const JUMP_VELOCITY = -700.0
 const ACCELERATION = 1000
 const GRAVITY = 1000
 
@@ -29,7 +29,7 @@ var antiGravityActivado = false
 func _ready():
 	update_heart_num()
 	pass
-	
+
 func update_heart_num():
 	heart.update_heart(current_heart)
 	if current_heart <= 0:

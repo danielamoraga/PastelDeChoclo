@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://cas5syg52emk"]
+
+[ext_resource type="Texture2D" uid="uid://b3uuirg25ii8v" path="res://assets/darkpine_sprites/individual_sprites/logs & branches/logs/logs_medium/log_medium_straight_sidebranch.png" id="1_shop6"]
+[ext_resource type="Texture2D" uid="uid://cel3bm34lbf6q" path="res://assets/darkpine_sprites/individual_sprites/logs & branches/logs/logs_medium/log_medium_stump.png" id="2_no2g2"]
+
+[node name="HookableBlock2" type="StaticBody2D" groups=["Hookable"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 1.5708
+texture = ExtResource("1_shop6")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(-16, 0)
+rotation = 1.5708
+texture = ExtResource("2_no2g2")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(16, 0)
+rotation = -1.5708
+texture = ExtResource("1_shop6")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(32, 0)
+rotation = -1.5708
+texture = ExtResource("2_no2g2")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+visible = false
+polygon = PackedVector2Array(-24, -6, -24, 6, -23, 6, -23, 5, -21, 5, -21, 4, 14, 4, 14, 5, 13, 5, 13, 7, 14, 7, 14, 8, 16, 8, 16, 7, 17, 7, 17, 6, 18, 6, 18, 5, 19, 5, 19, 4, 37, 4, 37, 5, 39, 5, 39, 6, 40, 6, 40, -6, 39, -6, 39, -5, 37, -5, 37, -4, 2, -4, 2, -5, 3, -5, 3, -7, 2, -7, 2, -8, 0, -8, 0, -7, -1, -7, -1, -6, -2, -6, -2, -5, -3, -5, -3, -4, -21, -4, -21, -5, -23, -5, -23, -6)

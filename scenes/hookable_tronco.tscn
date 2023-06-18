@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bneh63k5eyhtr"]
+
+[ext_resource type="Texture2D" uid="uid://dy1am1hlixhmn" path="res://assets/animated_spikes/pngs/horizontal_axle.png" id="1_alwhc"]
+
+[node name="HookableBlock1" type="StaticBody2D" groups=["Hookable"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_alwhc")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(307, -37.9, 307, 37.7, 306.4, 38.5, -306.2, 38.5, -307, 37.9, -307, -37.5, -306, -38.3, 306.1, -38.5)

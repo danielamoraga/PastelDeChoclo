@@ -1,8 +1,10 @@
 CollisionPolygon2D
+ParallaxLayer
+ParallaxBackground
+Node2D
 TileMap
 Area2D
 CollisionShape2D
-Node2D
 PointLight2D
 WorldEnvironment
 Label
@@ -28,5 +30,3 @@ CheckButton
 OptionButton
 GridContainer
 TabBar
-TabContainer
-ColorRect
