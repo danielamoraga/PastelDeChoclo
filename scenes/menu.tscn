@@ -13,7 +13,7 @@
 blend_mode = 3
 
 [sub_resource type="Gradient" id="Gradient_jie83"]
-offsets = PackedFloat32Array(0.291317, 0.47619)
+offsets = PackedFloat32Array(0.358543, 0.47619)
 colors = PackedColorArray(0.882353, 0.72549, 0.560784, 1, 0, 0, 0, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_dtc2i"]
@@ -141,8 +141,10 @@ shadow_color = Color(0.152941, 0.152941, 0.152941, 0)
 texture = SubResource("GradientTexture2D_dtc2i")
 
 [node name="PointLight2D8" type="PointLight2D" parent="PointLights"]
-position = Vector2(1213, 39)
+position = Vector2(1213, 40)
+scale = Vector2(1.14062, 1.125)
 color = Color(0.882353, 0.72549, 0.560784, 1)
+energy = 1.85
 shadow_color = Color(0.152941, 0.152941, 0.152941, 0)
 texture = SubResource("GradientTexture2D_dtc2i")
 

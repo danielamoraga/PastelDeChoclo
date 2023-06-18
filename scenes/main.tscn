@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://dgcnrayjs7jqn"]
+[gd_scene load_steps=19 format=3 uid="uid://dgcnrayjs7jqn"]
 
 [ext_resource type="Texture2D" uid="uid://d0wwo6w7whc6d" path="res://Diseño/tileset.png" id="1_2kw6x"]
 [ext_resource type="PackedScene" uid="uid://b5208fp6rc1i8" path="res://scenes/player.tscn" id="1_e8mkt"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://bf4us40h865te" path="res://scenes/win_area.tscn" id="7_pljoh"]
 [ext_resource type="PackedScene" uid="uid://dkvxipv1ai3jc" path="res://fps_label.tscn" id="8_dpol6"]
 [ext_resource type="PackedScene" uid="uid://bc4ced6s0fta2" path="res://scenes/banana_2d.tscn" id="10_8wuhj"]
+[ext_resource type="PackedScene" uid="uid://k5g8wh1siqum" path="res://scenes/reload_caida.tscn" id="11_2s4yl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b5jdv"]
 size = Vector2(2301.88, 152)
@@ -972,3 +973,7 @@ position = Vector2(660, 819)
 
 [node name="Banana2D" parent="." instance=ExtResource("10_8wuhj")]
 position = Vector2(291, 764)
+
+[node name="caidaVacio" parent="." instance=ExtResource("11_2s4yl")]
+position = Vector2(1795, 1226)
+scale = Vector2(1.96921, 2.78868)
