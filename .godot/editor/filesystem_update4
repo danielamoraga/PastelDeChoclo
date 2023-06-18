@@ -14,3 +14,5 @@ res://scenes/reload_caida.tscn
 res://scenes/win.gd
 res://scenes/win_menu.gd
 res://scenes/spikes_2.tscn
+res://scenes/spikes.tscn
+res://scenes/Spikes.gd

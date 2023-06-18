@@ -6988,7 +6988,7 @@ collision_layer = 1
 collision_mask = 1
 
 [node name="Spikes2" parent="spikes" instance=ExtResource("4_wkmhu")]
-position = Vector2(203, 1019)
+position = Vector2(558, 1694)
 rotation = 3.14085
 scale = Vector2(0.907716, 0.820359)
 collision_layer = 1

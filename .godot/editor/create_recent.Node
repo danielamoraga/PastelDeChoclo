@@ -1,3 +1,4 @@
+CollisionPolygon2D
 TileMap
 Area2D
 CollisionShape2D
@@ -8,7 +9,6 @@ Label
 TextureRect
 Panel
 Sprite2D
-CollisionPolygon2D
 CanvasLayer
 RayCast2D
 StaticBody2D

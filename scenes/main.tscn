@@ -924,7 +924,7 @@ layer_0/tile_data = PackedInt32Array(327669, 0, 9, 393205, 0, 10, 327670, 65536,
 [node name="spikes" type="Node2D" parent="."]
 
 [node name="Spikes" parent="spikes" instance=ExtResource("5_0vse3")]
-position = Vector2(762, 582)
+position = Vector2(762, 625)
 collision_layer = 1
 collision_mask = 1
 
@@ -938,7 +938,7 @@ collision_mask = 1
 [node name="blocks" type="Node2D" parent="."]
 
 [node name="HookableBlock" parent="blocks" instance=ExtResource("3_8flw8")]
-position = Vector2(762, 499)
+position = Vector2(760, 534)
 scale = Vector2(3.97425, 4.03562)
 
 [node name="HookableBlock2" parent="blocks" instance=ExtResource("3_8flw8")]
