@@ -196,9 +196,9 @@ stretch_mode = 3
 
 [node name="bananaCounter" type="Label" parent="CanvasLayer"]
 texture_filter = 1
-offset_left = 384.0
+offset_left = 393.0
 offset_top = 40.0
-offset_right = 446.0
+offset_right = 463.0
 offset_bottom = 85.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0.811765, 0.811765, 0.811765, 1)
@@ -207,7 +207,8 @@ theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
 theme_override_fonts/font = ExtResource("7_3xydi")
 theme_override_font_sizes/font_size = 44
-text = "00"
+text = "0
+"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(41, 20)

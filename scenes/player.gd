@@ -40,10 +40,7 @@ func update_heart_num():
 func update_banana_num():
 	banana += 1
 	$CanvasLayer/bananaCounter.text = str(banana)
-
-func _on_banana_collected():
-	update_banana_num()
-		
+	
 #Calculo de la gravedad
 func _gravity(delta):
 	if antiGravityActivado == false:
@@ -61,6 +58,7 @@ func _gravity(delta):
 		
 #Detectar si hay un bloque para el gancho
 func create_hook():
+	
 	if (hook_detector.is_colliding()):
 		var body: Node2D = hook_detector.get_collider()
 		if (body.is_in_group("Hookable")):
@@ -166,8 +164,6 @@ func _on_body_entered(body: Node):
 	if body is CharacterBody2D:
 		var character = body as CharacterBody2D
 		character.velocity = (character.global_position - global_position)
-	if body.has_signal("BananaCollected"):
-		body.connect("BananaCollected", _on_banana_collected)
 
 func take_damage(_dam: int) -> void:
 	current_heart -= 1
