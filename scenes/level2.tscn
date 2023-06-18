@@ -23,9 +23,9 @@
 [ext_resource type="PackedScene" uid="uid://bf8jrulltmrk4" path="res://scenes/hookable_block.tscn" id="19_i7yli"]
 [ext_resource type="PackedScene" uid="uid://b5208fp6rc1i8" path="res://scenes/player.tscn" id="20_3cgtb"]
 [ext_resource type="Script" path="res://scenes/AudioStreamPlayer.gd" id="21_ubdvu"]
+[ext_resource type="PackedScene" uid="uid://bcxbpfubwbqgo" path="res://scenes/hookable_tronco2.tscn" id="22_cb46s"]
 [ext_resource type="PackedScene" uid="uid://dkvxipv1ai3jc" path="res://fps_label.tscn" id="22_smj22"]
 [ext_resource type="PackedScene" uid="uid://bf4us40h865te" path="res://scenes/win_area.tscn" id="23_1wakw"]
-[ext_resource type="PackedScene" uid="uid://cas5syg52emk" path="res://scenes/hookable_tronco1.tscn" id="23_f7d5y"]
 [ext_resource type="PackedScene" uid="uid://bc4ced6s0fta2" path="res://scenes/banana_2d.tscn" id="24_6uhwr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ujrrn"]
@@ -2766,9 +2766,6 @@ texture = ExtResource("8_cim80")
 3:14/0 = 0
 3:14/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:14/0/physics_layer_0/angular_velocity = 0.0
-7:14/0 = 0
-7:14/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-7:14/0/physics_layer_0/angular_velocity = 0.0
 8:14/0 = 0
 8:14/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 8:14/0/physics_layer_0/angular_velocity = 0.0
@@ -2991,6 +2988,9 @@ texture = ExtResource("8_cim80")
 18:19/0 = 0
 18:19/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 18:19/0/physics_layer_0/angular_velocity = 0.0
+7:14/0 = 0
+7:14/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:14/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lh1fr"]
 texture = ExtResource("9_unled")
@@ -7029,7 +7029,7 @@ collision_layer = 1
 collision_mask = 1
 
 [node name="Spikes2" parent="spikes" instance=ExtResource("18_dbt13")]
-position = Vector2(558, 1694)
+position = Vector2(913, 986)
 rotation = 3.14085
 scale = Vector2(0.907716, 0.820359)
 collision_layer = 1
@@ -7101,8 +7101,8 @@ scale = Vector2(3.97425, 4.03562)
 position = Vector2(937, 1795)
 scale = Vector2(3.97425, 4.03562)
 
-[node name="HookableBlock18" parent="blocks" instance=ExtResource("23_f7d5y")]
-position = Vector2(192, 472)
+[node name="HookableBlock17" parent="blocks" instance=ExtResource("22_cb46s")]
+position = Vector2(191, 531)
 scale = Vector2(8, 8)
 
 [node name="Player" parent="." instance=ExtResource("20_3cgtb")]
@@ -7118,7 +7118,7 @@ offset_right = 291.0
 offset_bottom = 70.0
 
 [node name="win_zone" parent="." instance=ExtResource("23_1wakw")]
-position = Vector2(2096, 951)
+position = Vector2(2422, 1060)
 
 [node name="Antigravity" type="Area2D" parent="."]
 position = Vector2(2271, 1658)
