@@ -99,14 +99,14 @@ func _physics_process(delta):
 	#Movimiento si estamos colgando
 	if hooked:
 		#Acortar el gancho
-		#if Input.is_action_pressed("up") && dist > 100:
-		#	dist -= 5
+		if Input.is_action_pressed("up") && dist > 100:
+			dist -= 5
 			
 		#Impulso para balancearse
-		#if Input.is_action_pressed("left") and !Input.is_action_pressed("right"):
-		#	velocity.x -= 5
-		#if !Input.is_action_pressed("left") and Input.is_action_pressed("right"):
-		#	velocity.x += 5
+		if Input.is_action_pressed("left") and !Input.is_action_pressed("right"):
+			velocity.x -= 5
+		if !Input.is_action_pressed("left") and Input.is_action_pressed("right"):
+			velocity.x += 5
 		
 		#Actualizar la posición de la linea
 		hook_line.set_point_position(1, to_local(target))

@@ -20,7 +20,7 @@ func _on_win_zone_win():
 	
 func _on_next_level_pressed():
 	get_tree().paused = false
-	get_tree().change_scene_to_file("res://scenes/level1.tscn")
+	get_tree().change_scene_to_file("res://scenes/level2.tscn")
 	# siguientes niveles
 	#get_tree().change_scene_to_file("res://scenes/level1"+str(int(get_tree().current_scene_name)+1))+".tscn")
 	hide()

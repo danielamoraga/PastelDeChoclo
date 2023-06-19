@@ -1,10 +1,12 @@
+CollisionShape2D
 CollisionPolygon2D
+Area2D
+AudioStreamPlayer2D
+RigidBody2D
+TileMap
 ParallaxLayer
 ParallaxBackground
 Node2D
-TileMap
-Area2D
-CollisionShape2D
 PointLight2D
 WorldEnvironment
 Label
@@ -28,5 +30,3 @@ Camera2D
 HSlider
 CheckButton
 OptionButton
-GridContainer
-TabBar
