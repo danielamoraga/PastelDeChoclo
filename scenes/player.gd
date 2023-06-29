@@ -183,6 +183,8 @@ func _physics_process(delta):
 		$HookLine.position.x = 5
 	else:
 		$Pivot/Sprite2D.flip_h = true
+		#$CollisionShape2D.position.x = 11
+		#$CollisionPolygon2D.position.x = 24
 	
 func _on_body_entered(body: Node):	
 	if body.has_method("take damage"):

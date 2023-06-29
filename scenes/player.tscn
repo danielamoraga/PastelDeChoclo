@@ -184,7 +184,7 @@ position = Vector2(0, -1)
 target_position = Vector2(26, 0)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(47, -61)
+position = Vector2(45, -61)
 shape = SubResource("CapsuleShape2D_0ajd5")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
