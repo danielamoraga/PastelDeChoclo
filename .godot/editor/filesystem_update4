@@ -1,4 +1,5 @@
 res://scenes/player.tscn
+res://scenes/player.gd
 res://scenes/main.tscn
 res://scenes/win_area.tscn
 res://scenes/level1.tscn

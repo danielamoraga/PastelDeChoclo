@@ -1,9 +1,9 @@
-[gd_scene load_steps=23 format=3 uid="uid://b5208fp6rc1i8"]
+[gd_scene load_steps=25 format=3 uid="uid://b5208fp6rc1i8"]
 
 [ext_resource type="Script" path="res://scenes/player.gd" id="1_omsvt"]
-[ext_resource type="Texture2D" uid="uid://cryxl8frh8n60" path="res://assets/sprite/All textures.png" id="2_avtw0"]
 [ext_resource type="Texture2D" uid="uid://ujb7820lqxiu" path="res://assets/tail_texture.png" id="2_jmq4m"]
 [ext_resource type="PackedScene" uid="uid://blugmy1ntgbsp" path="res://scenes/pause_menu.tscn" id="3_b0tb6"]
+[ext_resource type="Texture2D" uid="uid://5a6iey668wtb" path="res://assets/sprite/All textures 2.png" id="3_rdy30"]
 [ext_resource type="PackedScene" uid="uid://bdi40on1byl5v" path="res://heart.tscn" id="4_v582h"]
 [ext_resource type="PackedScene" uid="uid://cm7pijkda0178" path="res://scenes/game_over.tscn" id="5_synem"]
 [ext_resource type="Texture2D" uid="uid://c7i7iul81t6ou" path="res://assets/banana/banana.png" id="6_hq2qp"]
@@ -80,12 +80,46 @@ tracks/0/keys = {
 "values": [5, 6, 7, 8]
 }
 
+[sub_resource type="Animation" id="Animation_2qmeh"]
+resource_name = "idle_no_tail"
+step = 0.125
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Pivot/Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.125, 0.25, 0.375),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [12, 12, 14, 14]
+}
+
+[sub_resource type="Animation" id="Animation_muom4"]
+resource_name = "run_no_tail"
+step = 0.125
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Pivot/Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [17, 18, 19, 20]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_agyot"]
 _data = {
 "RESET": SubResource("Animation_tovkg"),
 "fall": SubResource("Animation_x8y65"),
 "idle": SubResource("Animation_snln4"),
-"run": SubResource("Animation_mifg6")
+"idle_no_tail": SubResource("Animation_2qmeh"),
+"run": SubResource("Animation_mifg6"),
+"run_no_tail": SubResource("Animation_muom4")
 }
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_xcyjq"]
@@ -102,13 +136,13 @@ advance_mode = 2
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_wmwt3"]
 
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_jacqn"]
-states/Start/position = Vector2(198, 100)
+states/Start/position = Vector2(198.5, 100)
 states/idle/node = SubResource("AnimationNodeAnimation_xcyjq")
 states/idle/position = Vector2(375.958, 100)
 states/run/node = SubResource("AnimationNodeAnimation_or7gj")
 states/run/position = Vector2(558.958, 100)
 transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_vn1tx"), "idle", "run", SubResource("AnimationNodeStateMachineTransition_oup4h"), "run", "idle", SubResource("AnimationNodeStateMachineTransition_wmwt3")]
-graph_offset = Vector2(1.94744, 0)
+graph_offset = Vector2(234.252, -29.775)
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_8qvem"]
 
@@ -129,6 +163,7 @@ position = Vector2(0, -1)
 width = 23.0
 texture = ExtResource("2_jmq4m")
 texture_mode = 2
+joint_mode = 1
 end_cap_mode = 2
 
 [node name="Pivot" type="Node2D" parent="."]
@@ -136,10 +171,10 @@ position = Vector2(-13, -66)
 
 [node name="Sprite2D" type="Sprite2D" parent="Pivot"]
 position = Vector2(101, -38)
-texture = ExtResource("2_avtw0")
+texture = ExtResource("3_rdy30")
 offset = Vector2(-60, 0)
 hframes = 3
-vframes = 4
+vframes = 8
 
 [node name="HookDetector" type="RayCast2D" parent="."]
 position = Vector2(0, -1)

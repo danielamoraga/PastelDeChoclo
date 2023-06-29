@@ -16,6 +16,10 @@ var dist: float = 0
 
 var antiGravityActivado = false
 
+var previous_animation = ""
+var is_moving = false
+
+
 @onready var animation_player = $AnimationPlayer
 @onready var animation_tree = $AnimationTree
 @onready var playback = animation_tree.get("parameters/playback")
@@ -58,7 +62,7 @@ func _gravity(delta):
 		
 #Detectar si hay un bloque para el gancho
 func create_hook():
-	
+#func create_hook() -> bool:
 	if (hook_detector.is_colliding()):
 		var body: Node2D = hook_detector.get_collider()
 		if (body.is_in_group("Hookable")):
@@ -134,13 +138,16 @@ func _physics_process(delta):
 		#Si hacemos click y es un lugar valido, creamos el gancho
 		if Input.is_action_just_pressed("hook") and create_hook():
 			hooked = true
-		
+			previous_animation = "run_no_tail" if is_moving else "idle_no_tail"
+
 		#Movimiento
 		var direction = Input.get_axis("left", "right")
 		if direction:
 			velocity.x = direction * SPEED
+			is_moving = true
 		else:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
+			is_moving = false
 			
 	# Gravedad
 	if not is_on_floor():
@@ -148,16 +155,35 @@ func _physics_process(delta):
 
 	move_and_slide()
 	
-	#animation
-	if velocity.x != 0:
-		animation_player.play("run")
+	# Animation
+	if hooked:
+		animation_player.play("idle_no_tail")
 	else:
-		animation_player.play("idle")
+		if velocity.x != 0:
+			animation_player.play("run")
+		else:
+			animation_player.play("idle")
+			if previous_animation != "":
+				animation_player.play(previous_animation)
+				previous_animation = ""
+	
+	#animation
+	#if velocity.x != 0:
+	#	animation_player.play("run")
+	#else:
+	#	animation_player.play("idle")
+	
 	var move_input = Input.get_axis("left","right")
 	
-	if move_input:
-		pivot.scale.x = sign(move_input)
-
+	#if move_input:
+	#	pivot.scale.x = sign(move_input)
+		
+	if move_input >= 0:
+		$Pivot/Sprite2D.flip_h = false
+		$HookLine.position.x = 5
+	else:
+		$Pivot/Sprite2D.flip_h = true
+	
 func _on_body_entered(body: Node):	
 	if body.has_method("take damage"):
 		body.take_damage()
