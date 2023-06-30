@@ -19,7 +19,6 @@ var antiGravityActivado = false
 var previous_animation = ""
 var is_moving = false
 
-
 @onready var animation_player = $AnimationPlayer
 @onready var animation_tree = $AnimationTree
 @onready var playback = animation_tree.get("parameters/playback")
@@ -103,14 +102,14 @@ func _physics_process(delta):
 	#Movimiento si estamos colgando
 	if hooked:
 		#Acortar el gancho
-		if Input.is_action_pressed("up") && dist > 100:
-			dist -= 5
+		#if Input.is_action_pressed("up") && dist > 100:
+		#	dist -= 5
 			
 		#Impulso para balancearse
 		if Input.is_action_pressed("left") and !Input.is_action_pressed("right"):
-			velocity.x -= 5
+			velocity.x -= 8
 		if !Input.is_action_pressed("left") and Input.is_action_pressed("right"):
-			velocity.x += 5
+			velocity.x += 8
 		
 		#Actualizar la posición de la linea
 		hook_line.set_point_position(1, to_local(target))
@@ -175,14 +174,12 @@ func _physics_process(delta):
 	
 	var move_input = Input.get_axis("left","right")
 	
-	#if move_input:
-	#	pivot.scale.x = sign(move_input)
-		
-	if move_input >= 0:
+	if move_input > 0:
 		$Pivot/Sprite2D.flip_h = false
-		$HookLine.position.x = 5
-	else:
+		$HookLine.position.x = 9 #posicion de la cola "right"
+	elif move_input < 0:
 		$Pivot/Sprite2D.flip_h = true
+		$HookLine.position.x = 48 #posicion de la cola "left"
 		#$CollisionShape2D.position.x = 11
 		#$CollisionPolygon2D.position.x = 24
 	
