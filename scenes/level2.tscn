@@ -5702,8 +5702,16 @@ scale = Vector2(8, 8)
 position = Vector2(1434, 979)
 scale = Vector2(8, 8)
 
+[node name="HookableBlock4" parent="blocks" instance=ExtResource("16_tggar")]
+position = Vector2(1980, 503)
+scale = Vector2(8, 8)
+
+[node name="HookableBlock3" parent="blocks" instance=ExtResource("16_tggar")]
+position = Vector2(1664, 26)
+scale = Vector2(8, 8)
+
 [node name="Player" parent="." instance=ExtResource("20_3cgtb")]
-position = Vector2(136, 954)
+position = Vector2(121, 1000)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 volume_db = -25.316
@@ -5749,6 +5757,15 @@ position = Vector2(920, -8)
 
 [node name="Banana2D7" parent="Platanos" instance=ExtResource("24_6uhwr")]
 position = Vector2(807, -86)
+
+[node name="Banana2D11" parent="Platanos" instance=ExtResource("24_6uhwr")]
+position = Vector2(-958, -455)
+
+[node name="Banana2D12" parent="Platanos" instance=ExtResource("24_6uhwr")]
+position = Vector2(-1216, -459)
+
+[node name="Banana2D13" parent="Platanos" instance=ExtResource("24_6uhwr")]
+position = Vector2(797, -758)
 
 [node name="caidaVacio" parent="." instance=ExtResource("23_un0p7")]
 position = Vector2(2300, 1754)

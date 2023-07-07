@@ -1,5 +1,5 @@
 2a60927148abd1d33b818b535e306557
-::res://::1688324799
+::res://::1688714561
 export_presets.cfg::TextFile::-1::1687145453::0::1::::<><>::
 fps_label.gd::GDScript::-1::1684964435::0::1::::<>Label<>::
 fps_label.tscn::PackedScene::7905914018952563172::1686892294::0::1::::<><>::uid://bpvouls2mpuf7<>res://fps_label.gd
@@ -549,7 +549,7 @@ Hungarian Dance no. 5 (Brahms).mp3::AudioStreamMP3::7735394453381003347::1683948
 Solomon, HWV 67 (Handel, George Frideric).mp3::AudioStreamMP3::705695548757856574::1683948498::1682690033::1::::<><>::
 Symphony 40 Mozart.mp3::AudioStreamMP3::3088748457111251279::1683948498::1683948498::1::::<><>::
 Violin Concerto No. 1 in A minor (Bach).mp3::AudioStreamMP3::8658803064488866141::1683948499::1683948499::1::::<><>::
-::res://scenes/::1688324979
+::res://scenes/::1688375993
 AudioStreamPlayer2D.gd::GDScript::-1::1682690033::0::1::::<>AudioStreamPlayer2D<>::
 AudioStreamPlayer.gd::GDScript::-1::1683948499::0::1::::<>AudioStreamPlayer<>::
 background1.tscn::PackedScene::8899211475579459::1688106764::0::1::::<><>::uid://dxawaun5iu2gi<>uid://bpg2dnvna1t6r<>uid://cafv7xd4d0bwu
@@ -562,7 +562,7 @@ game_over.tscn::PackedScene::5682093108710755185::1687077432::0::1::::<><>::res:
 hookable_block.tscn::PackedScene::2806067247184040165::1688324817::0::1::::<><>::uid://lkxe3sndjn4n
 hookable_tronco1.tscn::PackedScene::141525149772385450::1688324817::0::1::::<><>::uid://b3uuirg25ii8v<>uid://cel3bm34lbf6q
 hookable_tronco2.tscn::PackedScene::2574366856801612450::1688324817::0::1::::<><>::uid://b3uuirg25ii8v<>uid://cel3bm34lbf6q<>uid://0mqwg1m1fmew<>uid://bmfukh5g1ehb7
-hookable_tronco3.tscn::PackedScene::4857853213455596770::1688325274::0::1::::<><>::uid://0mqwg1m1fmew<>uid://bmfukh5g1ehb7
+hookable_tronco3.tscn::PackedScene::4857853213455596770::1688375993::0::1::::<><>::uid://0mqwg1m1fmew<>uid://bmfukh5g1ehb7
 level1.tscn::PackedScene::410196050010644444::1688324816::0::1::::<><>::uid://dayx0tbjx2rin<>uid://x4trm30o47a7<>uid://d1e4oiij42m7d<>uid://5h3fcrpon2wy<>uid://d0wwo6w7whc6d<>uid://drwq0tlnshyc0<>uid://dimt4g2wdmky6<>uid://hkj1hbq1qmxf<>uid://bf8jrulltmrk4<>uid://bok0iwn2e7hd2<>uid://b5208fp6rc1i8<>uid://c14f5oigvlwwt<>res://scenes/AudioStreamPlayer.gd<>uid://dekd31bajp28u<>uid://dkvxipv1ai3jc<>uid://bdb8g3rypbcjm<>uid://5v5i3q5bxr78<>uid://bf4us40h865te<>uid://bftg8mwdahao2<>uid://ctqjo54awkvfm<>uid://ohimjra35urw<>uid://c7bvfdk8iuw4y<>uid://476iogrsh0st<>uid://bc4ced6s0fta2
 level2.tscn::PackedScene::4049823223417491168::1688324817::0::1::::<><>::uid://d0wwo6w7whc6d<>uid://bok0iwn2e7hd2<>uid://dekd31bajp28u<>uid://5v5i3q5bxr78<>uid://d1e4oiij42m7d<>uid://c14f5oigvlwwt<>uid://bdb8g3rypbcjm<>uid://bftg8mwdahao2<>uid://ctqjo54awkvfm<>uid://ohimjra35urw<>uid://c7bvfdk8iuw4y<>uid://cas5syg52emk<>uid://476iogrsh0st<>uid://hkj1hbq1qmxf<>uid://b5208fp6rc1i8<>res://scenes/AudioStreamPlayer.gd<>uid://bcxbpfubwbqgo<>uid://dkvxipv1ai3jc<>uid://bf4us40h865te<>uid://k5g8wh1siqum<>uid://bc4ced6s0fta2<>uid://doujpbxt4h0j8
 main.tscn::PackedScene::7585343585327511825::1688324814::0::1::::<><>::uid://d0wwo6w7whc6d<>uid://b5208fp6rc1i8<>uid://bf8jrulltmrk4<>uid://lkxe3sndjn4n<>uid://d1e4oiij42m7d<>uid://hkj1hbq1qmxf<>res://scenes/AudioStreamPlayer.gd<>uid://bf4us40h865te<>uid://dkvxipv1ai3jc<>uid://bc4ced6s0fta2<>uid://k5g8wh1siqum
@@ -577,7 +577,6 @@ PointLight.gd::GDScript::-1::1687032589::0::1::::<>PointLight2D<>::
 PointLights.gd::GDScript::-1::1687033531::0::1::::<>Node2D<>::
 reload_caida.gd::GDScript::-1::1687077571::0::1::::<>Area2D<>::
 reload_caida.tscn::PackedScene::764244169690620244::1688324817::0::1::::<><>::res://scenes/reload_caida.gd
-hookable_tronco4.tscn::PackedScene::1674138519515243708::1688325308::0::1::::<><>::uid://0mqwg1m1fmew<>uid://bmfukh5g1ehb7
 Settings.gd::GDScript::-1::1683948499::0::1::::<>MarginContainer<>::
 Settings.tscn::PackedScene::5226161845740687548::1684985895::0::1::::<><>::uid://bpvouls2mpuf7<>res://scenes/Settings.gd<>uid://81p7b7pbndxb<>uid://cynne27juo05m
 Spikes.gd::GDScript::-1::1687080947::0::1::::<>StaticBody2D<>::

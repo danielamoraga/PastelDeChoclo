@@ -19,6 +19,8 @@ var antiGravityActivado = false
 var previous_animation = ""
 var is_moving = false
 
+var air_jump = false
+
 @onready var animation_player = $AnimationPlayer
 @onready var animation_tree = $AnimationTree
 @onready var playback = animation_tree.get("parameters/playback")
@@ -96,15 +98,25 @@ func _swing(delta):
 
 func _physics_process(delta):
 	# Salto
-	if Input.is_action_just_pressed("jump") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
+	#if Input.is_action_just_pressed("jump") and is_on_floor():
+	#	velocity.y = JUMP_VELOCITY
+		
+	# Salto
+	if Input.is_action_just_pressed("jump"):
+		if is_on_floor():
+			# On ground, perform regular jump
+			velocity.y = JUMP_VELOCITY
+		elif !hooked && !air_jump:
+			# In air, perform air jump if not hooked and air jump not used
+			velocity.y = JUMP_VELOCITY
+			air_jump = true
 	
 	#Movimiento si estamos colgando
 	if hooked:
 		#Acortar el gancho
 		#if Input.is_action_pressed("up") && dist > 100:
-		#	dist -= 5
-			
+		#	dist -= 
+
 		#Impulso para balancearse
 		if Input.is_action_pressed("left") and !Input.is_action_pressed("right"):
 			velocity.x -= 8
@@ -154,6 +166,9 @@ func _physics_process(delta):
 
 	move_and_slide()
 	
+	if is_on_floor():
+		air_jump = false
+
 	# Animation
 	if hooked:
 		animation_player.play("idle_no_tail")
