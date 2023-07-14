@@ -15,6 +15,7 @@ func _ready():
 func _on_life_change():
 	var game_over = load("res://scenes/game_over.tscn").instance()
 	add_child(game_over, true)
+	get_tree().paused = true
 	
 func _on_restart_pressed():
 	get_tree().reload_current_scene()

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bc4ced6s0fta2"]
+
+[ext_resource type="Script" path="res://scenes/banana_2d.gd" id="1_7yqmh"]
+[ext_resource type="Texture2D" uid="uid://c7i7iul81t6ou" path="res://assets/banana/banana.png" id="2_nhtak"]
+
+[node name="Banana2D" type="Area2D" groups=["banana"]]
+texture_filter = 1
+script = ExtResource("1_7yqmh")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2(0.5, 0.5)
+polygon = PackedVector2Array(12, -91.4, 13.6, -84, 20.8, -84, 24, -80.8, 24, -74, 30.8, -74, 34, -70.8, 34, -64, 40.8, -64, 44, -60.8, 44, -54, 50.8, -54, 54, -50.8, 54, -33.7, 64, -31.6, 64, 22, 61.4, 22, 54, 23.6, 54, 41.6, 44, 43.7, 44, 50.8, 40.8, 54, 34, 54, 34, 60.8, 30.8, 64, 24, 64, 24, 70.8, 20.8, 74, -11.6, 74, -13.7, 64, -16.3, 64, -18.4, 74, -52, 74, -52, 71.4, -53.6, 64, -60.8, 64, -64, 60.8, -64, 38.4, -54, 36.3, -54, 18, -51.4, 18, -44, 16.4, -44, -12, -41.4, -12, -34, -13.6, -34, -81.6, -24, -83.7, -24, -91.2, -22, -92.2, -22, -94, 12, -94)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_nhtak")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

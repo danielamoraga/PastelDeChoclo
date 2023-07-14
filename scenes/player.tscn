@@ -1,14 +1,17 @@
-[gd_scene load_steps=19 format=3 uid="uid://b5208fp6rc1i8"]
+[gd_scene load_steps=25 format=3 uid="uid://b5208fp6rc1i8"]
 
 [ext_resource type="Script" path="res://scenes/player.gd" id="1_omsvt"]
-[ext_resource type="Texture2D" uid="uid://cryxl8frh8n60" path="res://assets/sprite/All textures.png" id="2_avtw0"]
+[ext_resource type="Texture2D" uid="uid://ujb7820lqxiu" path="res://assets/tail_texture.png" id="2_jmq4m"]
 [ext_resource type="PackedScene" uid="uid://blugmy1ntgbsp" path="res://scenes/pause_menu.tscn" id="3_b0tb6"]
+[ext_resource type="Texture2D" uid="uid://5a6iey668wtb" path="res://assets/sprite/All textures 2.png" id="3_rdy30"]
 [ext_resource type="PackedScene" uid="uid://bdi40on1byl5v" path="res://heart.tscn" id="4_v582h"]
 [ext_resource type="PackedScene" uid="uid://cm7pijkda0178" path="res://scenes/game_over.tscn" id="5_synem"]
+[ext_resource type="Texture2D" uid="uid://c7i7iul81t6ou" path="res://assets/banana/banana.png" id="6_hq2qp"]
+[ext_resource type="FontFile" uid="uid://bpvouls2mpuf7" path="res://Diseño/Fonts/Chonkly.otf" id="7_3xydi"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xf6c7"]
-radius = 73.0
-height = 152.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0ajd5"]
+radius = 67.0
+height = 170.0
 
 [sub_resource type="Animation" id="Animation_tovkg"]
 length = 0.001
@@ -60,6 +63,22 @@ tracks/0/keys = {
 "values": [0, 1, 2, 3]
 }
 
+[sub_resource type="Animation" id="Animation_2qmeh"]
+resource_name = "idle_no_tail"
+step = 0.125
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Pivot/Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.125, 0.25, 0.375),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [12, 12, 14, 14]
+}
+
 [sub_resource type="Animation" id="Animation_mifg6"]
 resource_name = "run"
 loop_mode = 1
@@ -77,12 +96,30 @@ tracks/0/keys = {
 "values": [5, 6, 7, 8]
 }
 
+[sub_resource type="Animation" id="Animation_muom4"]
+resource_name = "run_no_tail"
+step = 0.125
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Pivot/Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [17, 18, 19, 20]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_agyot"]
 _data = {
 "RESET": SubResource("Animation_tovkg"),
 "fall": SubResource("Animation_x8y65"),
 "idle": SubResource("Animation_snln4"),
-"run": SubResource("Animation_mifg6")
+"idle_no_tail": SubResource("Animation_2qmeh"),
+"run": SubResource("Animation_mifg6"),
+"run_no_tail": SubResource("Animation_muom4")
 }
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_xcyjq"]
@@ -99,38 +136,45 @@ advance_mode = 2
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_wmwt3"]
 
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_jacqn"]
-states/Start/position = Vector2(198, 100)
+states/Start/position = Vector2(198.5, 100)
 states/idle/node = SubResource("AnimationNodeAnimation_xcyjq")
 states/idle/position = Vector2(375.958, 100)
 states/run/node = SubResource("AnimationNodeAnimation_or7gj")
 states/run/position = Vector2(558.958, 100)
 transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_vn1tx"), "idle", "run", SubResource("AnimationNodeStateMachineTransition_oup4h"), "run", "idle", SubResource("AnimationNodeStateMachineTransition_wmwt3")]
-graph_offset = Vector2(1.94744, 0)
+graph_offset = Vector2(234.252, -29.775)
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_8qvem"]
 
-[node name="Player" type="CharacterBody2D"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7x8q6"]
+bg_color = Color(1, 1, 1, 0.419608)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
 collision_layer = 3
 collision_mask = 3
 script = ExtResource("1_omsvt")
 
 [node name="HookLine" type="Line2D" parent="."]
 position = Vector2(0, -1)
-default_color = Color(0.74902, 0.47451, 0.345098, 1)
+width = 23.0
+texture = ExtResource("2_jmq4m")
+texture_mode = 2
+joint_mode = 1
+end_cap_mode = 2
 
 [node name="Pivot" type="Node2D" parent="."]
 position = Vector2(-13, -66)
 
 [node name="Sprite2D" type="Sprite2D" parent="Pivot"]
-position = Vector2(42, -42)
-texture = ExtResource("2_avtw0")
+position = Vector2(101, -38)
+texture = ExtResource("3_rdy30")
 offset = Vector2(-60, 0)
 hframes = 3
-vframes = 4
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-14, -59)
-shape = SubResource("CapsuleShape2D_xf6c7")
+vframes = 8
 
 [node name="HookDetector" type="RayCast2D" parent="."]
 position = Vector2(0, -1)
@@ -138,6 +182,15 @@ position = Vector2(0, -1)
 [node name="winzoneDetector" type="RayCast2D" parent="."]
 position = Vector2(0, -1)
 target_position = Vector2(26, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(45, -57)
+shape = SubResource("CapsuleShape2D_0ajd5")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+visible = false
+position = Vector2(58, 3)
+polygon = PackedVector2Array(-36, -135, 14, -134, 15, -130, 22, -130, 23, -125, 25, -125, 29, -121, 34, -117, 35, -115, 38, -114, 38, -106, 41, -106, 41, -87, 45, -87, 45, -79, 50, -78, 49, -70, 45, -70, 45, -62, 49, -62, 49, -41, 45, -42, 45, -37, 41, -37, 42, -33, 25, -35, 25, -29, 21, -30, 22, -26, 17, -26, 17, 18, -6, 18, -6, 8, -36, 8, -35, 19, -59, 18, -59, -34, -53, -35, -55, -45, -64, -47, -64, -51, -68, -50, -68, -55, -71, -55, -72, -59, -75, -59, -75, -63, -81, -62, -81, -62, -80, -65, -83, -67, -82, -83, -79, -82, -79, -87, -75, -87, -75, -90, -62, -90, -63, -106, -59, -106, -59, -114, -54, -114, -55, -118, -51, -118, -51, -123, -45, -123, -47, -126, -42, -126, -44, -129, -37, -129)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -167,11 +220,46 @@ offset_top = 35.0
 offset_right = 3.0
 offset_bottom = 35.0
 
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+offset_left = 312.0
+offset_top = 15.0
+offset_right = 352.0
+offset_bottom = 55.0
+scale = Vector2(3.55427, 2.12975)
+theme_override_styles/panel = SubResource("StyleBoxFlat_7x8q6")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+offset_left = 337.0
+offset_top = 50.0
+offset_right = 377.0
+offset_bottom = 90.0
+scale = Vector2(0.455741, 0.469799)
+texture = ExtResource("6_hq2qp")
+expand_mode = 1
+stretch_mode = 3
+
+[node name="bananaCounter" type="Label" parent="CanvasLayer"]
+texture_filter = 1
+offset_left = 393.0
+offset_top = 40.0
+offset_right = 463.0
+offset_bottom = 85.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.811765, 0.811765, 0.811765, 1)
+theme_override_colors/font_outline_color = Color(0.937255, 0.937255, 0.937255, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("7_3xydi")
+theme_override_font_sizes/font_size = 44
+text = "0
+"
+
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(41, 20)
 offset = Vector2(0, -320)
 limit_left = 0
 limit_top = 320
-limit_bottom = -10
+limit_right = 4500
+rotation_smoothing_enabled = true
 
 [connection signal="life_change" from="CanvasLayer/Game_over" to="CanvasLayer/Game_over" method="_on_life_change"]
