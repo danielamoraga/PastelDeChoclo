@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxhq6odfowr17"]
+
+[ext_resource type="Texture2D" uid="uid://0mqwg1m1fmew" path="res://assets/darkpine_sprites/individual_sprites/logs & branches/logs/logs_medium/log_medium_angle.png" id="3_0yt28"]
+
+[node name="HookableBlock2" type="StaticBody2D" groups=["Hookable"]]
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(20.8, -9)
+rotation = -1.5708
+scale = Vector2(5.19, 5.19)
+texture = ExtResource("3_0yt28")
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="."]
+visible = false
+position = Vector2(21, -9)
+rotation = -1.5708
+scale = Vector2(5.19, 5.19)
+polygon = PackedVector2Array(3.99997, 8.00002, 4, -0.999986, 3, -0.999989, 3.00001, -1.99999, 2.00001, -1.99999, 2.00001, -2.99999, 1.00001, -3, 1.00001, -4, -7.99999, -4.00003, -8.00001, 3.99997, -4.00001, 3.99999, -4.00003, 7.99999)

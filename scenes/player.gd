@@ -108,7 +108,7 @@ func _physics_process(delta):
 			velocity.y = JUMP_VELOCITY
 		elif !hooked && !air_jump:
 			# In air, perform air jump if not hooked and air jump not used
-			velocity.y = JUMP_VELOCITY
+			velocity.y = JUMP_VELOCITY / 2
 			air_jump = true
 	
 	#Movimiento si estamos colgando

@@ -1,5 +1,6 @@
 [gd_scene load_steps=36 format=3 uid="uid://bxx085kl44npw"]
 
+[ext_resource type="PackedScene" uid="uid://cr8nebg52cue1" path="res://scenes/background4.tscn" id="1_unpyx"]
 [ext_resource type="Texture2D" uid="uid://d0wwo6w7whc6d" path="res://Diseño/tileset.png" id="6_s8kbk"]
 [ext_resource type="Texture2D" uid="uid://bok0iwn2e7hd2" path="res://assets/Sunny-land-assets-files/PNG/environment/layers/props.png" id="7_y0oci"]
 [ext_resource type="Texture2D" uid="uid://dekd31bajp28u" path="res://assets/Forest tileset/Tile-set/Leaves, branches, bushes, etc/03.png" id="8_cim80"]
@@ -21,7 +22,6 @@
 [ext_resource type="PackedScene" uid="uid://bf4us40h865te" path="res://scenes/win_area.tscn" id="23_1wakw"]
 [ext_resource type="PackedScene" uid="uid://k5g8wh1siqum" path="res://scenes/reload_caida.tscn" id="23_un0p7"]
 [ext_resource type="PackedScene" uid="uid://bc4ced6s0fta2" path="res://scenes/banana_2d.tscn" id="24_6uhwr"]
-[ext_resource type="PackedScene" uid="uid://doujpbxt4h0j8" path="res://scenes/background3.tscn" id="28_iu67k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rd052"]
 texture = ExtResource("6_s8kbk")
@@ -5642,7 +5642,7 @@ sources/11 = SubResource("TileSetAtlasSource_lh1fr")
 
 [node name="Level2" type="Node2D"]
 
-[node name="Background1" parent="." instance=ExtResource("28_iu67k")]
+[node name="Background1" parent="." instance=ExtResource("1_unpyx")]
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(909, 778)

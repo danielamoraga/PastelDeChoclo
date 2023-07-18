@@ -1,4 +1,6 @@
+res://scenes/background3.tscn
 res://scenes/level2.tscn
+res://scenes/level3.tscn
 res://scenes/main.tscn
 res://scenes/win_area.tscn
 res://scenes/level1.tscn
@@ -9,4 +11,11 @@ res://scenes/hookable_block.tscn
 res://scenes/banana_2d.tscn
 res://scenes/player.tscn
 res://scenes/hookable_tronco3.tscn
+res://scenes/background1.tscn
+res://scenes/background2.tscn
+res://scenes/background4.tscn
+res://scenes/hookable_tronco4.tscn
+res://scenes/hookable_tronco5.tscn
 res://scenes/player.gd
+res://scenes/spikes.tscn
+res://scenes/win_menu.gd
