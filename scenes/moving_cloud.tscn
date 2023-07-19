@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://pwi5hwoje1e4"]
+
+[ext_resource type="Texture2D" uid="uid://jts7ickjhr3i" path="res://assets/Clouds V2/Clouds V2-1.png" id="1_l202s"]
+
+[node name="moving_cloud" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0.339226, -2.66077)
+rotation = -0.10472
+texture = ExtResource("1_l202s")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+visible = false
+position = Vector2(0.339226, -2.66077)
+rotation = -0.10472
+polygon = PackedVector2Array(55.0777, 8.46433, 0.379028, 2.71527, -0.0390861, 6.69336, 11.059, 15.9039, 19.0151, 16.7401, 25.7677, 19.4608, 35.7129, 20.5061, 45.7627, 20.5569, 51.9389, 19.195, 54.2415, 16.4205)

@@ -1,14 +1,19 @@
-[gd_scene load_steps=7 format=3 uid="uid://c6k5yijjjaodx"]
+[gd_scene load_steps=9 format=3 uid="uid://c6k5yijjjaodx"]
 
 [ext_resource type="Script" path="res://scroll_credits.gd" id="1_2cc7h"]
 [ext_resource type="Texture2D" uid="uid://cynne27juo05m" path="res://Diseño/Menu Background.png" id="2_u4wom"]
 [ext_resource type="FontFile" uid="uid://81p7b7pbndxb" path="res://Diseño/Fonts/fibberish.ttf" id="3_p8jkg"]
+[ext_resource type="FontFile" uid="uid://bpvouls2mpuf7" path="res://Diseño/Fonts/Chonkly.otf" id="4_mbbfo"]
 [ext_resource type="Script" path="res://scenes/credits.gd" id="4_nkry7"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iqkcs"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_vim8r"]
 blend_mode = 3
+
+[sub_resource type="LabelSettings" id="LabelSettings_an2a2"]
+font = ExtResource("4_mbbfo")
+font_size = 24
 
 [node name="Node2D" type="Node2D"]
 
@@ -114,5 +119,6 @@ hola
 hola
 
 "
+label_settings = SubResource("LabelSettings_an2a2")
 horizontal_alignment = 1
 script = ExtResource("4_nkry7")

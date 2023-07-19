@@ -11,6 +11,17 @@ position = Vector2(-1, -2)
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
+[node name="ParallaxLayer6" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(189, -2390)
+motion_scale = Vector2(0.1, 0.1)
+motion_mirroring = Vector2(2304, 1296)
+
+[node name="BackgroundLayer1" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6"]
+texture_filter = 1
+position = Vector2(963, 455)
+scale = Vector2(4, 4)
+texture = ExtResource("1_pr2aj")
+
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2(189, 193)
 motion_scale = Vector2(0.1, 0.1)

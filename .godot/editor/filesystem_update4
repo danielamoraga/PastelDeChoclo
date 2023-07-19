@@ -9,3 +9,17 @@ res://scenes/Settings.tscn
 res://scenes/win_menu.gd
 res://global_next_level.gd
 res://scenes/credits.gd
+res://scenes/level3.tscn
+res://scenes/player.tscn
+res://scenes/background5.tscn
+res://scenes/background2.tscn
+res://scenes/background3.tscn
+res://scenes/moving_cloud.tscn
+res://scenes/moving_platform.gd
+res://scenes/moving_cloud_block.tscn
+res://scenes/hookable_tronco1.tscn
+res://scenes/hookable_tronco3.tscn
+res://scenes/hookable_tronco5.tscn
+res://scenes/hookable_tronco4.tscn
+res://scenes/hookable_tronco2.tscn
+res://scenes/hookable_block.tscn
