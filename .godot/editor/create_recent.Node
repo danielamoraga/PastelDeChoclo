@@ -1,3 +1,10 @@
+PanelContainer
+Label
+VBoxContainer
+ScrollContainer
+Node2D
+RichTextLabel
+MarginContainer
 CollisionShape2D
 CollisionPolygon2D
 Area2D
@@ -6,10 +13,8 @@ RigidBody2D
 TileMap
 ParallaxLayer
 ParallaxBackground
-Node2D
 PointLight2D
 WorldEnvironment
-Label
 TextureRect
 Panel
 Sprite2D
@@ -21,12 +26,7 @@ Control
 HBoxContainer
 ProgressBar
 TextureProgressBar
-MarginContainer
 AudioStreamPlayer
 Node
 Button
-PanelContainer
 Camera2D
-HSlider
-CheckButton
-OptionButton

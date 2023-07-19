@@ -1,0 +1,118 @@
+[gd_scene load_steps=7 format=3 uid="uid://c6k5yijjjaodx"]
+
+[ext_resource type="Script" path="res://scroll_credits.gd" id="1_2cc7h"]
+[ext_resource type="Texture2D" uid="uid://cynne27juo05m" path="res://Diseño/Menu Background.png" id="2_u4wom"]
+[ext_resource type="FontFile" uid="uid://81p7b7pbndxb" path="res://Diseño/Fonts/fibberish.ttf" id="3_p8jkg"]
+[ext_resource type="Script" path="res://scenes/credits.gd" id="4_nkry7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iqkcs"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_vim8r"]
+blend_mode = 3
+
+[node name="Node2D" type="Node2D"]
+
+[node name="go back" type="MarginContainer" parent="."]
+offset_right = 125.0
+offset_bottom = 66.0
+script = ExtResource("1_2cc7h")
+
+[node name="Sprite2D" type="Sprite2D" parent="go back"]
+position = Vector2(896, 504)
+scale = Vector2(1.03704, 0.933334)
+texture = ExtResource("2_u4wom")
+
+[node name="PanelContainer" type="PanelContainer" parent="go back"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxEmpty_iqkcs")
+
+[node name="MarginContainer" type="MarginContainer" parent="go back/PanelContainer"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="go back/PanelContainer/MarginContainer"]
+self_modulate = Color(1, 1, 1, 0)
+material = SubResource("CanvasItemMaterial_vim8r")
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="Back" type="Button" parent="go back/PanelContainer/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_p8jkg")
+theme_override_font_sizes/font_size = 65
+text = "Back"
+
+[node name="ScrollContainer" type="PanelContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 270.0
+offset_right = 1519.0
+offset_bottom = 1007.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="."]
+offset_left = 272.0
+offset_top = 208.0
+offset_right = 1521.0
+offset_bottom = 728.0
+text = "Banana Bounce
+
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+hola
+
+"
+horizontal_alignment = 1
+script = ExtResource("4_nkry7")

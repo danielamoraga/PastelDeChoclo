@@ -12,17 +12,13 @@ func _on_win_zone_win():
 	var win_menu = load("res://scenes/win_menu.tscn").instantiate()
 	add_child(win_menu)
 	show()
-	#get_tree().paused = true
-	print("1")
-	if next_level.is_pressed():
-		get_tree().paused = false
-		print("2")
 	
 func _on_next_level_pressed():
 	get_tree().paused = false
-	get_tree().change_scene_to_file("res://scenes/level1.tscn")
+	#get_tree().change_scene_to_file("res://scenes/level1.tscn")
 	# siguientes niveles
-	#get_tree().change_scene_to_file("res://scenes/level1"+str(int(get_tree().current_scene_name)+1))+".tscn")
+	GlobalNextLevel.current_level += 1
+	get_tree().change_scene_to_file("res://scenes/level" + str(GlobalNextLevel.current_level) + ".tscn")
 	hide()
 
 func _on_main_menu_pressed():

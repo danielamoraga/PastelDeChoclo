@@ -19,6 +19,7 @@ config/icon="res://Diseño/Logo Itchio.png"
 
 GlobalSettings="*res://global_settings.gd"
 MainMenuMusicController="*res://MainMenuMusicController.tscn"
+GlobalNextLevel="*res://global_next_level.gd"
 
 [display]
 
