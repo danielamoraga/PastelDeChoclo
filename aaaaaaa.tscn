@@ -1,0 +1,60 @@
+[gd_scene load_steps=6 format=3 uid="uid://cm2io0ojp80fp"]
+
+[ext_resource type="Texture2D" uid="uid://cynne27juo05m" path="res://Diseño/Menu Background.png" id="1_1dhem"]
+[ext_resource type="FontFile" uid="uid://bpvouls2mpuf7" path="res://Diseño/Fonts/Chonkly.otf" id="2_22ix8"]
+[ext_resource type="Script" path="res://complete_game.gd" id="2_k6udb"]
+[ext_resource type="FontFile" uid="uid://81p7b7pbndxb" path="res://Diseño/Fonts/fibberish.ttf" id="3_opepw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tiagp"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(898, 545)
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("1_1dhem")
+
+[node name="MarginContainer" type="MarginContainer" parent="Sprite2D"]
+offset_left = -816.0
+offset_top = -495.0
+offset_right = 813.0
+offset_bottom = 421.0
+script = ExtResource("2_k6udb")
+
+[node name="PanelContainer2" type="PanelContainer" parent="Sprite2D/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxEmpty_tiagp")
+
+[node name="MarginContainer" type="MarginContainer" parent="Sprite2D/MarginContainer/PanelContainer2"]
+layout_mode = 2
+theme_override_constants/margin_left = 35
+theme_override_constants/margin_top = 35
+theme_override_constants/margin_right = 35
+theme_override_constants/margin_bottom = 35
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Sprite2D/MarginContainer/PanelContainer2/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Label" type="Label" parent="Sprite2D/MarginContainer/PanelContainer2/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.623529, 0.160784, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.898039, 0.411765, 0.12549, 1)
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("2_22ix8")
+theme_override_font_sizes/font_size = 60
+text = "You Win!
+Game Complete"
+horizontal_alignment = 1
+
+[node name="Main Menu" type="Button" parent="Sprite2D/MarginContainer/PanelContainer2/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_opepw")
+theme_override_font_sizes/font_size = 50
+text = "Main Menu"

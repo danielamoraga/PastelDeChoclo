@@ -1,5 +1,5 @@
 2a60927148abd1d33b818b535e306557
-::res://::1689845122
+::res://::1689851264
 export_presets.cfg::TextFile::-1::1688959220::0::1::::<><>::
 fps_label.gd::GDScript::-1::1689838801::0::1::::<>Label<>::
 fps_label.tscn::PackedScene::7905914018952563172::1686892294::0::1::::<><>::uid://bpvouls2mpuf7<>res://fps_label.gd
@@ -525,7 +525,7 @@ Hungarian Dance no. 5 (Brahms).mp3::AudioStreamMP3::7735394453381003347::1683948
 Solomon, HWV 67 (Handel, George Frideric).mp3::AudioStreamMP3::705695548757856574::1683948498::1682690033::1::::<><>::
 Symphony 40 Mozart.mp3::AudioStreamMP3::3088748457111251279::1683948498::1683948498::1::::<><>::
 Violin Concerto No. 1 in A minor (Bach).mp3::AudioStreamMP3::8658803064488866141::1683948499::1683948499::1::::<><>::
-::res://scenes/::1689845142
+::res://scenes/::1689851207
 AudioStreamPlayer2D.gd::GDScript::-1::1682690033::0::1::::<>AudioStreamPlayer2D<>::
 AudioStreamPlayer.gd::GDScript::-1::1689838801::0::1::::<>AudioStreamPlayer<>::
 background1.tscn::PackedScene::8899211475579459::1689666900::0::1::::<><>::uid://dxawaun5iu2gi<>uid://bpg2dnvna1t6r<>uid://cafv7xd4d0bwu
@@ -544,13 +544,13 @@ hookable_tronco2.tscn::PackedScene::2574366856801612450::1689832371::0::1::::<><
 hookable_tronco3.tscn::PackedScene::4857853213455596770::1689832371::0::1::::<><>::uid://0mqwg1m1fmew<>uid://bmfukh5g1ehb7
 hookable_tronco4.tscn::PackedScene::8789083670735867976::1689832371::0::1::::<><>::uid://0mqwg1m1fmew
 hookable_tronco5.tscn::PackedScene::5741131461388711555::1689832371::0::1::::<><>::uid://bmfukh5g1ehb7
-level1.tscn::PackedScene::1902534946036396071::1689845093::0::1::::<><>::uid://doujpbxt4h0j8<>uid://d1e4oiij42m7d<>uid://d0wwo6w7whc6d<>uid://hkj1hbq1qmxf<>uid://bok0iwn2e7hd2<>uid://h0yvgoywwqd1<>uid://b5208fp6rc1i8<>uid://c14f5oigvlwwt<>uid://1ecylkmnddqt<>res://scenes/AudioStreamPlayer.gd<>uid://dekd31bajp28u<>uid://dkvxipv1ai3jc<>uid://bdb8g3rypbcjm<>uid://5v5i3q5bxr78<>uid://bf4us40h865te<>uid://bftg8mwdahao2<>uid://ctqjo54awkvfm<>uid://ohimjra35urw<>uid://c7bvfdk8iuw4y<>uid://dxhq6odfowr17<>uid://476iogrsh0st<>uid://cn2bujodc58xb<>uid://bc4ced6s0fta2<>uid://k5g8wh1siqum
-level2.tscn::PackedScene::2794356260884726840::1689845093::0::1::::<><>::uid://doujpbxt4h0j8<>uid://h0yvgoywwqd1<>uid://d0wwo6w7whc6d<>uid://1ecylkmnddqt<>uid://bok0iwn2e7hd2<>uid://dekd31bajp28u<>uid://5v5i3q5bxr78<>uid://d1e4oiij42m7d<>uid://c14f5oigvlwwt<>uid://bdb8g3rypbcjm<>uid://bftg8mwdahao2<>uid://ctqjo54awkvfm<>uid://ohimjra35urw<>uid://c7bvfdk8iuw4y<>uid://476iogrsh0st<>uid://dxhq6odfowr17<>uid://cn2bujodc58xb<>uid://hkj1hbq1qmxf<>uid://b5208fp6rc1i8<>res://scenes/AudioStreamPlayer.gd<>uid://dkvxipv1ai3jc<>uid://bf4us40h865te<>uid://k5g8wh1siqum<>uid://bc4ced6s0fta2
-level3.tscn::PackedScene::3899868181834340501::1689845093::0::1::::<><>::uid://doujpbxt4h0j8<>uid://d0wwo6w7whc6d<>uid://bok0iwn2e7hd2<>uid://dekd31bajp28u<>uid://5v5i3q5bxr78<>uid://h0yvgoywwqd1<>uid://1ecylkmnddqt<>uid://d1e4oiij42m7d<>uid://c14f5oigvlwwt<>uid://bdb8g3rypbcjm<>uid://bftg8mwdahao2<>uid://ctqjo54awkvfm<>uid://ohimjra35urw<>uid://c7bvfdk8iuw4y<>uid://476iogrsh0st<>uid://hkj1hbq1qmxf<>uid://dxhq6odfowr17<>uid://cn2bujodc58xb<>uid://b5208fp6rc1i8<>res://scenes/AudioStreamPlayer.gd<>uid://dkvxipv1ai3jc<>uid://bf4us40h865te<>uid://pwi5hwoje1e4<>res://scenes/moving_platform.gd<>uid://k5g8wh1siqum<>uid://bc4ced6s0fta2
-main.tscn::PackedScene::7585343585327511825::1689845142::0::1::::<><>::uid://d0wwo6w7whc6d<>uid://doujpbxt4h0j8<>uid://b5208fp6rc1i8<>uid://bok0iwn2e7hd2<>uid://dekd31bajp28u<>uid://d1e4oiij42m7d<>uid://5v5i3q5bxr78<>res://scenes/AudioStreamPlayer.gd<>uid://h0yvgoywwqd1<>uid://1ecylkmnddqt<>uid://bf4us40h865te<>uid://dkvxipv1ai3jc<>uid://c14f5oigvlwwt<>uid://bdb8g3rypbcjm<>uid://bftg8mwdahao2<>uid://ctqjo54awkvfm<>uid://ohimjra35urw<>uid://c7bvfdk8iuw4y<>uid://476iogrsh0st<>uid://cn2bujodc58xb<>uid://dxhq6odfowr17<>res://scenes/Tutorial1.gd<>uid://bc4ced6s0fta2<>uid://81p7b7pbndxb<>res://scenes/Tutorial2.gd<>res://scenes/Tutorial3.gd<>uid://cq370viehwqvv<>res://scenes/Tutorial4.gd
+level1.tscn::PackedScene::1902534946036396071::1689851162::0::1::::<><>::uid://doujpbxt4h0j8<>uid://d1e4oiij42m7d<>uid://d0wwo6w7whc6d<>uid://hkj1hbq1qmxf<>uid://bok0iwn2e7hd2<>uid://h0yvgoywwqd1<>uid://b5208fp6rc1i8<>uid://c14f5oigvlwwt<>uid://1ecylkmnddqt<>res://scenes/AudioStreamPlayer.gd<>uid://dekd31bajp28u<>uid://dkvxipv1ai3jc<>uid://bdb8g3rypbcjm<>uid://5v5i3q5bxr78<>uid://bf4us40h865te<>uid://bftg8mwdahao2<>uid://ctqjo54awkvfm<>uid://ohimjra35urw<>uid://c7bvfdk8iuw4y<>uid://dxhq6odfowr17<>uid://476iogrsh0st<>uid://cn2bujodc58xb<>uid://bc4ced6s0fta2<>uid://k5g8wh1siqum
+level2.tscn::PackedScene::2794356260884726840::1689851163::0::1::::<><>::uid://doujpbxt4h0j8<>uid://h0yvgoywwqd1<>uid://d0wwo6w7whc6d<>uid://1ecylkmnddqt<>uid://bok0iwn2e7hd2<>uid://dekd31bajp28u<>uid://5v5i3q5bxr78<>uid://d1e4oiij42m7d<>uid://c14f5oigvlwwt<>uid://bdb8g3rypbcjm<>uid://bftg8mwdahao2<>uid://ctqjo54awkvfm<>uid://ohimjra35urw<>uid://c7bvfdk8iuw4y<>uid://476iogrsh0st<>uid://dxhq6odfowr17<>uid://cn2bujodc58xb<>uid://hkj1hbq1qmxf<>uid://b5208fp6rc1i8<>res://scenes/AudioStreamPlayer.gd<>uid://dkvxipv1ai3jc<>uid://bf4us40h865te<>uid://k5g8wh1siqum<>uid://bc4ced6s0fta2
+level3.tscn::PackedScene::3899868181834340501::1689851162::0::1::::<><>::uid://doujpbxt4h0j8<>uid://d0wwo6w7whc6d<>uid://bok0iwn2e7hd2<>uid://dekd31bajp28u<>uid://5v5i3q5bxr78<>uid://h0yvgoywwqd1<>uid://1ecylkmnddqt<>uid://d1e4oiij42m7d<>uid://c14f5oigvlwwt<>uid://bdb8g3rypbcjm<>uid://bftg8mwdahao2<>uid://ctqjo54awkvfm<>uid://ohimjra35urw<>uid://c7bvfdk8iuw4y<>uid://476iogrsh0st<>uid://hkj1hbq1qmxf<>uid://dxhq6odfowr17<>uid://cn2bujodc58xb<>uid://b5208fp6rc1i8<>res://scenes/AudioStreamPlayer.gd<>uid://dkvxipv1ai3jc<>uid://bf4us40h865te<>uid://pwi5hwoje1e4<>res://scenes/moving_platform.gd<>uid://k5g8wh1siqum<>uid://bc4ced6s0fta2
+main.tscn::PackedScene::7585343585327511825::1689851161::0::1::::<><>::uid://d0wwo6w7whc6d<>uid://doujpbxt4h0j8<>uid://b5208fp6rc1i8<>uid://bok0iwn2e7hd2<>uid://dekd31bajp28u<>uid://d1e4oiij42m7d<>uid://5v5i3q5bxr78<>res://scenes/AudioStreamPlayer.gd<>uid://h0yvgoywwqd1<>uid://1ecylkmnddqt<>uid://bf4us40h865te<>uid://dkvxipv1ai3jc<>uid://c14f5oigvlwwt<>uid://bdb8g3rypbcjm<>uid://bftg8mwdahao2<>uid://ctqjo54awkvfm<>uid://ohimjra35urw<>uid://c7bvfdk8iuw4y<>uid://476iogrsh0st<>uid://cn2bujodc58xb<>uid://dxhq6odfowr17<>res://scenes/Tutorial1.gd<>uid://bc4ced6s0fta2<>uid://81p7b7pbndxb<>res://scenes/Tutorial2.gd<>res://scenes/Tutorial3.gd<>uid://cq370viehwqvv<>res://scenes/Tutorial4.gd
 menu music.tscn::PackedScene::6460266331224397579::1687075968::0::1::::<><>::uid://bnbywajfaycpi
 menu.gd::GDScript::-1::1689838801::0::1::::<>MarginContainer<>::
-menu.tscn::PackedScene::5934976567708442679::1689763573::0::1::::<><>::res://scenes/menu.gd<>uid://dgcnrayjs7jqn<>uid://cynne27juo05m<>res://scenes/PointLights.gd<>uid://bpvouls2mpuf7<>uid://81p7b7pbndxb
+menu.tscn::PackedScene::5934976567708442679::1689851162::0::1::::<><>::res://scenes/menu.gd<>uid://dgcnrayjs7jqn<>uid://cynne27juo05m<>res://scenes/PointLights.gd<>uid://bpvouls2mpuf7<>uid://81p7b7pbndxb
 moving_cloud.tscn::PackedScene::1098788677216537981::1689832371::0::1::::<><>::uid://jts7ickjhr3i
 moving_platform.gd::GDScript::-1::1689838801::0::1::::<>Node2D<>::
 pause_menu.gd::GDScript::-1::1689838801::0::1::::<>MarginContainer<>::
@@ -561,7 +561,6 @@ PointLight.gd::GDScript::-1::1689838801::0::1::::<>PointLight2D<>::
 PointLights.gd::GDScript::-1::1689838801::0::1::::<>Node2D<>::
 reload_caida.gd::GDScript::-1::1689838801::0::1::::<>Area2D<>::
 reload_caida.tscn::PackedScene::764244169690620244::1689667299::0::1::::<><>::res://scenes/reload_caida.gd
-win_game_complete.tscn::PackedScene::6009991412730923664::1689845178::0::1::::<><>::res://scenes/win_menu.gd<>uid://bpvouls2mpuf7<>uid://81p7b7pbndxb
 Settings.gd::GDScript::-1::1689838801::0::1::::<>MarginContainer<>::
 Settings.tscn::PackedScene::5226161845740687548::1689763573::0::1::::<><>::uid://bpvouls2mpuf7<>res://scenes/Settings.gd<>uid://81p7b7pbndxb<>uid://cynne27juo05m
 Spikes.gd::GDScript::-1::1689838801::0::1::::<>StaticBody2D<>::
@@ -572,5 +571,7 @@ Tutorial3.gd::GDScript::-1::1689842651::0::1::::<>Node2D<>::
 Tutorial4.gd::GDScript::-1::1689843761::0::1::::<>Node2D<>::
 win.gd::GDScript::-1::1689838801::0::1::::<>Area2D<>::
 win_area.tscn::PackedScene::2798479903057279274::1689845093::0::1::::<><>::res://scenes/win.gd<>uid://i1kandsu4y3f
-win_menu.gd::GDScript::-1::1689844650::0::1::::<>MarginContainer<>::
-win_menu.tscn::PackedScene::615792428921175877::1689845093::0::1::::<><>::res://scenes/win_menu.gd<>uid://bpvouls2mpuf7<>uid://81p7b7pbndxb
+win_game_complete.gd::GDScript::-1::1689846774::0::1::::<>MarginContainer<>::
+win_game_complete.tscn::PackedScene::6009991412730923664::1689851161::0::1::::<><>::res://scenes/win_game_complete.gd<>uid://bpvouls2mpuf7<>uid://cynne27juo05m<>uid://81p7b7pbndxb
+win_menu.gd::GDScript::-1::1689850518::0::1::::<>MarginContainer<>::
+win_menu.tscn::PackedScene::615792428921175877::1689851207::0::1::::<><>::res://scenes/win_menu.gd<>uid://bpvouls2mpuf7<>uid://81p7b7pbndxb<>res://scenes/win_game_complete.gd<>uid://cynne27juo05m

@@ -6149,7 +6149,7 @@ position = Vector2(836, -27)
 position = Vector2(1102, -36)
 
 [node name="win_zone" parent="." instance=ExtResource("9_8j8vn")]
-position = Vector2(768, 1010)
+position = Vector2(3639, 1032)
 
 [node name="caidaVacio" parent="." instance=ExtResource("24_u2du8")]
 position = Vector2(-215, 1376)

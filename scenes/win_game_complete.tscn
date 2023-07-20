@@ -1,9 +1,24 @@
-[gd_scene load_steps=6 format=3 uid="uid://crvjxewitf665"]
+[gd_scene load_steps=6 format=3 uid="uid://c6oyvsqdp06q3"]
 
-[ext_resource type="Script" path="res://scenes/win_game_complete.gd" id="1_goq2e"]
 [ext_resource type="FontFile" uid="uid://bpvouls2mpuf7" path="res://Diseño/Fonts/Chonkly.otf" id="2_crlmh"]
 [ext_resource type="Texture2D" uid="uid://cynne27juo05m" path="res://Diseño/Menu Background.png" id="2_fjdjh"]
 [ext_resource type="FontFile" uid="uid://81p7b7pbndxb" path="res://Diseño/Fonts/fibberish.ttf" id="3_u4b8v"]
+
+[sub_resource type="GDScript" id="GDScript_5ygqx"]
+script/source = "extends MarginContainer
+
+@onready var main_menu = %\"Main Menu\"
+
+func _ready():
+	main_menu.pressed.connect(_on_main_menu_pressed)
+	hide()
+	
+func _on_main_menu_pressed():
+	MainMenuMusicController.play_music()
+	get_tree().change_scene_to_file(\"res://scenes/menu.tscn\")
+	get_tree().paused = false
+	
+"
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gc84l"]
 
@@ -18,7 +33,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-script = ExtResource("1_goq2e")
+script = SubResource("GDScript_5ygqx")
 metadata/_edit_lock_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

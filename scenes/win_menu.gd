@@ -15,11 +15,9 @@ func _on_win_zone_win():
 	
 func _on_next_level_pressed():
 	get_tree().paused = false
-	#get_tree().change_scene_to_file("res://scenes/level1.tscn")
+	
 	# siguientes niveles
 	GlobalNextLevel.current_level += 1
-	#get_tree().change_scene_to_file("res://scenes/level" + str(GlobalNextLevel.current_level) + ".tscn")
-	#hide()
 	
 	# Construct the path to the next level scene
 	var next_level_path = "res://scenes/level" + str(GlobalNextLevel.current_level) + ".tscn"
@@ -30,9 +28,9 @@ func _on_next_level_pressed():
 		# If the scene file exists, load it
 		get_tree().change_scene_to_file(next_level_path)
 	else:
-		get_tree().change_scene_to_file("res://scenes/win_game_complete.tscn")
+		get_tree().change_scene_to_file("res://aaaaaaa.tscn")
 		show()
-	
+
 	# Hide this scene (assuming this script is attached to the current scene)
 	hide()
 	

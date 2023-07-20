@@ -3,7 +3,6 @@ extends MarginContainer
 @onready var resume = %Resume
 @onready var main_menu = %"Main Menu"
 
-
 func _ready():
 	resume.pressed.connect(_on_resume_pressed)
 	main_menu.pressed.connect(_on_main_menu_pressed)
@@ -22,3 +21,4 @@ func _on_main_menu_pressed():
 	MainMenuMusicController.play_music()
 	get_tree().change_scene_to_file("res://scenes/menu.tscn")
 	get_tree().paused = false
+	GlobalNextLevel.current_level = 0

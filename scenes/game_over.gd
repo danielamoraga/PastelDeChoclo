@@ -24,6 +24,7 @@ func _on_main_menu_pressed():
 	MainMenuMusicController.play_music()
 	get_tree().change_scene_to_file("res://scenes/menu.tscn")
 	get_tree().paused = false
+	GlobalNextLevel.current_level = 0
 	
 func _on_exit_pressed():
 	get_tree().quit()
