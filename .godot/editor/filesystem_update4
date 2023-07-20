@@ -12,3 +12,4 @@ res://aaaaaaa.tscn
 res://complete_game.gd
 res://scenes/game_over.gd
 res://scenes/pause_menu.gd
+res://scenes/credits.tscn
