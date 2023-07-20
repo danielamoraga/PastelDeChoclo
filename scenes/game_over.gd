@@ -19,6 +19,7 @@ func _on_life_change():
 	
 func _on_restart_pressed():
 	get_tree().reload_current_scene()
+	get_tree().paused = false
 		
 func _on_main_menu_pressed():
 	MainMenuMusicController.play_music()

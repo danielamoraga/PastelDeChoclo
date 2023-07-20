@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://dvaa7q26wv5s8"]
+
+[ext_resource type="Texture2D" uid="uid://b3uuirg25ii8v" path="res://assets/darkpine_sprites/individual_sprites/logs & branches/logs/logs_medium/log_medium_straight_sidebranch.png" id="1_683a3"]
+[ext_resource type="Texture2D" uid="uid://cel3bm34lbf6q" path="res://assets/darkpine_sprites/individual_sprites/logs & branches/logs/logs_medium/log_medium_stump.png" id="2_x2yci"]
+[ext_resource type="Texture2D" uid="uid://0mqwg1m1fmew" path="res://assets/darkpine_sprites/individual_sprites/logs & branches/logs/logs_medium/log_medium_angle.png" id="3_ui7e3"]
+[ext_resource type="Texture2D" uid="uid://bmfukh5g1ehb7" path="res://assets/darkpine_sprites/individual_sprites/logs & branches/logs/logs_medium/log_medium_straight.png" id="4_ijn1t"]
+
+[node name="HookableBlock2" type="StaticBody2D" groups=["Hookable"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 1.5708
+texture = ExtResource("1_683a3")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(-16, 0)
+rotation = 1.5708
+texture = ExtResource("2_x2yci")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(16, 0)
+rotation = -1.5708
+texture = ExtResource("1_683a3")
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+position = Vector2(48, 0)
+rotation = 1.5708
+texture = ExtResource("3_ui7e3")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(48, -16)
+rotation = -3.14159
+texture = ExtResource("2_x2yci")
+
+[node name="Sprite2D7" type="Sprite2D" parent="."]
+position = Vector2(32, 0)
+rotation = 1.5708
+texture = ExtResource("4_ijn1t")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+visible = false
+polygon = PackedVector2Array(42, -24, 45, -20, 45, -4, -20, -4, -24, -5, -23, 5, -21, 4, 49, 4, 51, 0, 51, -20, 53, -24)

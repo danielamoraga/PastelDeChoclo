@@ -1,16 +1,16 @@
+AnimationPlayer
+Node2D
 Button
 Label
 VBoxContainer
 MarginContainer
 PanelContainer
 Sprite2D
-Node2D
 ColorRect
 CollisionShape2D
 Area2D
 Control
 RichTextLabel
-AnimationPlayer
 CharacterBody2D
 ScrollContainer
 CollisionPolygon2D
@@ -30,4 +30,3 @@ CenterContainer
 HBoxContainer
 ProgressBar
 TextureProgressBar
-AudioStreamPlayer
