@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0ns1nn3efm7a"
-path="res://.godot/imported/unavoidable_spikes_just_roller_05.png-b694217f1a393e122fe3fe25962a819c.ctex"
+uid="uid://cq370viehwqvv"
+path="res://.godot/imported/sign-1.png-98c205dbaacd3efb0ca860d03a1bf37d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/animated_spikes/pngs/unavoidable_roller/unavoidable_spikes_just_roller_05.png"
-dest_files=["res://.godot/imported/unavoidable_spikes_just_roller_05.png-b694217f1a393e122fe3fe25962a819c.ctex"]
+source_file="res://assets/Sunny-land-assets-files/edited/sign-1.png"
+dest_files=["res://.godot/imported/sign-1.png-98c205dbaacd3efb0ca860d03a1bf37d.ctex"]
 
 [params]
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://dgcnrayjs7jqn"]
+[gd_scene load_steps=39 format=3 uid="uid://dgcnrayjs7jqn"]
 
 [ext_resource type="Texture2D" uid="uid://d0wwo6w7whc6d" path="res://Diseño/tileset.png" id="1_2kw6x"]
 [ext_resource type="PackedScene" uid="uid://doujpbxt4h0j8" path="res://scenes/background3.tscn" id="1_3hyle"]
@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://cn2bujodc58xb" path="res://scenes/hookable_tronco5.tscn" id="16_62pfg"]
 [ext_resource type="PackedScene" uid="uid://dxhq6odfowr17" path="res://scenes/hookable_tronco4.tscn" id="17_ms1i7"]
 [ext_resource type="PackedScene" uid="uid://bc4ced6s0fta2" path="res://scenes/banana_2d.tscn" id="19_8n6vd"]
+[ext_resource type="Texture2D" uid="uid://cq370viehwqvv" path="res://assets/Sunny-land-assets-files/edited/sign-1.png" id="23_k3pth"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rd052"]
 texture = ExtResource("1_2kw6x")
@@ -6078,6 +6079,14 @@ position = Vector2(1837.5, 646)
 [node name="HookableBlock7" parent="blocks" instance=ExtResource("17_ms1i7")]
 position = Vector2(2593, 616.1)
 rotation = 1.5708
+
+[node name="Tutorial" type="Node2D" parent="."]
+position = Vector2(291, 754)
+
+[node name="Sign-1" type="Sprite2D" parent="Tutorial"]
+position = Vector2(685, 303)
+scale = Vector2(5, 5)
+texture = ExtResource("23_k3pth")
 
 [node name="Player" parent="." instance=ExtResource("1_e8mkt")]
 position = Vector2(291, 754)

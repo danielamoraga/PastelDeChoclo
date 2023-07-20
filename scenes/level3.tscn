@@ -6465,6 +6465,37 @@ rotation = 3.14159
 position = Vector2(5295, 97.0003)
 rotation = -1.98968
 
+[node name="moving_platform" type="Node2D" parent="."]
+position = Vector2(1308, -7)
+scale = Vector2(5.16426, 5.35263)
+script = ExtResource("22_mmdhe")
+
+[node name="moving_cloud0" parent="moving_platform" instance=ExtResource("22_b2o2h")]
+position = Vector2(639.976, -47.2665)
+
+[node name="moving_cloud1" parent="moving_platform" instance=ExtResource("22_b2o2h")]
+position = Vector2(839.23, -280.797)
+
+[node name="moving_cloud2" parent="moving_platform" instance=ExtResource("22_b2o2h")]
+position = Vector2(304.013, -132.832)
+
+[node name="moving_cloud3" parent="moving_platform" instance=ExtResource("22_b2o2h")]
+position = Vector2(231.011, -67.4435)
+
+[node name="moving_cloud4" parent="moving_platform" instance=ExtResource("22_b2o2h")]
+position = Vector2(525.729, -269.4)
+
+[node name="moving_cloud5" parent="moving_platform" instance=ExtResource("22_b2o2h")]
+position = Vector2(259.282, -269.4)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="moving_platform"]
+libraries = {
+"": SubResource("AnimationLibrary_xdxqh")
+}
+
+[node name="Player" parent="." instance=ExtResource("19_yrsdt")]
+position = Vector2(221, 652)
+
 [node name="Platanos" type="Node2D" parent="."]
 position = Vector2(1344, 1078)
 
@@ -6551,37 +6582,6 @@ position = Vector2(3733, -3077)
 
 [node name="Banana2D14" parent="Platanos" instance=ExtResource("25_87rsb")]
 position = Vector2(4062, -3069)
-
-[node name="moving_platform" type="Node2D" parent="."]
-position = Vector2(1308, -7)
-scale = Vector2(5.16426, 5.35263)
-script = ExtResource("22_mmdhe")
-
-[node name="moving_cloud0" parent="moving_platform" instance=ExtResource("22_b2o2h")]
-position = Vector2(639.976, -47.2665)
-
-[node name="moving_cloud1" parent="moving_platform" instance=ExtResource("22_b2o2h")]
-position = Vector2(839.23, -280.797)
-
-[node name="moving_cloud2" parent="moving_platform" instance=ExtResource("22_b2o2h")]
-position = Vector2(304.013, -132.832)
-
-[node name="moving_cloud3" parent="moving_platform" instance=ExtResource("22_b2o2h")]
-position = Vector2(231.011, -67.4435)
-
-[node name="moving_cloud4" parent="moving_platform" instance=ExtResource("22_b2o2h")]
-position = Vector2(525.729, -269.4)
-
-[node name="moving_cloud5" parent="moving_platform" instance=ExtResource("22_b2o2h")]
-position = Vector2(259.282, -269.4)
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="moving_platform"]
-libraries = {
-"": SubResource("AnimationLibrary_xdxqh")
-}
-
-[node name="Player" parent="." instance=ExtResource("19_yrsdt")]
-position = Vector2(221, 652)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 volume_db = -25.316

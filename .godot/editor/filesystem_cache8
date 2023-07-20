@@ -1,5 +1,5 @@
 2a60927148abd1d33b818b535e306557
-::res://::1689833415
+::res://::1689836320
 export_presets.cfg::TextFile::-1::1688959220::0::1::::<><>::
 fps_label.gd::GDScript::-1::1684964435::0::1::::<>Label<>::
 fps_label.tscn::PackedScene::7905914018952563172::1686892294::0::1::::<><>::uid://bpvouls2mpuf7<>res://fps_label.gd
@@ -13,40 +13,11 @@ MainMenuMusicController.tscn::PackedScene::8618125689634764609::1683948498::0::1
 README.md::TextFile::-1::1680652428::0::1::::<><>::
 scroll_credits.gd::GDScript::-1::1689761716::0::1::::<>MarginContainer<>::
 static_body_2d.tscn::PackedScene::5452006668427936074::1682177729::0::1::::<><>::
-::res://assets/::1688107835
+::res://assets/::1689836247
 empty_heart.png::CompressedTexture2D::5683977703844133637::1684964435::1684960372::1::::<><>::
 full_heart.png::CompressedTexture2D::9180209628692300226::1684964435::1684960372::1::::<><>::
 half_heart.png::CompressedTexture2D::1778793393771662343::1684964435::1684960372::1::::<><>::
 tail_texture.png::CompressedTexture2D::1422475911076423824::1687162516::1687162528::1::::<><>::
-::res://assets/animated_spikes/::1687122117
-animated rotating sprite trap.svg::CompressedTexture2D::6739276614696050358::1505250918::1687122117::1::::<><>::
-::res://assets/animated_spikes/pngs/::1687122114
-horizontal_axle.png::CompressedTexture2D::8897490926456620825::1505250870::1687122114::1::::<><>::
-horizontal_base.png::CompressedTexture2D::9103237562124788564::1505250904::1687122114::1::::<><>::
-vertical_axle.png::CompressedTexture2D::7898008117783798894::1505250860::1687122114::1::::<><>::
-vertical_base.png::CompressedTexture2D::2454902912524312994::1505250890::1687122114::1::::<><>::
-::res://assets/animated_spikes/pngs/avoidable_roller/::1687122115
-avoidable_spike_roller_just_roller_01.png::CompressedTexture2D::7803643424276903939::1505250816::1687122114::1::::<><>::
-avoidable_spike_roller_just_roller_02.png::CompressedTexture2D::7712220391219666160::1505250818::1687122114::1::::<><>::
-avoidable_spike_roller_just_roller_03.png::CompressedTexture2D::5817255288385140947::1505250820::1687122115::1::::<><>::
-avoidable_spike_roller_just_roller_04.png::CompressedTexture2D::4353824688844162717::1505250822::1687122115::1::::<><>::
-avoidable_spike_roller_just_roller_05.png::CompressedTexture2D::5214447298239661849::1505250824::1687122115::1::::<><>::
-avoidable_spike_roller_just_roller_06.png::CompressedTexture2D::7413791320837133896::1505250828::1687122115::1::::<><>::
-avoidable_spike_roller_just_roller_07.png::CompressedTexture2D::7227470117032839346::1505250830::1687122115::1::::<><>::
-avoidable_spike_roller_just_roller_08.png::CompressedTexture2D::3701929614169362227::1505250832::1687122115::1::::<><>::
-avoidable_spike_roller_just_roller_09.png::CompressedTexture2D::5270130737905456760::1505250834::1687122115::1::::<><>::
-avoidable_spike_roller_just_roller_10.png::CompressedTexture2D::2586166026633449495::1505250836::1687122115::1::::<><>::
-::res://assets/animated_spikes/pngs/unavoidable_roller/::1687122115
-unavoidable_spikes_just_roller_01.png::CompressedTexture2D::6811447341163210044::1505250790::1687122115::1::::<><>::
-unavoidable_spikes_just_roller_02.png::CompressedTexture2D::3043356387389903653::1505250792::1687122115::1::::<><>::
-unavoidable_spikes_just_roller_03.png::CompressedTexture2D::3384471168508731124::1505250794::1687122115::1::::<><>::
-unavoidable_spikes_just_roller_04.png::CompressedTexture2D::5155657997933788842::1505250796::1687122114::1::::<><>::
-unavoidable_spikes_just_roller_05.png::CompressedTexture2D::1782698042428668312::1505250798::1687122114::1::::<><>::
-unavoidable_spikes_just_roller_06.png::CompressedTexture2D::9130256854578180613::1505250802::1687122114::1::::<><>::
-unavoidable_spikes_just_roller_07.png::CompressedTexture2D::4021791054908331755::1505250804::1687122114::1::::<><>::
-unavoidable_spikes_just_roller_08.png::CompressedTexture2D::8790186643349451063::1505250810::1687122114::1::::<><>::
-unavoidable_spikes_just_roller_09.png::CompressedTexture2D::5687822635177992027::1505250812::1687122114::1::::<><>::
-unavoidable_spikes_just_roller_10.png::CompressedTexture2D::5101401871675356519::1505250814::1687122114::1::::<><>::
 ::res://assets/banana/::1686905777
 banana.png::CompressedTexture2D::7037357684950230916::1686882507::1686905777::1::::<><>::
 ::res://assets/Clouds V2/::1689767271
@@ -283,7 +254,7 @@ Run 4.png::CompressedTexture2D::1583400786211088153::1681749367::1681749367::1::
 Sit 1.png::CompressedTexture2D::53050309308417014::1681749367::1681749367::1::::<><>::
 Sit 2.png::CompressedTexture2D::6256232191596590623::1681749367::1681749367::1::::<><>::
 Sit 3.png::CompressedTexture2D::8452083034188144374::1681749367::1681749367::1::::<><>::
-::res://assets/Sunny-land-assets-files/::1688107835
+::res://assets/Sunny-land-assets-files/::1689836264
 public-license.txt::TextFile::-1::1680652428::0::1::::<><>::
 ::res://assets/Sunny-land-assets-files/code/::1688107835
 ::res://assets/Sunny-land-assets-files/code/sunny-land/::1686762927
@@ -308,6 +279,8 @@ instructions.png::CompressedTexture2D::7339412256145475029::1680652428::16806524
 loading.png::CompressedTexture2D::1861603638015555217::1680652428::1680652428::1::::<><>::
 press-enter-text.png::CompressedTexture2D::6805420581303122636::1680652428::1680652428::1::::<><>::
 title-screen.png::CompressedTexture2D::5676785597346345986::1680652428::1680652428::1::::<><>::
+::res://assets/Sunny-land-assets-files/edited/::1689836264
+sign-1.png::CompressedTexture2D::5955654146865311551::1689836070::1689836321::1::::<><>::
 ::res://assets/Sunny-land-assets-files/GIF/::1686762997
 ::res://assets/Sunny-land-assets-files/GIF/sprites/::1686762997
 ::res://assets/Sunny-land-assets-files/GIF/sprites/eagle/::1680652428
@@ -552,7 +525,7 @@ Hungarian Dance no. 5 (Brahms).mp3::AudioStreamMP3::7735394453381003347::1683948
 Solomon, HWV 67 (Handel, George Frideric).mp3::AudioStreamMP3::705695548757856574::1683948498::1682690033::1::::<><>::
 Symphony 40 Mozart.mp3::AudioStreamMP3::3088748457111251279::1683948498::1683948498::1::::<><>::
 Violin Concerto No. 1 in A minor (Bach).mp3::AudioStreamMP3::8658803064488866141::1683948499::1683948499::1::::<><>::
-::res://scenes/::1689833339
+::res://scenes/::1689835920
 AudioStreamPlayer2D.gd::GDScript::-1::1682690033::0::1::::<>AudioStreamPlayer2D<>::
 AudioStreamPlayer.gd::GDScript::-1::1683948499::0::1::::<>AudioStreamPlayer<>::
 background1.tscn::PackedScene::8899211475579459::1689666900::0::1::::<><>::uid://dxawaun5iu2gi<>uid://bpg2dnvna1t6r<>uid://cafv7xd4d0bwu
@@ -571,10 +544,10 @@ hookable_tronco2.tscn::PackedScene::2574366856801612450::1689832371::0::1::::<><
 hookable_tronco3.tscn::PackedScene::4857853213455596770::1689832371::0::1::::<><>::uid://0mqwg1m1fmew<>uid://bmfukh5g1ehb7
 hookable_tronco4.tscn::PackedScene::8789083670735867976::1689832371::0::1::::<><>::uid://0mqwg1m1fmew
 hookable_tronco5.tscn::PackedScene::5741131461388711555::1689832371::0::1::::<><>::uid://bmfukh5g1ehb7
-level1.tscn::PackedScene::1902534946036396071::1689832996::0::1::::<><>::uid://doujpbxt4h0j8<>uid://d1e4oiij42m7d<>uid://d0wwo6w7whc6d<>uid://hkj1hbq1qmxf<>uid://bok0iwn2e7hd2<>uid://h0yvgoywwqd1<>uid://b5208fp6rc1i8<>uid://c14f5oigvlwwt<>uid://1ecylkmnddqt<>res://scenes/AudioStreamPlayer.gd<>uid://dekd31bajp28u<>uid://dkvxipv1ai3jc<>uid://bdb8g3rypbcjm<>uid://5v5i3q5bxr78<>uid://bf4us40h865te<>uid://bftg8mwdahao2<>uid://ctqjo54awkvfm<>uid://ohimjra35urw<>uid://c7bvfdk8iuw4y<>uid://dxhq6odfowr17<>uid://476iogrsh0st<>uid://cn2bujodc58xb<>uid://bc4ced6s0fta2<>uid://k5g8wh1siqum
-level2.tscn::PackedScene::2794356260884726840::1689832585::0::1::::<><>::uid://doujpbxt4h0j8<>uid://h0yvgoywwqd1<>uid://d0wwo6w7whc6d<>uid://1ecylkmnddqt<>uid://bok0iwn2e7hd2<>uid://dekd31bajp28u<>uid://5v5i3q5bxr78<>uid://d1e4oiij42m7d<>uid://c14f5oigvlwwt<>uid://bdb8g3rypbcjm<>uid://bftg8mwdahao2<>uid://ctqjo54awkvfm<>uid://ohimjra35urw<>uid://c7bvfdk8iuw4y<>uid://476iogrsh0st<>uid://dxhq6odfowr17<>uid://cn2bujodc58xb<>uid://hkj1hbq1qmxf<>uid://b5208fp6rc1i8<>res://scenes/AudioStreamPlayer.gd<>uid://dkvxipv1ai3jc<>uid://bf4us40h865te<>uid://k5g8wh1siqum<>uid://bc4ced6s0fta2
-level3.tscn::PackedScene::3899868181834340501::1689832805::0::1::::<><>::uid://doujpbxt4h0j8<>uid://d0wwo6w7whc6d<>uid://bok0iwn2e7hd2<>uid://dekd31bajp28u<>uid://5v5i3q5bxr78<>uid://h0yvgoywwqd1<>uid://1ecylkmnddqt<>uid://d1e4oiij42m7d<>uid://c14f5oigvlwwt<>uid://bdb8g3rypbcjm<>uid://bftg8mwdahao2<>uid://ctqjo54awkvfm<>uid://ohimjra35urw<>uid://c7bvfdk8iuw4y<>uid://476iogrsh0st<>uid://hkj1hbq1qmxf<>uid://dxhq6odfowr17<>uid://cn2bujodc58xb<>uid://b5208fp6rc1i8<>res://scenes/AudioStreamPlayer.gd<>uid://dkvxipv1ai3jc<>uid://bf4us40h865te<>uid://pwi5hwoje1e4<>res://scenes/moving_platform.gd<>uid://k5g8wh1siqum<>uid://bc4ced6s0fta2
-main.tscn::PackedScene::7585343585327511825::1689833339::0::1::::<><>::uid://d0wwo6w7whc6d<>uid://doujpbxt4h0j8<>uid://b5208fp6rc1i8<>uid://bok0iwn2e7hd2<>uid://dekd31bajp28u<>uid://d1e4oiij42m7d<>uid://5v5i3q5bxr78<>res://scenes/AudioStreamPlayer.gd<>uid://h0yvgoywwqd1<>uid://1ecylkmnddqt<>uid://bf4us40h865te<>uid://dkvxipv1ai3jc<>uid://c14f5oigvlwwt<>uid://bdb8g3rypbcjm<>uid://bftg8mwdahao2<>uid://ctqjo54awkvfm<>uid://ohimjra35urw<>uid://c7bvfdk8iuw4y<>uid://476iogrsh0st
+level1.tscn::PackedScene::1902534946036396071::1689833586::0::1::::<><>::uid://doujpbxt4h0j8<>uid://d1e4oiij42m7d<>uid://d0wwo6w7whc6d<>uid://hkj1hbq1qmxf<>uid://bok0iwn2e7hd2<>uid://h0yvgoywwqd1<>uid://b5208fp6rc1i8<>uid://c14f5oigvlwwt<>uid://1ecylkmnddqt<>res://scenes/AudioStreamPlayer.gd<>uid://dekd31bajp28u<>uid://dkvxipv1ai3jc<>uid://bdb8g3rypbcjm<>uid://5v5i3q5bxr78<>uid://bf4us40h865te<>uid://bftg8mwdahao2<>uid://ctqjo54awkvfm<>uid://ohimjra35urw<>uid://c7bvfdk8iuw4y<>uid://dxhq6odfowr17<>uid://476iogrsh0st<>uid://cn2bujodc58xb<>uid://bc4ced6s0fta2<>uid://k5g8wh1siqum
+level2.tscn::PackedScene::2794356260884726840::1689835909::0::1::::<><>::uid://doujpbxt4h0j8<>uid://h0yvgoywwqd1<>uid://d0wwo6w7whc6d<>uid://1ecylkmnddqt<>uid://bok0iwn2e7hd2<>uid://dekd31bajp28u<>uid://5v5i3q5bxr78<>uid://d1e4oiij42m7d<>uid://c14f5oigvlwwt<>uid://bdb8g3rypbcjm<>uid://bftg8mwdahao2<>uid://ctqjo54awkvfm<>uid://ohimjra35urw<>uid://c7bvfdk8iuw4y<>uid://476iogrsh0st<>uid://dxhq6odfowr17<>uid://cn2bujodc58xb<>uid://hkj1hbq1qmxf<>uid://b5208fp6rc1i8<>res://scenes/AudioStreamPlayer.gd<>uid://dkvxipv1ai3jc<>uid://bf4us40h865te<>uid://k5g8wh1siqum<>uid://bc4ced6s0fta2
+level3.tscn::PackedScene::3899868181834340501::1689833589::0::1::::<><>::uid://doujpbxt4h0j8<>uid://d0wwo6w7whc6d<>uid://bok0iwn2e7hd2<>uid://dekd31bajp28u<>uid://5v5i3q5bxr78<>uid://h0yvgoywwqd1<>uid://1ecylkmnddqt<>uid://d1e4oiij42m7d<>uid://c14f5oigvlwwt<>uid://bdb8g3rypbcjm<>uid://bftg8mwdahao2<>uid://ctqjo54awkvfm<>uid://ohimjra35urw<>uid://c7bvfdk8iuw4y<>uid://476iogrsh0st<>uid://hkj1hbq1qmxf<>uid://dxhq6odfowr17<>uid://cn2bujodc58xb<>uid://b5208fp6rc1i8<>res://scenes/AudioStreamPlayer.gd<>uid://dkvxipv1ai3jc<>uid://bf4us40h865te<>uid://pwi5hwoje1e4<>res://scenes/moving_platform.gd<>uid://k5g8wh1siqum<>uid://bc4ced6s0fta2
+main.tscn::PackedScene::7585343585327511825::1689835920::0::1::::<><>::uid://d0wwo6w7whc6d<>uid://doujpbxt4h0j8<>uid://b5208fp6rc1i8<>uid://bok0iwn2e7hd2<>uid://dekd31bajp28u<>uid://d1e4oiij42m7d<>uid://5v5i3q5bxr78<>res://scenes/AudioStreamPlayer.gd<>uid://h0yvgoywwqd1<>uid://1ecylkmnddqt<>uid://bf4us40h865te<>uid://dkvxipv1ai3jc<>uid://c14f5oigvlwwt<>uid://bdb8g3rypbcjm<>uid://bftg8mwdahao2<>uid://ctqjo54awkvfm<>uid://ohimjra35urw<>uid://c7bvfdk8iuw4y<>uid://476iogrsh0st<>uid://cn2bujodc58xb<>uid://dxhq6odfowr17<>uid://bc4ced6s0fta2
 menu music.tscn::PackedScene::6460266331224397579::1687075968::0::1::::<><>::uid://bnbywajfaycpi
 menu.gd::GDScript::-1::1689761136::0::1::::<>MarginContainer<>::
 menu.tscn::PackedScene::5934976567708442679::1689763573::0::1::::<><>::res://scenes/menu.gd<>uid://dgcnrayjs7jqn<>uid://cynne27juo05m<>res://scenes/PointLights.gd<>uid://bpvouls2mpuf7<>uid://81p7b7pbndxb
