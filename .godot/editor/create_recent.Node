@@ -1,5 +1,5 @@
-AnimationPlayer
 Node2D
+AnimationPlayer
 Sprite2D
 CharacterBody2D
 RichTextLabel
@@ -30,4 +30,3 @@ ProgressBar
 TextureProgressBar
 AudioStreamPlayer
 Node
-Button

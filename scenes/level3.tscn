@@ -6504,6 +6504,9 @@ position = Vector2(4456, -2559)
 [node name="Banana2D12" parent="Platanos" instance=ExtResource("25_87rsb")]
 position = Vector2(3900, -3254)
 
+[node name="Banana2D28" parent="Platanos" instance=ExtResource("25_87rsb")]
+position = Vector2(3457, -2856)
+
 [node name="Banana2D15" parent="Platanos" instance=ExtResource("25_87rsb")]
 position = Vector2(3285, -2581)
 
@@ -6556,15 +6559,12 @@ script = ExtResource("22_mmdhe")
 
 [node name="moving_cloud0" parent="moving_platform" instance=ExtResource("22_b2o2h")]
 position = Vector2(639.976, -47.2665)
-scale = Vector2(1, 1)
 
 [node name="moving_cloud1" parent="moving_platform" instance=ExtResource("22_b2o2h")]
 position = Vector2(839.23, -280.797)
-scale = Vector2(1, 1)
 
 [node name="moving_cloud2" parent="moving_platform" instance=ExtResource("22_b2o2h")]
 position = Vector2(304.013, -132.832)
-scale = Vector2(1, 1)
 
 [node name="moving_cloud3" parent="moving_platform" instance=ExtResource("22_b2o2h")]
 position = Vector2(231.011, -67.4435)
@@ -6597,4 +6597,9 @@ position = Vector2(963, -1673)
 
 [node name="caidaVacio" parent="." instance=ExtResource("24_yhxdq")]
 position = Vector2(-838, 1092)
+scale = Vector2(0.5, 0.555)
+
+[node name="caidaVacio2" parent="." instance=ExtResource("24_yhxdq")]
+position = Vector2(-481, -457)
+rotation = -1.5708
 scale = Vector2(0.5, 0.555)
