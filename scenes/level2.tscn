@@ -5731,6 +5731,24 @@ position = Vector2(1344, 1078)
 [node name="Banana2D" parent="Platanos" instance=ExtResource("24_6uhwr")]
 position = Vector2(-924, 133)
 
+[node name="Banana2D14" parent="Platanos" instance=ExtResource("24_6uhwr")]
+position = Vector2(-490, 127)
+
+[node name="Banana2D15" parent="Platanos" instance=ExtResource("24_6uhwr")]
+position = Vector2(-272, 125)
+
+[node name="Banana2D16" parent="Platanos" instance=ExtResource("24_6uhwr")]
+position = Vector2(-45, 129)
+
+[node name="Banana2D17" parent="Platanos" instance=ExtResource("24_6uhwr")]
+position = Vector2(206, 129)
+
+[node name="Banana2D18" parent="Platanos" instance=ExtResource("24_6uhwr")]
+position = Vector2(397, 139)
+
+[node name="Banana2D19" parent="Platanos" instance=ExtResource("24_6uhwr")]
+position = Vector2(1278, 77)
+
 [node name="Banana2D2" parent="Platanos" instance=ExtResource("24_6uhwr")]
 position = Vector2(-791, 135)
 
