@@ -6036,18 +6036,18 @@ sources/11 = SubResource("TileSetAtlasSource_lh1fr")
 sources/12 = SubResource("TileSetAtlasSource_qbp1u")
 sources/13 = SubResource("TileSetAtlasSource_iwyob")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_46bo4"]
-size = Vector2(236, 20)
-
-[sub_resource type="LabelSettings" id="LabelSettings_kv1v1"]
-font = ExtResource("19_ccn1h")
-font_size = 70
-font_color = Color(0, 0, 0, 1)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sgk63"]
 size = Vector2(89, 101)
 
 [sub_resource type="LabelSettings" id="LabelSettings_1plpf"]
+font = ExtResource("19_ccn1h")
+font_size = 70
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_46bo4"]
+size = Vector2(236, 20)
+
+[sub_resource type="LabelSettings" id="LabelSettings_kv1v1"]
 font = ExtResource("19_ccn1h")
 font_size = 70
 font_color = Color(0, 0, 0, 1)
@@ -6120,123 +6120,120 @@ rotation = 1.5708
 [node name="Tutorial" type="Node2D" parent="."]
 position = Vector2(291, 754)
 
-[node name="Tutorial0" type="Node2D" parent="."]
-position = Vector2(291, 754)
+[node name="Tutorial1" type="Node2D" parent="Tutorial"]
+script = ExtResource("20_odt4o")
+
+[node name="Sign-1" type="Sprite2D" parent="Tutorial/Tutorial1"]
+position = Vector2(685, 303)
+scale = Vector2(5, 5)
+texture = ExtResource("23_k3pth")
+
+[node name="Area2D1" type="Area2D" parent="Tutorial/Tutorial1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial/Tutorial1/Area2D1"]
+position = Vector2(685.5, 304.5)
+shape = SubResource("RectangleShape2D_sgk63")
+
+[node name="MarginContainer1" type="MarginContainer" parent="Tutorial/Tutorial1"]
+offset_left = 20.0
+offset_top = 369.0
+offset_right = 1392.0
+offset_bottom = 507.0
+
+[node name="ColorRect1" type="ColorRect" parent="Tutorial/Tutorial1/MarginContainer1"]
+layout_mode = 2
+color = Color(0.870588, 0.901961, 0.952941, 0.713726)
+
+[node name="Label1" type="Label" parent="Tutorial/Tutorial1/MarginContainer1"]
+layout_mode = 2
+text = "Jump with W-key to collect some bananas"
+label_settings = SubResource("LabelSettings_1plpf")
+horizontal_alignment = 1
+
+[node name="Tutorial0" type="Node2D" parent="Tutorial"]
 script = ExtResource("18_26g70")
 
-[node name="Area2D" type="Area2D" parent="Tutorial0"]
+[node name="Area2D" type="Area2D" parent="Tutorial/Tutorial0"]
 position = Vector2(-88, 351)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial0/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial/Tutorial0/Area2D"]
 position = Vector2(108, 0)
 shape = SubResource("RectangleShape2D_46bo4")
 
-[node name="MarginContainer" type="MarginContainer" parent="Tutorial0"]
+[node name="MarginContainer" type="MarginContainer" parent="Tutorial/Tutorial0"]
 offset_left = -154.0
 offset_top = 369.0
 offset_right = 1385.0
 offset_bottom = 507.0
 
-[node name="ColorRect" type="ColorRect" parent="Tutorial0/MarginContainer"]
+[node name="ColorRect" type="ColorRect" parent="Tutorial/Tutorial0/MarginContainer"]
 layout_mode = 2
 color = Color(0.870588, 0.901961, 0.952941, 0.713726)
 
-[node name="Label" type="Label" parent="Tutorial0/MarginContainer"]
+[node name="Label" type="Label" parent="Tutorial/Tutorial0/MarginContainer"]
 layout_mode = 2
 text = "Hello, Welcome to Banana Bounce!!! 
 To play move left with A-key and right with D-key"
 label_settings = SubResource("LabelSettings_kv1v1")
 horizontal_alignment = 1
 
-[node name="Tutorial1" type="Node2D" parent="."]
-position = Vector2(291, 754)
-script = ExtResource("20_odt4o")
-
-[node name="Sign-1" type="Sprite2D" parent="Tutorial1"]
-position = Vector2(685, 303)
-scale = Vector2(5, 5)
-texture = ExtResource("23_k3pth")
-
-[node name="Area2D1" type="Area2D" parent="Tutorial1"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial1/Area2D1"]
-position = Vector2(685.5, 304.5)
-shape = SubResource("RectangleShape2D_sgk63")
-
-[node name="MarginContainer1" type="MarginContainer" parent="Tutorial1"]
-offset_left = 20.0
-offset_top = 369.0
-offset_right = 1392.0
-offset_bottom = 507.0
-
-[node name="ColorRect1" type="ColorRect" parent="Tutorial1/MarginContainer1"]
-layout_mode = 2
-color = Color(0.870588, 0.901961, 0.952941, 0.713726)
-
-[node name="Label1" type="Label" parent="Tutorial1/MarginContainer1"]
-layout_mode = 2
-text = "Jump with W-key to collect some bananas"
-label_settings = SubResource("LabelSettings_1plpf")
-horizontal_alignment = 1
-
-[node name="Tutorial2" type="Node2D" parent="."]
-position = Vector2(291, 754)
+[node name="Tutorial2" type="Node2D" parent="Tutorial"]
 script = ExtResource("22_a3n05")
 
-[node name="Sign-2" type="Sprite2D" parent="Tutorial2"]
+[node name="Sign-2" type="Sprite2D" parent="Tutorial/Tutorial2"]
 position = Vector2(1385, 305)
 scale = Vector2(5, 5)
 texture = ExtResource("23_k3pth")
 
-[node name="Area2D2" type="Area2D" parent="Tutorial2"]
+[node name="Area2D2" type="Area2D" parent="Tutorial/Tutorial2"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial2/Area2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial/Tutorial2/Area2D2"]
 position = Vector2(1385, 305.75)
 shape = SubResource("RectangleShape2D_e3n0v")
 
-[node name="MarginContainer2" type="MarginContainer" parent="Tutorial2"]
+[node name="MarginContainer2" type="MarginContainer" parent="Tutorial/Tutorial2"]
 offset_left = 629.0
 offset_top = 369.0
 offset_right = 2143.0
 offset_bottom = 520.0
 
-[node name="ColorRect2" type="ColorRect" parent="Tutorial2/MarginContainer2"]
+[node name="ColorRect2" type="ColorRect" parent="Tutorial/Tutorial2/MarginContainer2"]
 layout_mode = 2
 color = Color(0.870588, 0.901961, 0.952941, 0.713726)
 
-[node name="Label2" type="Label" parent="Tutorial2/MarginContainer2"]
+[node name="Label2" type="Label" parent="Tutorial/Tutorial2/MarginContainer2"]
 layout_mode = 2
 text = "Hang from tail by aiming mouse at the wooden logs, 
 move back and forth with A-key and D-key"
 label_settings = SubResource("LabelSettings_x4ybg")
 horizontal_alignment = 1
 
-[node name="Tutorial3" type="Node2D" parent="."]
-position = Vector2(920, 1155)
+[node name="Tutorial3" type="Node2D" parent="Tutorial"]
+position = Vector2(629, 401)
 script = ExtResource("23_uidnk")
 
-[node name="Sign-3" type="Sprite2D" parent="Tutorial3"]
+[node name="Sign-3" type="Sprite2D" parent="Tutorial/Tutorial3"]
 position = Vector2(2008, -96)
 scale = Vector2(5, 5)
 texture = ExtResource("23_k3pth")
 
-[node name="Area2D3" type="Area2D" parent="Tutorial3"]
+[node name="Area2D3" type="Area2D" parent="Tutorial/Tutorial3"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial3/Area2D3"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial/Tutorial3/Area2D3"]
 position = Vector2(2008, -95)
 shape = SubResource("RectangleShape2D_eyfhr")
 
-[node name="MarginContainer3" type="MarginContainer" parent="Tutorial3"]
+[node name="MarginContainer3" type="MarginContainer" parent="Tutorial/Tutorial3"]
 offset_left = 1528.0
 offset_top = -32.0
 offset_right = 2414.0
 offset_bottom = 102.0
 
-[node name="ColorRect3" type="ColorRect" parent="Tutorial3/MarginContainer3"]
+[node name="ColorRect3" type="ColorRect" parent="Tutorial/Tutorial3/MarginContainer3"]
 layout_mode = 2
 color = Color(0.870588, 0.901961, 0.952941, 0.713726)
 
-[node name="Label" type="Label" parent="Tutorial3/MarginContainer3"]
+[node name="Label" type="Label" parent="Tutorial/Tutorial3/MarginContainer3"]
 layout_mode = 2
 text = "To win I have to reach home"
 label_settings = SubResource("LabelSettings_3jrot")
@@ -6276,13 +6273,13 @@ position = Vector2(3742, 58)
 position = Vector2(3916, 0)
 
 [node name="win_zone" parent="." instance=ExtResource("7_pljoh")]
-position = Vector2(3527, 1025)
+position = Vector2(660, 1007)
 
-[connection signal="body_entered" from="Tutorial0/Area2D" to="Tutorial0" method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="Tutorial0/Area2D" to="Tutorial0" method="_on_area_2d_body_exited"]
-[connection signal="body_entered" from="Tutorial1/Area2D1" to="Tutorial1" method="_on_area_2d_1_body_entered"]
-[connection signal="body_exited" from="Tutorial1/Area2D1" to="Tutorial1" method="_on_area_2d_1_body_exited"]
-[connection signal="body_entered" from="Tutorial2/Area2D2" to="Tutorial2" method="_on_area_2d_2_body_entered"]
-[connection signal="body_exited" from="Tutorial2/Area2D2" to="Tutorial2" method="_on_area_2d_2_body_exited"]
-[connection signal="body_entered" from="Tutorial3/Area2D3" to="Tutorial3" method="_on_area_2d_3_body_entered"]
-[connection signal="body_exited" from="Tutorial3/Area2D3" to="Tutorial3" method="_on_area_2d_3_body_exited"]
+[connection signal="body_entered" from="Tutorial/Tutorial1/Area2D1" to="Tutorial/Tutorial1" method="_on_area_2d_1_body_entered"]
+[connection signal="body_exited" from="Tutorial/Tutorial1/Area2D1" to="Tutorial/Tutorial1" method="_on_area_2d_1_body_exited"]
+[connection signal="body_entered" from="Tutorial/Tutorial0/Area2D" to="Tutorial/Tutorial0" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Tutorial/Tutorial0/Area2D" to="Tutorial/Tutorial0" method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Tutorial/Tutorial2/Area2D2" to="Tutorial/Tutorial2" method="_on_area_2d_2_body_entered"]
+[connection signal="body_exited" from="Tutorial/Tutorial2/Area2D2" to="Tutorial/Tutorial2" method="_on_area_2d_2_body_exited"]
+[connection signal="body_entered" from="Tutorial/Tutorial3/Area2D3" to="Tutorial/Tutorial3" method="_on_area_2d_3_body_entered"]
+[connection signal="body_exited" from="Tutorial/Tutorial3/Area2D3" to="Tutorial/Tutorial3" method="_on_area_2d_3_body_exited"]

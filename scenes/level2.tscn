@@ -6113,7 +6113,7 @@ offset_right = 291.0
 offset_bottom = 70.0
 
 [node name="win_zone" parent="." instance=ExtResource("23_1wakw")]
-position = Vector2(3577, 1001)
+position = Vector2(826, 992)
 
 [node name="Platanos" type="Node2D" parent="."]
 position = Vector2(1344, 1078)

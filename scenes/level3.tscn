@@ -6494,7 +6494,7 @@ libraries = {
 }
 
 [node name="Player" parent="." instance=ExtResource("19_yrsdt")]
-position = Vector2(221, 652)
+position = Vector2(274, -1844)
 
 [node name="Platanos" type="Node2D" parent="."]
 position = Vector2(1344, 1078)
