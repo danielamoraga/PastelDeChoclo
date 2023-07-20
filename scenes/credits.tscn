@@ -77,9 +77,28 @@ offset_right = 1521.0
 offset_bottom = 728.0
 text = "Banana Bounce
 
-Assets:
-Music:
-Fonts:
+Assets
+Character: https://vimlark.itch.io/monkey-maker
+Background: https://free-game-assets.itch.io/free-sky-with-clouds-Background-pixel-art-set
+https://craftpix.net/file-licenses/
+Tileset: https://leafpix.itch.io/grassland-16x16-tileset
+Banana: https://simon-develop.itch.io/pixel-art-fruits-free
+Clouds: https://latenightcoffe.itch.io/2d-pixel-art-semi-realistic-clouds
+Decoration and Spikes: https://ansimuz.itch.io/sunny-land-pixel-game-art
+Hook : https://limitless-assets.itch.io/pine-tree
+Hearts: https://www.deviantart.com/yukikootomiye/art/Sprites-Heart-Life-641296172
+
+Fonts
+https://arcadiaxdev.itch.io/chonkly-pixel-font
+https://caffinate.itch.io/fibberish
+
+Pastel de Choclo
+Fernanda Contreras
+Daniela Moraga
+Matías Sanhueza
+Taller de Desarrollo de Videojuegos
+Universidad de Chile
+2023
 "
 label_settings = SubResource("LabelSettings_an2a2")
 horizontal_alignment = 1
