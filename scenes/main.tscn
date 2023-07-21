@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=3 uid="uid://dgcnrayjs7jqn"]
+[gd_scene load_steps=51 format=3 uid="uid://dgcnrayjs7jqn"]
 
 [ext_resource type="Texture2D" uid="uid://d0wwo6w7whc6d" path="res://Diseño/tileset.png" id="1_2kw6x"]
 [ext_resource type="PackedScene" uid="uid://doujpbxt4h0j8" path="res://scenes/background3.tscn" id="1_3hyle"]
@@ -11,7 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://h0yvgoywwqd1" path="res://assets/darkpine_sprites/darkpine_spritesheet.png" id="6_yek6j"]
 [ext_resource type="Texture2D" uid="uid://1ecylkmnddqt" path="res://assets/Grassland  - 16x16 tileset/decoration/Decoration.png" id="7_phk33"]
 [ext_resource type="PackedScene" uid="uid://bf4us40h865te" path="res://scenes/win_area.tscn" id="7_pljoh"]
-[ext_resource type="PackedScene" uid="uid://dkvxipv1ai3jc" path="res://fps_label.tscn" id="8_dpol6"]
 [ext_resource type="Texture2D" uid="uid://c14f5oigvlwwt" path="res://assets/Forest tileset/Tile-set/Ground/Ground tile set 00.png" id="9_c01ki"]
 [ext_resource type="Texture2D" uid="uid://bdb8g3rypbcjm" path="res://assets/Grassland  - 16x16 tileset/tile/tile.png" id="10_wp1p8"]
 [ext_resource type="Texture2D" uid="uid://bftg8mwdahao2" path="res://assets/Forest tileset/Tile-set/Trunks/Trunk 06.png" id="11_v1f3j"]
@@ -6245,11 +6244,6 @@ position = Vector2(291, 754)
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 volume_db = -25.316
 script = ExtResource("6_y3l10")
-
-[node name="Label" parent="." instance=ExtResource("8_dpol6")]
-visible = false
-offset_right = 291.0
-offset_bottom = 70.0
 
 [node name="Platanos" type="Node2D" parent="."]
 position = Vector2(291, 764)

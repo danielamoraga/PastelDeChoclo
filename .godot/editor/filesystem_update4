@@ -1,7 +1,12 @@
 res://scenes/menu.tscn
 res://scenes/hookable_block.tscn
 res://scenes/pause_menu.tscn
-res://scenes/Settings.tscn
 res://heart.tscn
 res://scenes/main.tscn
 res://scenes/credits.tscn
+res://scenes/Settings.tscn
+res://scenes/player.tscn
+res://FpsLabel.gd
+res://scenes/fps_label.tscn
+res://scenes/Settings.gd
+res://global_settings.gd

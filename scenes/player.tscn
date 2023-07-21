@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://b5208fp6rc1i8"]
+[gd_scene load_steps=26 format=3 uid="uid://b5208fp6rc1i8"]
 
 [ext_resource type="Script" path="res://scenes/player.gd" id="1_omsvt"]
 [ext_resource type="Texture2D" uid="uid://ujb7820lqxiu" path="res://assets/tail_texture.png" id="2_jmq4m"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://cm7pijkda0178" path="res://scenes/game_over.tscn" id="5_synem"]
 [ext_resource type="Texture2D" uid="uid://c7i7iul81t6ou" path="res://assets/banana/banana.png" id="6_hq2qp"]
 [ext_resource type="FontFile" uid="uid://bpvouls2mpuf7" path="res://Diseño/Fonts/Chonkly.otf" id="7_3xydi"]
+[ext_resource type="PackedScene" uid="uid://cv6x5pwgc258g" path="res://scenes/fps_label.tscn" id="9_unif6"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0ajd5"]
 radius = 67.0
@@ -253,6 +254,12 @@ theme_override_fonts/font = ExtResource("7_3xydi")
 theme_override_font_sizes/font_size = 44
 text = "0
 "
+
+[node name="FpsLabel" parent="CanvasLayer" instance=ExtResource("9_unif6")]
+offset_left = 1065.0
+offset_right = 1792.0
+offset_bottom = 46.0
+horizontal_alignment = 2
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(41, 20)

@@ -1,6 +1,8 @@
 extends Node
 
 signal fps_displayed(value)
+signal brightness_updated(value)
+signal mouse_senes_updated(value)
 
 func toggle_fullscreen(value):
 	if value == false:
@@ -16,3 +18,6 @@ func toggle_vsync(value):
 
 func toggle_fps_display(value):
 	emit_signal("fps_displayed", value)
+
+func update_master_vol(vol):
+	AudioServer.set_bus_volume_db(0,vol+11)

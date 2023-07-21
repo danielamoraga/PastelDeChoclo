@@ -22,48 +22,44 @@ extends MarginContainer
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	display_options.select(1 if Save.game_data.fullscreen_on else 0)
+	GlobalSettings.toggle_fullscreen(Save.game_data.fullscreen_on)
+	vsync_btn.button_pressed = Save.game_data.vsync_on
+	display_fps_btn.button_pressed = Save.game_data.display_fps
 	close.pressed.connect(_on_close_pressed)
-	pass # Replace with function body.
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+	master_vol_slider.value = Save.game_data.master_vol
 
 func _on_close_pressed():
 	get_tree().change_scene_to_file("res://scenes/menu.tscn")
 
 func _on_display_button_item_selected(index):
 	GlobalSettings.toggle_fullscreen(true if index == 1 else false)
+	Save.game_data.fullscreen_on = (true if index == 1 else false)
+	Save.save_data()
 	pass # Replace with function body.
 
 
-func _on_vsync_button_toggled(button_pressed):
-	pass # Replace with function body.
-
-
-func _on_display_fps_button_toggled(button_pressed):
-	pass # Replace with function body.
+func _on_vsync_button_toggled(button_pressed: bool) -> void:
+	if button_pressed:
+		DisplayServer.window_set_vsync_mode(DisplayServer.VSYNC_ENABLED)
+	else:
+		DisplayServer.window_set_vsync_mode(DisplayServer.VSYNC_DISABLED)
+	Save.game_data.vsync_on = button_pressed
+	Save.save_data()
 
 
 func _on_max_fps_slider_value_changed(value):
-	pass # Replace with function body.
+	pass
 
 
 func _on_brightness_slider_value_changed(value):
-	pass # Replace with function body.
+	GlobalSettings.update_brightness(value)
 
 
-func _on_master_volume_slider_value_changed(value):
-	pass # Replace with function body.
-
-
-func _on_music_volume_slider_value_changed(value):
-	pass # Replace with function body.
-
-
-func _on_sfx_volume_slider_value_changed(value):
-	pass # Replace with function body.
-
-
+func _on_master_volume_slider_value_changed(vol):
+	AudioServer.set_bus_volume_db(0,vol+11)
+	Save.game_data.master_vol = vol
+	Save.save_data()
+	
 func _on_mouse_sensitivity_slider_value_changed(value):
 	pass # Replace with function body.
