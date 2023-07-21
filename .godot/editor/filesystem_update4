@@ -6,7 +6,7 @@ res://scenes/main.tscn
 res://scenes/credits.tscn
 res://scenes/Settings.tscn
 res://scenes/player.tscn
-res://FpsLabel.gd
 res://scenes/fps_label.tscn
+res://FpsLabel.gd
+res://save.gd
 res://scenes/Settings.gd
-res://global_settings.gd

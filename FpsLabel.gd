@@ -6,7 +6,7 @@ func _ready():
 	hide()  # Initially, hide the Label
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float):
+func _process(_delta: float):
 	text = "FPS: " + str(int(Engine.get_frames_per_second()))  # Get FPS and convert it to a string without decimals
 
 func _input(event):

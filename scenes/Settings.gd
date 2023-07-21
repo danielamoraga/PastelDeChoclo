@@ -7,7 +7,7 @@ extends MarginContainer
 @onready var vsync_btn = $SettingsTabs/Video/MarginContainer/VideoSettings/VsyncButton
 @onready var display_fps_btn = $SettingsTabs/Video/MarginContainer/VideoSettings/DisplayFPSButton
 @onready var max_fps_val = $SettingsTabs/Video/MarginContainer/VideoSettings/HBoxContainer/MaxFPSSlider
-@onready var max_fps_slider = $SettingsTabs/Video/MarginContainer/VideoSettings/Bloom2
+#@onready var max_fps_slider = $SettingsTabs/Video/MarginContainer/VideoSettings/Bloom2
 @onready var brightness_slider = $SettingsTabs/Video/MarginContainer/VideoSettings/Brightness2/BrightnessSlider
 
 #Audio Settings
@@ -16,8 +16,8 @@ extends MarginContainer
 @onready var sfx_vol_slider = $SettingsTabs/Audio/MarginContainer/AudioSettings/SFXVolume2/SFXVolumeSlider
 
 #Gameplay Settings
-@onready var mouse_sens_val = $SettingsTabs/Gameplay/MarginContainer/GameplaySettings/MouseSensitivity2/MouseSensitivityLabel
-@onready var mouse_sens_slider = $SettingsTabs/Gameplay/MarginContainer/GameplaySettings/MouseSensitivity2/MouseSensitivitySlider
+#@onready var mouse_sens_val = $SettingsTabs/Gameplay/MarginContainer/GameplaySettings/MouseSensitivity2/MouseSensitivityLabel
+#@onready var mouse_sens_slider = $SettingsTabs/Gameplay/MarginContainer/GameplaySettings/MouseSensitivity2/MouseSensitivitySlider
 
 
 # Called when the node enters the scene tree for the first time.
@@ -28,7 +28,7 @@ func _ready():
 	display_fps_btn.button_pressed = Save.game_data.display_fps
 	close.pressed.connect(_on_close_pressed)
 	master_vol_slider.value = Save.game_data.master_vol
-
+	
 func _on_close_pressed():
 	get_tree().change_scene_to_file("res://scenes/menu.tscn")
 
@@ -48,7 +48,7 @@ func _on_vsync_button_toggled(button_pressed: bool) -> void:
 	Save.save_data()
 
 
-func _on_max_fps_slider_value_changed(value):
+func _on_max_fps_slider_value_changed(_value):
 	pass
 
 
@@ -61,5 +61,5 @@ func _on_master_volume_slider_value_changed(vol):
 	Save.game_data.master_vol = vol
 	Save.save_data()
 	
-func _on_mouse_sensitivity_slider_value_changed(value):
+func _on_mouse_sensitivity_slider_value_changed(_value):
 	pass # Replace with function body.
