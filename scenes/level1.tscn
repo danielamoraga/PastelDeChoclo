@@ -11,7 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://1ecylkmnddqt" path="res://assets/Grassland  - 16x16 tileset/decoration/Decoration.png" id="7_04g0m"]
 [ext_resource type="Script" path="res://scenes/AudioStreamPlayer.gd" id="7_cyash"]
 [ext_resource type="Texture2D" uid="uid://dekd31bajp28u" path="res://assets/Forest tileset/Tile-set/Leaves, branches, bushes, etc/03.png" id="8_b4a5u"]
-[ext_resource type="PackedScene" uid="uid://dkvxipv1ai3jc" path="res://fps_label.tscn" id="8_kk1hx"]
 [ext_resource type="Texture2D" uid="uid://bdb8g3rypbcjm" path="res://assets/Grassland  - 16x16 tileset/tile/tile.png" id="8_q4nf0"]
 [ext_resource type="Texture2D" uid="uid://5v5i3q5bxr78" path="res://assets/Forest tileset/Tile-set/Leaves, branches, bushes, etc/04.png" id="9_2ykqx"]
 [ext_resource type="PackedScene" uid="uid://bf4us40h865te" path="res://scenes/win_area.tscn" id="9_8j8vn"]
@@ -22,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://dxhq6odfowr17" path="res://scenes/hookable_tronco4.tscn" id="17_afx6o"]
 [ext_resource type="Texture2D" uid="uid://476iogrsh0st" path="res://assets/Forest tileset/Tile-set/Leaves, branches, bushes, etc/02.png" id="17_t4otm"]
 [ext_resource type="PackedScene" uid="uid://cn2bujodc58xb" path="res://scenes/hookable_tronco5.tscn" id="18_3sf0h"]
+[ext_resource type="PackedScene" uid="uid://cv6x5pwgc258g" path="res://scenes/fps_label.tscn" id="24_4gqp8"]
 [ext_resource type="PackedScene" uid="uid://bc4ced6s0fta2" path="res://scenes/banana_2d.tscn" id="24_c43sr"]
 [ext_resource type="PackedScene" uid="uid://k5g8wh1siqum" path="res://scenes/reload_caida.tscn" id="24_u2du8"]
 
@@ -6107,11 +6107,6 @@ position = Vector2(484, 944)
 volume_db = -25.316
 script = ExtResource("7_cyash")
 
-[node name="Label" parent="." instance=ExtResource("8_kk1hx")]
-visible = false
-offset_right = 291.0
-offset_bottom = 70.0
-
 [node name="Platanos" type="Node2D" parent="."]
 position = Vector2(1344, 1078)
 
@@ -6149,8 +6144,11 @@ position = Vector2(836, -27)
 position = Vector2(1102, -36)
 
 [node name="win_zone" parent="." instance=ExtResource("9_8j8vn")]
-position = Vector2(3639, 1032)
+position = Vector2(3653, 1027)
 
 [node name="caidaVacio" parent="." instance=ExtResource("24_u2du8")]
 position = Vector2(-215, 1376)
 scale = Vector2(0.5, 0.555)
+
+[node name="FpsLabel" parent="." instance=ExtResource("24_4gqp8")]
+visible = false

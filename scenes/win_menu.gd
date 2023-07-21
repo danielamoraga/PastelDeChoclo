@@ -5,16 +5,18 @@ extends MarginContainer
 
 func _ready():
 	next_level.pressed.connect(_on_next_level_pressed)
+	get_tree().paused = false
 	main_menu.pressed.connect(_on_main_menu_pressed)
+	get_tree().paused = false
 	hide()
 	
 func _on_win_zone_win():
 	var win_menu = load("res://scenes/win_menu.tscn").instantiate()
 	add_child(win_menu)
 	show()
+	get_tree().paused = true
 	
 func _on_next_level_pressed():
-	get_tree().paused = false
 	
 	# siguientes niveles
 	GlobalNextLevel.current_level += 1
@@ -26,6 +28,7 @@ func _on_next_level_pressed():
 	var resource_loader = ResourceLoader.exists(next_level_path)
 	if resource_loader == true:
 		# If the scene file exists, load it
+		#get_tree().paused = false
 		get_tree().change_scene_to_file(next_level_path)
 	else:
 		get_tree().change_scene_to_file("res://aaaaaaa.tscn")

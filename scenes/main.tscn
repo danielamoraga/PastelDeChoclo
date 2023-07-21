@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=3 uid="uid://dgcnrayjs7jqn"]
+[gd_scene load_steps=52 format=3 uid="uid://dgcnrayjs7jqn"]
 
 [ext_resource type="Texture2D" uid="uid://d0wwo6w7whc6d" path="res://Diseño/tileset.png" id="1_2kw6x"]
 [ext_resource type="PackedScene" uid="uid://doujpbxt4h0j8" path="res://scenes/background3.tscn" id="1_3hyle"]
@@ -27,6 +27,7 @@
 [ext_resource type="Script" path="res://scenes/Tutorial3.gd" id="22_a3n05"]
 [ext_resource type="Texture2D" uid="uid://cq370viehwqvv" path="res://assets/Sunny-land-assets-files/edited/sign-1.png" id="23_k3pth"]
 [ext_resource type="Script" path="res://scenes/Tutorial4.gd" id="23_uidnk"]
+[ext_resource type="PackedScene" uid="uid://cv6x5pwgc258g" path="res://scenes/fps_label.tscn" id="28_4bo2w"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rd052"]
 texture = ExtResource("1_2kw6x")
@@ -6267,7 +6268,10 @@ position = Vector2(3742, 58)
 position = Vector2(3916, 0)
 
 [node name="win_zone" parent="." instance=ExtResource("7_pljoh")]
-position = Vector2(3536, 1021)
+position = Vector2(3576, 1009)
+
+[node name="FpsLabel" parent="." instance=ExtResource("28_4bo2w")]
+visible = false
 
 [connection signal="body_entered" from="Tutorial/Tutorial1/Area2D1" to="Tutorial/Tutorial1" method="_on_area_2d_1_body_entered"]
 [connection signal="body_exited" from="Tutorial/Tutorial1/Area2D1" to="Tutorial/Tutorial1" method="_on_area_2d_1_body_exited"]

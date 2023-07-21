@@ -1,6 +1,7 @@
 [gd_scene load_steps=48 format=3 uid="uid://bf2uv0diyuifo"]
 
 [ext_resource type="PackedScene" uid="uid://doujpbxt4h0j8" path="res://scenes/background3.tscn" id="1_0jybb"]
+[ext_resource type="PackedScene" uid="uid://cv6x5pwgc258g" path="res://scenes/fps_label.tscn" id="1_m1qdl"]
 [ext_resource type="Texture2D" uid="uid://h0yvgoywwqd1" path="res://assets/darkpine_sprites/darkpine_spritesheet.png" id="6_5kf1u"]
 [ext_resource type="Texture2D" uid="uid://d0wwo6w7whc6d" path="res://Diseño/tileset.png" id="6_s8kbk"]
 [ext_resource type="Texture2D" uid="uid://1ecylkmnddqt" path="res://assets/Grassland  - 16x16 tileset/decoration/Decoration.png" id="7_61fr0"]
@@ -21,7 +22,6 @@
 [ext_resource type="PackedScene" uid="uid://hkj1hbq1qmxf" path="res://scenes/spikes.tscn" id="18_dbt13"]
 [ext_resource type="PackedScene" uid="uid://b5208fp6rc1i8" path="res://scenes/player.tscn" id="20_3cgtb"]
 [ext_resource type="Script" path="res://scenes/AudioStreamPlayer.gd" id="21_ubdvu"]
-[ext_resource type="PackedScene" uid="uid://dkvxipv1ai3jc" path="res://fps_label.tscn" id="22_smj22"]
 [ext_resource type="PackedScene" uid="uid://bf4us40h865te" path="res://scenes/win_area.tscn" id="23_1wakw"]
 [ext_resource type="PackedScene" uid="uid://k5g8wh1siqum" path="res://scenes/reload_caida.tscn" id="23_un0p7"]
 [ext_resource type="PackedScene" uid="uid://bc4ced6s0fta2" path="res://scenes/banana_2d.tscn" id="24_6uhwr"]
@@ -6045,6 +6045,31 @@ sources/13 = SubResource("TileSetAtlasSource_iwyob")
 pattern_0 = SubResource("TileMapPattern_hp1qt")
 pattern_1 = SubResource("TileMapPattern_j14f8")
 
+[sub_resource type="Animation" id="Animation_3rltg"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("moving_cloud:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-261, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("moving_cloud2:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(122, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
 [sub_resource type="Animation" id="Animation_lpbbd"]
 resource_name = "move1"
 length = 5.0
@@ -6072,31 +6097,6 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0, 2.5, 5)
 }
 
-[sub_resource type="Animation" id="Animation_3rltg"]
-length = 0.001
-tracks/0/type = "bezier"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("moving_cloud:position:y")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(-261, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/1/type = "bezier"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("moving_cloud2:position:y")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(122, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_plg3i"]
 _data = {
 "RESET": SubResource("Animation_3rltg"),
@@ -6104,6 +6104,9 @@ _data = {
 }
 
 [node name="Level2" type="Node2D"]
+
+[node name="FpsLabel" parent="." instance=ExtResource("1_m1qdl")]
+visible = false
 
 [node name="Background1" parent="." instance=ExtResource("1_0jybb")]
 
@@ -6257,13 +6260,8 @@ position = Vector2(361, 840)
 volume_db = -25.316
 script = ExtResource("21_ubdvu")
 
-[node name="Label" parent="." instance=ExtResource("22_smj22")]
-visible = false
-offset_right = 291.0
-offset_bottom = 70.0
-
 [node name="win_zone" parent="." instance=ExtResource("23_1wakw")]
-position = Vector2(670, -88)
+position = Vector2(654, -78)
 
 [node name="Platanos" type="Node2D" parent="."]
 position = Vector2(1344, 1078)

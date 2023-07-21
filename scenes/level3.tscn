@@ -20,12 +20,12 @@
 [ext_resource type="PackedScene" uid="uid://cn2bujodc58xb" path="res://scenes/hookable_tronco5.tscn" id="18_bsk5a"]
 [ext_resource type="PackedScene" uid="uid://b5208fp6rc1i8" path="res://scenes/player.tscn" id="19_yrsdt"]
 [ext_resource type="Script" path="res://scenes/AudioStreamPlayer.gd" id="20_urtdw"]
-[ext_resource type="PackedScene" uid="uid://dkvxipv1ai3jc" path="res://fps_label.tscn" id="21_pltxx"]
 [ext_resource type="PackedScene" uid="uid://bf4us40h865te" path="res://scenes/win_area.tscn" id="22_1qo5g"]
 [ext_resource type="PackedScene" uid="uid://pwi5hwoje1e4" path="res://scenes/moving_cloud.tscn" id="22_b2o2h"]
 [ext_resource type="Script" path="res://scenes/moving_platform.gd" id="22_mmdhe"]
 [ext_resource type="PackedScene" uid="uid://k5g8wh1siqum" path="res://scenes/reload_caida.tscn" id="24_yhxdq"]
 [ext_resource type="PackedScene" uid="uid://bc4ced6s0fta2" path="res://scenes/banana_2d.tscn" id="25_87rsb"]
+[ext_resource type="PackedScene" uid="uid://cv6x5pwgc258g" path="res://scenes/fps_label.tscn" id="26_m8a06"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_ujmim"]
 tile_data = PackedInt32Array(0, 4, 0, 65536, 4, 1, 1, 65540, 0, 65537, 65540, 1)
@@ -6637,13 +6637,8 @@ position = Vector2(4062, -3069)
 volume_db = -25.316
 script = ExtResource("20_urtdw")
 
-[node name="Label" parent="." instance=ExtResource("21_pltxx")]
-visible = false
-offset_right = 291.0
-offset_bottom = 70.0
-
 [node name="win_zone" parent="." instance=ExtResource("22_1qo5g")]
-position = Vector2(963, -1673)
+position = Vector2(880, -1616)
 
 [node name="caidaVacio" parent="." instance=ExtResource("24_yhxdq")]
 position = Vector2(-838, 1092)
@@ -6653,3 +6648,6 @@ scale = Vector2(0.5, 0.555)
 position = Vector2(-481, -457)
 rotation = -1.5708
 scale = Vector2(0.5, 0.555)
+
+[node name="FpsLabel" parent="." instance=ExtResource("26_m8a06")]
+visible = false

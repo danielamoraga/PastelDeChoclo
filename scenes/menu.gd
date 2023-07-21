@@ -8,6 +8,7 @@ extends MarginContainer
 @export var main_scene: PackedScene
 
 func _ready():
+	get_tree().paused = false
 	play.pressed.connect(_on_play_pressed)
 	settings.pressed.connect(_on_settings_pressed)
 	credits.pressed.connect(_on_credits_pressed)
