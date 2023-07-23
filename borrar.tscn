@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://dpgmps1acpsg6"]
+
+[ext_resource type="PackedScene" uid="uid://b5208fp6rc1i8" path="res://scenes/player.tscn" id="1_lywpm"]
+[ext_resource type="PackedScene" uid="uid://cn2bujodc58xb" path="res://scenes/hookable_tronco5.tscn" id="2_b18m6"]
+[ext_resource type="PackedScene" uid="uid://hkj1hbq1qmxf" path="res://scenes/spikes.tscn" id="3_h4q5j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6u1pi"]
+size = Vector2(1574, 472)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_lywpm")]
+
+[node name="HookableBlock2" parent="." instance=ExtResource("2_b18m6")]
+position = Vector2(625, 284)
+scale = Vector2(2, 2)
+
+[node name="Spikes" parent="." instance=ExtResource("3_h4q5j")]
+position = Vector2(661, 333)
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Spikes"]
+position = Vector2(125, 634)
+shape = SubResource("RectangleShape2D_6u1pi")

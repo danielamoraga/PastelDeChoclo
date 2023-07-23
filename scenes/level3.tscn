@@ -6250,6 +6250,39 @@ rotation = 3.14159
 position = Vector2(1794, 947)
 rotation = 1.5708
 
+[node name="Spikes35" parent="spikes" instance=ExtResource("16_wixyd")]
+position = Vector2(1353, 434)
+
+[node name="Spikes36" parent="spikes" instance=ExtResource("16_wixyd")]
+position = Vector2(1686, 435)
+
+[node name="Spikes37" parent="spikes" instance=ExtResource("16_wixyd")]
+position = Vector2(2017, 434)
+
+[node name="Spikes38" parent="spikes" instance=ExtResource("16_wixyd")]
+position = Vector2(2350, 435)
+
+[node name="Spikes39" parent="spikes" instance=ExtResource("16_wixyd")]
+position = Vector2(2678, 433)
+
+[node name="Spikes40" parent="spikes" instance=ExtResource("16_wixyd")]
+position = Vector2(3011, 434)
+
+[node name="Spikes41" parent="spikes" instance=ExtResource("16_wixyd")]
+position = Vector2(3356, 432)
+
+[node name="Spikes42" parent="spikes" instance=ExtResource("16_wixyd")]
+position = Vector2(3689, 433)
+
+[node name="Spikes43" parent="spikes" instance=ExtResource("16_wixyd")]
+position = Vector2(4014, 435)
+
+[node name="Spikes44" parent="spikes" instance=ExtResource("16_wixyd")]
+position = Vector2(2518, -2172)
+
+[node name="Spikes45" parent="spikes" instance=ExtResource("16_wixyd")]
+position = Vector2(2839, -2173)
+
 [node name="Spikes14" parent="spikes" instance=ExtResource("16_wixyd")]
 position = Vector2(1347, 945)
 rotation = 4.71239

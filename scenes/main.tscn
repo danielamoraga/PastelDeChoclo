@@ -6094,8 +6094,6 @@ layer_2/y_sort_origin = 0
 layer_2/z_index = 0
 layer_2/tile_data = PackedInt32Array(196636, 65549, 4, 196635, 65549, 4, 196643, 13, 4, 196644, 13, 4, 196649, 13, 4, 196650, 13, 4, 196645, 13, 4, 196648, 13, 4, 196610, 13, 4)
 
-[node name="spikes" type="Node2D" parent="."]
-
 [node name="blocks" type="Node2D" parent="."]
 
 [node name="HookableBlock2" parent="blocks" instance=ExtResource("16_62pfg")]
@@ -6116,6 +6114,8 @@ position = Vector2(1837.5, 646)
 [node name="HookableBlock7" parent="blocks" instance=ExtResource("17_ms1i7")]
 position = Vector2(2593, 616.1)
 rotation = 1.5708
+
+[node name="spikes" type="Node2D" parent="."]
 
 [node name="Tutorial" type="Node2D" parent="."]
 position = Vector2(291, 754)
