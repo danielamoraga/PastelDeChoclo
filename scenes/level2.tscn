@@ -6197,6 +6197,22 @@ position = Vector2(5617, 887)
 position = Vector2(2422, -272)
 rotation = 3.14159
 
+[node name="Spikes17" parent="spikes" instance=ExtResource("18_dbt13")]
+position = Vector2(3548, -16)
+rotation = 0.0340572
+
+[node name="Spikes18" parent="spikes" instance=ExtResource("18_dbt13")]
+position = Vector2(2956, -13)
+rotation = -0.0249463
+
+[node name="Spikes19" parent="spikes" instance=ExtResource("18_dbt13")]
+position = Vector2(5975, -1021)
+rotation = -0.00862304
+
+[node name="Spikes20" parent="spikes" instance=ExtResource("18_dbt13")]
+position = Vector2(6106, -1018)
+rotation = 0.0226036
+
 [node name="blocks" type="Node2D" parent="."]
 
 [node name="HookableBlock5" parent="blocks" instance=ExtResource("18_71u1h")]
@@ -6341,3 +6357,15 @@ position = Vector2(-339, -166)
 [node name="caidaVacio" parent="." instance=ExtResource("23_un0p7")]
 position = Vector2(1224, 2289)
 scale = Vector2(1.44236, 1.60008)
+
+[node name="Spikes19" parent="." instance=ExtResource("18_dbt13")]
+position = Vector2(6763, -1014)
+rotation = -0.00862304
+
+[node name="Spikes20" parent="." instance=ExtResource("18_dbt13")]
+position = Vector2(6887, -1016)
+rotation = -0.00862304
+
+[node name="Spikes21" parent="." instance=ExtResource("18_dbt13")]
+position = Vector2(5637, -1019)
+rotation = -0.00862304
