@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://2duqck75trg6"]
+[gd_scene load_steps=45 format=3 uid="uid://2duqck75trg6"]
 
 [ext_resource type="PackedScene" uid="uid://doujpbxt4h0j8" path="res://scenes/background3.tscn" id="1_xiamm"]
 [ext_resource type="Texture2D" uid="uid://d1e4oiij42m7d" path="res://assets/tiles/platforms.png" id="2_r4uds"]
@@ -24,6 +24,9 @@
 [ext_resource type="PackedScene" uid="uid://cv6x5pwgc258g" path="res://scenes/fps_label.tscn" id="24_4gqp8"]
 [ext_resource type="PackedScene" uid="uid://bc4ced6s0fta2" path="res://scenes/banana_2d.tscn" id="24_c43sr"]
 [ext_resource type="PackedScene" uid="uid://k5g8wh1siqum" path="res://scenes/reload_caida.tscn" id="24_u2du8"]
+[ext_resource type="Script" path="res://scenes/Tutorial2.gd" id="25_ix3sw"]
+[ext_resource type="Texture2D" uid="uid://cq370viehwqvv" path="res://assets/Sunny-land-assets-files/edited/sign-1.png" id="26_qt3ya"]
+[ext_resource type="FontFile" uid="uid://81p7b7pbndxb" path="res://Diseño/Fonts/fibberish.ttf" id="27_crut2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rd052"]
 texture = ExtResource("3_rdymd")
@@ -6032,6 +6035,14 @@ sources/11 = SubResource("TileSetAtlasSource_lh1fr")
 sources/12 = SubResource("TileSetAtlasSource_qbp1u")
 sources/13 = SubResource("TileSetAtlasSource_iwyob")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yrhum"]
+size = Vector2(89, 101)
+
+[sub_resource type="LabelSettings" id="LabelSettings_q6r4o"]
+font = ExtResource("27_crut2")
+font_size = 70
+font_color = Color(0, 0, 0, 1)
+
 [node name="Level2" type="Node2D"]
 
 [node name="Background1" parent="." instance=ExtResource("1_xiamm")]
@@ -6061,19 +6072,19 @@ layer_2/tile_data = PackedInt32Array(196613, 262157, 4, 196614, 262157, 4, 19663
 [node name="spikes" type="Node2D" parent="."]
 
 [node name="Spikes" parent="spikes" instance=ExtResource("4_wkmhu")]
-position = Vector2(2120, 1266)
+position = Vector2(2115, 1269)
 rotation = 3.14159
 
 [node name="Spikes2" parent="spikes" instance=ExtResource("4_wkmhu")]
-position = Vector2(2249, 1266)
+position = Vector2(2244, 1269)
 rotation = 3.14159
 
 [node name="Spikes3" parent="spikes" instance=ExtResource("4_wkmhu")]
-position = Vector2(2377, 1266)
+position = Vector2(2372, 1269)
 rotation = 3.14159
 
 [node name="Spikes4" parent="spikes" instance=ExtResource("4_wkmhu")]
-position = Vector2(2506, 1266)
+position = Vector2(2501, 1269)
 rotation = 3.14159
 
 [node name="blocks" type="Node2D" parent="."]
@@ -6152,3 +6163,45 @@ scale = Vector2(0.5, 0.555)
 
 [node name="FpsLabel" parent="." instance=ExtResource("24_4gqp8")]
 visible = false
+
+[node name="Spikes19" parent="." instance=ExtResource("4_wkmhu")]
+position = Vector2(2148, 669)
+rotation = -0.00862304
+
+[node name="Spikes19" parent="Spikes19" instance=ExtResource("4_wkmhu")]
+position = Vector2(327.988, 2.82831)
+rotation = -0.00862304
+
+[node name="Tutorial1" type="Node2D" parent="."]
+position = Vector2(1910.3, 1027.53)
+script = ExtResource("25_ix3sw")
+
+[node name="Sign-1" type="Sprite2D" parent="Tutorial1"]
+position = Vector2(-0.297363, 43.4685)
+scale = Vector2(5, 5)
+texture = ExtResource("26_qt3ya")
+
+[node name="Area2D1" type="Area2D" parent="Tutorial1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tutorial1/Area2D1"]
+position = Vector2(-0.297363, 42.4684)
+shape = SubResource("RectangleShape2D_yrhum")
+
+[node name="MarginContainer1" type="MarginContainer" parent="Tutorial1"]
+offset_left = -755.297
+offset_top = 159.468
+offset_right = 735.703
+offset_bottom = 297.468
+
+[node name="ColorRect1" type="ColorRect" parent="Tutorial1/MarginContainer1"]
+layout_mode = 2
+color = Color(0.870588, 0.901961, 0.952941, 0.713726)
+
+[node name="Label1" type="Label" parent="Tutorial1/MarginContainer1"]
+layout_mode = 2
+text = "Careful with the spikes! They might hurt your tail"
+label_settings = SubResource("LabelSettings_q6r4o")
+horizontal_alignment = 1
+
+[connection signal="body_entered" from="Tutorial1/Area2D1" to="Tutorial1" method="_on_area_2d_1_body_entered"]
+[connection signal="body_exited" from="Tutorial1/Area2D1" to="Tutorial1" method="_on_area_2d_1_body_exited"]
